@@ -1,6 +1,9 @@
 @import 'tailwindcss';
+@import '@catppuccin/tailwindcss/mocha.css';
+
+@custom-variant dark (&:where(.mocha, .mocha *));
 
 @theme {
-  --font-sans: 'Inter Variable', sans-serif;
-  --font-mono: 'JetBrains Mono Variable', monospace;
+	--font-sans: 'Inter Variable', sans-serif;
+	--font-mono: 'JetBrains Mono Variable', monospace;
 }
