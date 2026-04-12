@@ -1,8 +1,8 @@
 <script lang="ts">
 	import { browser } from '$app/environment';
-	import './layout.css';
 	import favicon from '$lib/assets/favicon.svg';
 	import Navbar from '../components/Navbar.svelte';
+	import './layout.css';
 
 	if (browser) {
 		const isThemeAuto = localStorage.getItem('theme-auto');
