@@ -7,3 +7,15 @@
 	--font-sans: 'Inter Variable', sans-serif;
 	--font-mono: 'JetBrains Mono Variable', monospace;
 }
+
+body {
+	@apply bg-ctp-base text-ctp-text;
+}
+
+section {
+	@apply rounded-lg border border-ctp-surface0 bg-ctp-mantle px-4 py-2;
+}
+
+section h3 {
+	@apply font-mono text-sm text-ctp-subtext1 uppercase;
+}
