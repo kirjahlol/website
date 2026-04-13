@@ -3,13 +3,14 @@
 	import { type ResolvedPathname } from '$app/types';
 	import { type Icon } from '@tabler/icons-svelte';
 
-	interface Props {
+	export interface LinkProps {
+		id: number;
 		href: ResolvedPathname;
 		LinkIcon: Icon;
 		name: string;
 	}
 
-	let { href, LinkIcon, name }: Props = $props();
+	let { href, LinkIcon, name }: LinkProps = $props();
 </script>
 
 <!-- eslint-disable svelte/no-navigation-without-resolve -->
