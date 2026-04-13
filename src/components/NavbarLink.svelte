@@ -16,7 +16,9 @@
 <a
 	{href}
 	class={[
-		'flex gap-2 rounded-lg px-4 py-2',
-		page.url.pathname === href ? 'bg-ctp-green-400 font-semibold text-ctp-mantle' : ''
+		'flex gap-2 rounded-lg px-4 py-2 transition duration-150',
+		page.url.pathname === href
+			? 'bg-ctp-green-400 font-semibold text-ctp-mantle'
+			: 'hover:bg-ctp-surface0/50'
 	]}><LinkIcon /> {name}</a
 >
