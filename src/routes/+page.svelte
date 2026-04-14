@@ -8,8 +8,8 @@
 <div class="grid w-5xl grid-cols-[1fr_3fr] gap-4 rounded-lg">
 	<aside class="flex w-full flex-col items-center justify-center gap-4 [&_section]:w-full">
 		<img src={ProfilePicture} alt="PFP" class="size-48 rounded-full bg-ctp-mantle" />
-		<Socials />
 		<DateAndTime />
+		<Socials />
 	</aside>
 	<main class="flex flex-col items-center justify-center gap-4 [&_section]:w-full">
 		<section>
