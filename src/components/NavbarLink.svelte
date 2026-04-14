@@ -11,15 +11,23 @@
 	}
 
 	let { href, LinkIcon, name }: LinkProps = $props();
+
+	let active = $derived(page.url.pathname === href);
 </script>
 
 <!-- eslint-disable svelte/no-navigation-without-resolve -->
-<a
-	{href}
-	class={[
-		'flex gap-2 rounded-lg px-4 py-2 transition duration-150',
-		page.url.pathname === href
-			? 'bg-ctp-green-400 font-semibold text-ctp-mantle'
-			: 'hover:bg-ctp-surface0/50'
-	]}><LinkIcon /> {name}</a
+<a {href} class={['flex gap-2 rounded-lg px-4 py-2 transition duration-150', { active }]}
+	><LinkIcon /> {name}</a
 >
+
+<style>
+	@reference '@routes/layout.css';
+
+	a.active {
+		@apply pointer-events-none animate-spring bg-ctp-green-400 font-semibold text-ctp-mantle;
+	}
+
+	a:not(.active) {
+		@apply hover:bg-ctp-surface0/50 active:scale-90;
+	}
+</style>
