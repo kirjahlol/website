@@ -33,5 +33,17 @@ section {
 }
 
 section h3 {
-	@apply font-mono text-sm text-ctp-subtext1 uppercase;
+	@apply mb-2 font-mono text-sm text-ctp-subtext1 uppercase;
+}
+
+section p:not(:last-of-type) {
+	@apply mb-2;
+}
+
+section code {
+	@apply rounded-lg border border-ctp-surface0 bg-ctp-surface0/50 px-1 font-medium;
+}
+
+section a {
+	@apply text-ctp-green-400 hover:underline;
 }
