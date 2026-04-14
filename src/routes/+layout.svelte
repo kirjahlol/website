@@ -1,7 +1,7 @@
 <script lang="ts">
 	import favicon from '$lib/assets/favicon.svg';
 	import Footer from '$lib/components/Footer.svelte';
-	import Header from '$lib/components/Header.svelte';
+	// import Header from '$lib/components/Header.svelte';
 	import Navbar from '$lib/components/Navbar.svelte';
 	import ThemeSwitcher from '$lib/components/ThemeSwitcher.svelte';
 	import './layout.css';
@@ -20,7 +20,7 @@
 {#if visible}
 	<div transition:fade={{ duration: 300 }}>
 		<div class="flex min-h-screen flex-col items-center justify-center gap-2">
-			<Header />
+			<!-- <Header /> -->
 			<ThemeSwitcher />
 			<Navbar />
 			{@render children()}
