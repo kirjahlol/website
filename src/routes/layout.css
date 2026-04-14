@@ -33,7 +33,7 @@ section {
 }
 
 section h3 {
-	@apply mb-2 font-mono text-sm text-ctp-subtext1 uppercase;
+	@apply mb-2 font-mono text-sm text-ctp-subtext0 uppercase;
 }
 
 section p:not(:last-of-type) {
