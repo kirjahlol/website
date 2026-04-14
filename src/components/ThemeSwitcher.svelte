@@ -16,15 +16,13 @@
 	});
 </script>
 
-<div class="absolute flex w-screen flex-row-reverse p-4">
-	<button
-		onclick={handleThemeSwitch}
-		class="cursor-pointer transition-[scale] duration-150 active:scale-90"
-	>
-		{#if theme === 'latte'}
-			<IconSun size={48} class="animate-spring" />
-		{:else}
-			<IconMoon size={48} class="animate-spring" />
-		{/if}
-	</button>
-</div>
+<button
+	onclick={handleThemeSwitch}
+	class="absolute top-4 right-4 cursor-pointer transition-[scale] duration-150 active:scale-90"
+>
+	{#if theme === 'latte'}
+		<IconSun size={48} class="animate-spring" />
+	{:else}
+		<IconMoon size={48} class="animate-spring" />
+	{/if}
+</button>
