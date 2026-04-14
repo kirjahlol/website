@@ -1,5 +1,6 @@
 <script lang="ts">
 	import favicon from '$lib/assets/favicon.svg';
+	import Footer from '../components/Footer.svelte';
 	import Navbar from '../components/Navbar.svelte';
 	import ThemeSwitcher from '../components/ThemeSwitcher.svelte';
 	import './layout.css';
@@ -21,9 +22,7 @@
 			<Navbar />
 			<ThemeSwitcher />
 			{@render children()}
-			<footer>
-				<a href="https://github.com/kirjahlol/website" target="_blank">Source code</a>
-			</footer>
+			<Footer />
 		</div>
 	</div>
 {/if}
