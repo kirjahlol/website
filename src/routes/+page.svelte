@@ -1,6 +1,7 @@
 <script lang="ts">
 	import ProfilePicture from '$lib/assets/profile-picture.webp';
 	import Age from '$lib/components/Age.svelte';
+	import Clock from '$lib/components/Clock.svelte';
 	import Socials from '$lib/components/Socials.svelte';
 </script>
 
@@ -8,6 +9,7 @@
 	<aside class="flex w-full flex-col items-center justify-center gap-4 [&_section]:w-full">
 		<img src={ProfilePicture} alt="PFP" class="size-48 rounded-full bg-ctp-mantle" />
 		<Socials />
+		<Clock />
 	</aside>
 	<main class="flex flex-col items-center justify-center gap-4 [&_section]:w-full">
 		<section>
