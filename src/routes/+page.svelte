@@ -9,9 +9,9 @@
 		<img src={ProfilePicture} alt="PFP" class="size-48 rounded-full bg-ctp-mantle" />
 		<Socials />
 	</aside>
-	<main class="flex items-center justify-center">
-		<section class="w-full">
-			<h3>About</h3>
+	<main class="flex flex-col items-center justify-center gap-4 [&_section]:w-full">
+		<section>
+			<h3>About Me</h3>
 			<p>
 				Hi! My name is <span class="font-semibold text-ctp-green-400">kirjah</span>
 				<span class="text-sm text-ctp-subtext0 italic">(KUR-jah)</span>. I'm a <Age /> year old self-taught
@@ -35,9 +35,13 @@
 				The best way to get in contact with me is through Discord (username is <code>kirjah</code>)
 				or Twitter.
 			</p>
+		</section>
+		<section>
+			<h3>About Website</h3>
 			<p>
-				This site was built using <a href="https://svelte.dev/docs/kit/introduction" target="_blank"
-					>SvelteKit</a
+				This website was built using <a
+					href="https://svelte.dev/docs/kit/introduction"
+					target="_blank">SvelteKit</a
 				>
 				and
 				<a href="https://tailwindcss.com/" target="_blank">Tailwind CSS</a>. For it, I'm using the
