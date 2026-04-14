@@ -44,6 +44,7 @@ section code {
 	@apply rounded-lg border border-ctp-surface0 bg-ctp-surface0/50 px-1 font-medium;
 }
 
-section a {
+section a,
+footer a {
 	@apply text-ctp-green-400 hover:underline;
 }
