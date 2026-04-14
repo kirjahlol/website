@@ -1,12 +1,12 @@
 <script lang="ts">
+	import ProfilePicture from '$lib/assets/profile-picture.webp';
 	import Age from '$lib/components/Age.svelte';
 </script>
 
 <div class="grid w-5xl grid-cols-[1fr_3fr] gap-4 rounded-lg">
-	<aside class="flex items-center justify-center">
-		<section class="w-full">
-			<p>foo</p>
-		</section>
+	<aside class="flex flex-col items-center justify-center gap-4">
+		<img src={ProfilePicture} alt="PFP" class="size-48 rounded-full bg-ctp-mantle" />
+		<section class="w-full">foo</section>
 	</aside>
 	<main class="flex items-center justify-center">
 		<section class="w-full">
