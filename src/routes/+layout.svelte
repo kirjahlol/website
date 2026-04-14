@@ -1,9 +1,9 @@
 <script lang="ts">
 	import favicon from '$lib/assets/favicon.svg';
-	import Footer from '../components/Footer.svelte';
-	import Header from '../components/Header.svelte';
-	import Navbar from '../components/Navbar.svelte';
-	import ThemeSwitcher from '../components/ThemeSwitcher.svelte';
+	import Footer from '$lib/components/Footer.svelte';
+	import Header from '$lib/components/Header.svelte';
+	import Navbar from '$lib/components/Navbar.svelte';
+	import ThemeSwitcher from '$lib/components/ThemeSwitcher.svelte';
 	import './layout.css';
 	import { fade } from 'svelte/transition';
 

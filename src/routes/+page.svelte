@@ -1,5 +1,5 @@
 <script lang="ts">
-	import Age from '../components/Age.svelte';
+	import Age from '$lib/components/Age.svelte';
 </script>
 
 <div class="grid w-5xl grid-cols-[1fr_3fr] gap-4 rounded-lg">
