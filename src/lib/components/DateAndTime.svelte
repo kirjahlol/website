@@ -1,4 +1,6 @@
 <script lang="ts">
+	import { IconCalendar, IconClock } from '@tabler/icons-svelte';
+
 	const myTimeZone = 'America/New_York';
 
 	let time = $state('0:00:00 AM');
@@ -48,11 +50,16 @@
 </script>
 
 <section>
-	<h3>Clock</h3>
+	<h3>Date and Time</h3>
 	<div class="flex flex-col items-center">
-		<p class="mb-0!">
-			<code>{time}</code> <span class="text-sm text-ctp-subtext0 italic">({timeZoneDiffText})</span>
+		<p class="flex items-center gap-2 font-mono">
+			<IconCalendar />
+			{date}
 		</p>
-		<p class="font-mono">{date}</p>
+		<p class="flex items-center gap-2">
+			<IconClock />
+			<code>{time}</code>
+			<span class="text-sm text-ctp-subtext0 italic">({timeZoneDiffText})</span>
+		</p>
 	</div>
 </section>
