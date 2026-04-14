@@ -3,6 +3,7 @@
 	import favicon from '$lib/assets/favicon.svg';
 	import Navbar from '../components/Navbar.svelte';
 	import './layout.css';
+	import { fade } from 'svelte/transition';
 
 	if (browser) {
 		const isThemeAuto = localStorage.getItem('theme-auto');
@@ -21,8 +22,18 @@
 	}
 
 	let { children } = $props();
+
+	let visible = $state(false);
+
+	$effect(() => {
+		visible = true;
+	});
 </script>
 
 <svelte:head><link rel="icon" href={favicon} /></svelte:head>
-<Navbar />
-{@render children()}
+{#if visible}
+	<div transition:fade={{ duration: 300 }}>
+		<Navbar />
+		{@render children()}
+	</div>
+{/if}
