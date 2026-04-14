@@ -1,7 +1,7 @@
 <script lang="ts">
 	import { page } from '$app/state';
-	import { type ResolvedPathname } from '$app/types';
-	import { type Icon } from '@tabler/icons-svelte';
+	import type { ResolvedPathname } from '$app/types';
+	import type { Icon } from '@tabler/icons-svelte';
 
 	export interface LinkProps {
 		id: number;
