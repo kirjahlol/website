@@ -67,7 +67,7 @@
 	<div class="flex flex-col items-center">
 		<p class="flex items-center gap-2 font-mono">
 			<IconCalendar />
-			{date}
+			<code>{date}</code>
 		</p>
 		<p class="flex items-center gap-2">
 			<IconClock />
