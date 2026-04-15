@@ -3,8 +3,21 @@
 
 	const myTimeZone = 'America/New_York';
 
-	let time = $state('0:00:00 AM');
-	let date = $state('1/1');
+	let time = $state(
+		new Date().toLocaleTimeString('en-US', {
+			timeZone: myTimeZone,
+			hour: 'numeric',
+			minute: '2-digit',
+			second: '2-digit'
+		})
+	);
+	let date = $state(
+		new Date().toLocaleDateString('en-US', {
+			timeZone: myTimeZone,
+			month: 'numeric',
+			day: 'numeric'
+		})
+	);
 
 	$effect(() => {
 		const id = setInterval(() => {
