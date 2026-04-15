@@ -53,7 +53,12 @@
 				<a href="https://tailwindcss.com/" target="_blank">Tailwind CSS</a>. For it, I'm using the
 				color theme
 
-				<a href="https://catppuccin.com/" target="_blank" class="text-ctp-mauve-400!">Catppuccin</a>
+				<a
+					href="https://catppuccin.com/"
+					target="_blank"
+					class="bg-linear-to-r from-ctp-peach-400 to-ctp-mauve-400 bg-clip-text text-transparent!"
+					>Catppuccin</a
+				>
 				and the icon set <a href="https://tabler.io/icons">Tabler Icons</a>. You can find it hosted
 				on both
 				<a href="https://docs.github.com/en/pages" target="_blank">GitHub Pages</a> and
