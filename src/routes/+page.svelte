@@ -4,11 +4,13 @@
 	import DateAndTime from '$lib/components/DateAndTime.svelte';
 	import Labels from '$lib/components/Labels.svelte';
 	import Socials from '$lib/components/Socials.svelte';
+	import Status from '$lib/components/Status.svelte';
 </script>
 
 <div class="grid w-5xl grid-cols-[1fr_3fr] gap-4 rounded-lg">
 	<aside class="flex w-full flex-col items-center justify-center gap-4 [&_section]:w-full">
 		<img src={ProfilePicture} alt="PFP" class="size-48 rounded-full bg-ctp-mantle" />
+		<Status />
 		<DateAndTime />
 		<Socials />
 	</aside>
