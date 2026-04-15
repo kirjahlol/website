@@ -27,12 +27,14 @@
 
 <section>
 	<h3>Status</h3>
-	{#if status}
-		<div class="flex flex-col items-center">
+	<div class="flex flex-col items-center">
+		{#if status}
 			<span class="text-sm text-ctp-subtext0 italic">{status.timeAgo}</span>
 			<p class="mb-2">{status.face} "{status.content}"</p>
-		</div>
-	{/if}
+		{:else}
+			<p class="mb-2">Loading...</p>
+		{/if}
+	</div>
 	<div class="flex justify-between text-xs text-ctp-subtext0">
 		<span>Powered by <a href="https://status.cafe/" target="_blank">Status Cafe</a></span>
 		<a href="https://status.cafe/users/kirjahri" target="_blank">Past statuses</a>
