@@ -69,10 +69,12 @@
 			<IconCalendar />
 			<code>{date}</code>
 		</p>
-		<p class="flex items-center gap-2">
+		<div class="flex items-center gap-2">
 			<IconClock />
-			<code>{time}</code>
-			<span class="text-sm text-ctp-subtext0 italic">({timeZoneDiffText})</span>
-		</p>
+			<div class="flex flex-col items-center gap-y-1">
+				<code>{time}</code>
+				<span class="text-sm text-ctp-subtext0 italic">({timeZoneDiffText})</span>
+			</div>
+		</div>
 	</div>
 </section>
