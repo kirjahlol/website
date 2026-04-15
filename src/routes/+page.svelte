@@ -2,6 +2,7 @@
 	import ProfilePicture from '$lib/assets/profile-picture.webp';
 	import Age from '$lib/components/Age.svelte';
 	import DateAndTime from '$lib/components/DateAndTime.svelte';
+	import Labels from '$lib/components/Labels.svelte';
 	import Socials from '$lib/components/Socials.svelte';
 </script>
 
@@ -37,6 +38,7 @@
 				The best way to get in contact with me is through Discord (username is <code>kirjah</code>)
 				or Twitter.
 			</p>
+			<Labels />
 		</section>
 		<section>
 			<h3>About Website</h3>

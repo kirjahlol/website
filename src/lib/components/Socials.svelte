@@ -79,7 +79,7 @@
 				href={social.href}
 				title={social.name}
 				target="_blank"
-				class="flex justify-center rounded-lg border border-ctp-surface0 bg-ctp-surface0/50 py-1 text-ctp-text! transition-[scale] duration-150 hover:scale-110"
+				class="flex justify-center rounded-md border border-ctp-surface0 bg-ctp-surface0/50 py-1 text-ctp-text! transition-[scale] duration-150 hover:scale-110"
 			>
 				<social.SocialIcon />
 			</a>
