@@ -23,10 +23,8 @@
 				self-taught programmer.
 			</p>
 			<p>
-				Some of my hobbies are coding things, drawing digitally (you can find my art on <a
-					href="https://x.com/kirjahlol"
-					target="_blank">Twitter</a
-				>), and playing
+				Some of my hobbies are coding things, drawing digitally (you can find my art on Twitter),
+				and playing
 				<a href="https://lounge.mkcentral.com/mkworld" target="_blank"
 					>competitive Mario Kart World</a
 				>
