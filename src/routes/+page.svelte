@@ -7,14 +7,14 @@
 	import Status from '$lib/components/Status.svelte';
 </script>
 
-<div class="grid w-5xl grid-cols-[1fr_3fr] gap-4 rounded-lg">
-	<aside class="flex flex-col items-center gap-4 [&_section]:w-full">
+<div class="grid w-5xl grid-cols-[1fr_3fr] gap-2 rounded-lg">
+	<aside class="flex flex-col items-center gap-2 [&_section]:w-full">
 		<img src={ProfilePicture} alt="PFP" class="size-48 rounded-full bg-ctp-mantle" />
 		<Status />
 		<DateAndTime />
 		<Socials />
 	</aside>
-	<main class="flex flex-col gap-4 [&_section]:w-full">
+	<main class="flex flex-col gap-2 [&_section]:w-full">
 		<section>
 			<h3>About Me</h3>
 			<p>
@@ -86,5 +86,5 @@
 		<!-- 	</p> -->
 		<!-- </section> -->
 	</main>
-	<hr class="col-span-2" />
+	<hr class="col-span-2 mb-2" />
 </div>
