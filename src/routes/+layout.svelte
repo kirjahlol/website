@@ -21,7 +21,7 @@
 	<div transition:fade={{ duration: 300 }}>
 		<ThemeSwitcher />
 		<Navbar />
-		<div class="flex flex-col items-center py-[25vh]">
+		<div class="flex flex-col items-center pt-[25vh] pb-[10vh]">
 			<!-- <Header /> -->
 			{@render children()}
 			<Footer />
