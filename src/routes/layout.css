@@ -52,7 +52,11 @@ footer a {
 }
 
 .tippy-box[data-theme~='ctp'] {
-	@apply bg-ctp-green-400 text-ctp-mantle;
+	@apply bg-ctp-base text-ctp-green-400;
+}
+
+.tippy-box[data-theme~='ctp'] .tippy-content {
+	@apply rounded-[inherit] border border-ctp-green-400 bg-ctp-green-400/25;
 }
 
 .tippy-box[data-theme~='ctp'][data-placement^='top'] > .tippy-arrow::before {
