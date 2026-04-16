@@ -1,5 +1,5 @@
 <script lang="ts">
-	import { toWords } from 'number-to-words';
+	import numberToWords from 'number-to-words';
 
 	function getAge(birthday: Date, digits: number = 0): number {
 		const currentDate = new Date();
@@ -16,7 +16,7 @@
 </script>
 
 <!-- This is like the most trivial thing ever but I'm doing it anyway -->
-{#if toWords(age).match('^[aeiou].*')}
+{#if numberToWords.toWords(age).match('^[aeiou].*')}
 	<span>an <code>{age}</code></span>
 {:else}
 	<span>a <code>{age}</code></span>
