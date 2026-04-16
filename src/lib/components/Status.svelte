@@ -29,7 +29,7 @@
 	<h3>Status</h3>
 	<div class="flex flex-col items-center">
 		{#if status}
-			<span class="text-sm text-ctp-subtext0 italic">{status.timeAgo}</span>
+			<span class="text-sm text-ctp-subtext0 italic">({status.timeAgo})</span>
 			<p class="mb-2">{status.face} "{status.content}"</p>
 		{:else}
 			<p class="mb-2">Loading...</p>
