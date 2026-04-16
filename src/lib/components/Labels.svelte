@@ -1,4 +1,5 @@
 <script lang="ts">
+	import { tooltip } from '$lib';
 	import { IconMapPin, IconUser, type Icon } from '@tabler/icons-svelte';
 
 	interface Label {
@@ -54,8 +55,8 @@
 <div class="flex gap-2">
 	{#each labels as label (label.id)}
 		<div
+			{@attach tooltip(label.name, 'bottom')}
 			class="flex gap-2 rounded-md bg-ctp-green-400/25 px-2 py-1 text-ctp-green-400"
-			title={label.name}
 		>
 			<label.LabelIcon />
 			{label.content}

@@ -1,1 +1,14 @@
-// place files you want to import through the `$lib` alias in this folder.
+import type { Attachment } from 'svelte/attachments';
+import tippy, { type Placement } from 'tippy.js';
+
+export function tooltip(content: string, placement: Placement): Attachment {
+	return (node) => {
+		const tooltip = tippy(node, {
+			content,
+			placement,
+			theme: 'ctp',
+			animation: 'shift-away-subtle'
+		});
+		return tooltip.destroy;
+	};
+}

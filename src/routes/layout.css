@@ -1,5 +1,7 @@
 @import 'tailwindcss';
 @import '@catppuccin/tailwindcss/mocha.css';
+@import 'tippy.js/dist/tippy.css';
+@import 'tippy.js/animations/shift-away-subtle.css';
 
 @custom-variant dark (&:where(.mocha, .mocha *));
 
@@ -47,4 +49,24 @@ section code {
 section a,
 footer a {
 	@apply text-ctp-green-400 hover:underline;
+}
+
+.tippy-box[data-theme~='ctp'] {
+	@apply bg-ctp-green-400 text-ctp-mantle;
+}
+
+.tippy-box[data-theme~='ctp'][data-placement^='top'] > .tippy-arrow::before {
+	@apply border-t-ctp-green-400;
+}
+
+.tippy-box[data-theme~='ctp'][data-placement^='bottom'] > .tippy-arrow::before {
+	@apply border-b-ctp-green-400;
+}
+
+.tippy-box[data-theme~='ctp'][data-placement^='left'] > .tippy-arrow::before {
+	@apply border-l-ctp-green-400;
+}
+
+.tippy-box[data-theme~='ctp'][data-placement^='right'] > .tippy-arrow::before {
+	@apply border-r-ctp-green-400;
 }

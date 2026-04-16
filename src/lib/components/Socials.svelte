@@ -1,4 +1,5 @@
 <script lang="ts">
+	import { tooltip } from '$lib';
 	import {
 		IconBrandBluesky,
 		IconBrandGithub,
@@ -77,7 +78,7 @@
 			<!-- eslint-disable svelte/no-navigation-without-resolve -->
 			<a
 				href={social.href}
-				title={social.name}
+				{@attach tooltip(social.name, 'bottom')}
 				target="_blank"
 				class="flex justify-center rounded-md border border-ctp-surface0 bg-ctp-surface0/50 py-1 text-ctp-text! transition-[scale] duration-150 hover:scale-110"
 			>
