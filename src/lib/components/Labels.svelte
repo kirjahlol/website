@@ -1,6 +1,6 @@
 <script lang="ts">
 	import { tooltip } from '$lib';
-	import { IconMapPin, IconUser, type Icon } from '@tabler/icons-svelte';
+	import { IconMapPin, IconTags, type Icon } from '@tabler/icons-svelte';
 
 	interface Label {
 		id: number;
@@ -39,7 +39,7 @@
 	const labels: Label[] = $derived([
 		{
 			id: 1,
-			LabelIcon: IconUser,
+			LabelIcon: IconTags,
 			name: 'Pronouns',
 			content: pronouns
 		},
