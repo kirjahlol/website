@@ -19,10 +19,10 @@
 <svelte:head><link rel="icon" href={favicon} /></svelte:head>
 {#if visible}
 	<div transition:fade={{ duration: 300 }}>
-		<div class="flex min-h-screen flex-col items-center justify-center gap-2">
+		<ThemeSwitcher />
+		<Navbar />
+		<div class="flex flex-col items-center py-[25vh]">
 			<!-- <Header /> -->
-			<ThemeSwitcher />
-			<Navbar />
 			{@render children()}
 			<Footer />
 		</div>

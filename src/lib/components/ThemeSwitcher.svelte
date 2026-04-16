@@ -18,7 +18,7 @@
 
 <button
 	onclick={handleThemeSwitch}
-	class="absolute top-4 right-4 cursor-pointer transition-[scale] duration-150 hover:scale-110 active:scale-90"
+	class="fixed top-4 right-4 cursor-pointer transition-[scale] duration-150 hover:scale-110 active:scale-90"
 >
 	{#if theme === 'latte'}
 		<IconSun size={48} class="animate-spring" />

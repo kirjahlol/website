@@ -8,13 +8,13 @@
 </script>
 
 <div class="grid w-5xl grid-cols-[1fr_3fr] gap-4 rounded-lg">
-	<aside class="flex w-full flex-col items-center justify-center gap-4 [&_section]:w-full">
+	<aside class="flex flex-col items-center gap-4 [&_section]:w-full">
 		<img src={ProfilePicture} alt="PFP" class="size-48 rounded-full bg-ctp-mantle" />
 		<Status />
 		<DateAndTime />
 		<Socials />
 	</aside>
-	<main class="flex flex-col items-center justify-center gap-4 [&_section]:w-full">
+	<main class="flex flex-col gap-4 [&_section]:w-full">
 		<section>
 			<h3>About Me</h3>
 			<p>
@@ -39,8 +39,7 @@
 				or Twitter.
 			</p>
 			<Labels />
-		</section>
-		<section>
+			<hr class="my-2" />
 			<h3>About Website</h3>
 			<p>
 				This website was built using <a
@@ -63,6 +62,29 @@
 				<a href="https://neocities.org/" target="_blank">Neocities</a>.
 			</p>
 		</section>
+		<!-- <section> -->
+		<!-- 	<h3>About Website</h3> -->
+		<!-- 	<p> -->
+		<!-- 		This website was built using <a -->
+		<!-- 			href="https://svelte.dev/docs/kit/introduction" -->
+		<!-- 			target="_blank">SvelteKit</a -->
+		<!-- 		> -->
+		<!-- 		and -->
+		<!-- 		<a href="https://tailwindcss.com/" target="_blank">Tailwind CSS</a>. For it, I'm using the -->
+		<!-- 		color theme -->
+		<!---->
+		<!-- 		<a -->
+		<!-- 			href="https://catppuccin.com/" -->
+		<!-- 			target="_blank" -->
+		<!-- 			class="bg-linear-to-r from-ctp-peach-400 to-ctp-mauve-400 bg-clip-text text-transparent!" -->
+		<!-- 			>Catppuccin</a -->
+		<!-- 		> -->
+		<!-- 		and the icon set <a href="https://tabler.io/icons">Tabler Icons</a>. You can find it hosted -->
+		<!-- 		on both -->
+		<!-- 		<a href="https://docs.github.com/en/pages" target="_blank">GitHub Pages</a> and -->
+		<!-- 		<a href="https://neocities.org/" target="_blank">Neocities</a>. -->
+		<!-- 	</p> -->
+		<!-- </section> -->
 	</main>
 	<hr class="col-span-2" />
 </div>
