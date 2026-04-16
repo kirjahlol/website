@@ -19,8 +19,8 @@
 			<h3>About Me</h3>
 			<p>
 				Hi! My name is <span class="font-semibold text-ctp-green-400">kirjah</span>
-				<span class="text-sm text-ctp-subtext0 italic">(KUR-jah)</span>. I'm a <Age /> year old self-taught
-				programmer.
+				<span class="text-sm text-ctp-subtext0 italic">(KUR-jah)</span>. I'm <Age />-year-old
+				self-taught programmer.
 			</p>
 			<p>
 				Some of my hobbies are coding things, drawing digitally (you can find my art on <a
