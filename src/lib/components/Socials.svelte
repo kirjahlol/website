@@ -73,7 +73,7 @@
 
 <section class="">
 	<h3>Socials</h3>
-	<div class="grid grid-cols-4 gap-2">
+	<div class="grid grid-cols-5 gap-2">
 		{#each socials as social (social.id)}
 			<!-- eslint-disable svelte/no-navigation-without-resolve -->
 			<a
