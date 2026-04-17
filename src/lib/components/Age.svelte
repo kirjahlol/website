@@ -10,9 +10,17 @@
 		return Number((diffInMs / msInYear).toFixed(digits));
 	}
 
-	// If you came here to find out when my birthday is, then congrats: you found it
-	// Here's a cookie for you efforts: 🍪
-	let age = getAge(new Date('2010-03-29T00:00:00.000Z'), 5);
+	let age = $state(getAge(new Date('2010-03-29T00:00:00.000Z'), 5));
+
+	$effect(() => {
+		const id = setInterval(() => {
+			// If you came here to find out when my birthday is, then congrats: you found it
+			// Here's a cookie for you efforts: 🍪
+			age = getAge(new Date('2010-03-29T00:00:00.000Z'), 5);
+		}, 315600);
+
+		return () => clearInterval(id);
+	});
 </script>
 
 <!-- This is like the most trivial thing ever but I'm doing it anyway -->
