@@ -10,12 +10,13 @@
 		return Number((diffInMs / msInYear).toFixed(digits));
 	}
 
+	// You know, if you wanted my birth date, you *could* have just asked me personally
+	// But no, you have to be weird and snoop around in my code without my approval
+	// Shame on you!
 	let age = $state(getAge(new Date('2010-03-29T00:00:00.000Z'), 5));
 
 	$effect(() => {
 		const id = setInterval(() => {
-			// If you came here to find out when my birthday is, then congrats: you found it
-			// Here's a cookie for you efforts: 🍪
 			age = getAge(new Date('2010-03-29T00:00:00.000Z'), 5);
 		}, 315600);
 
