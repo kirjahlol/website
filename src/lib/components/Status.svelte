@@ -30,7 +30,7 @@
 	<div class="flex flex-col items-center">
 		{#if status}
 			<span class="mb-2 text-sm text-ctp-subtext0 italic">({status.timeAgo})</span>
-			<code class="mb-2"
+			<code class="mb-2 bg-ctp-base!"
 				><span class="text-ctp-green-400">> echo</span>
 				<span class="text-ctp-yellow-400">"{status.face} {status.content}"</span><span
 					class="animate-blink text-ctp-rosewater-400">_</span
