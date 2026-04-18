@@ -18,7 +18,7 @@
 {#if visible}
 	<div transition:fade={{ duration: 300 }}>
 		<ThemeSwitcher />
-		<div class="flex flex-col items-center pt-[25vh] pb-[10vh]">
+		<div class="flex flex-col items-center pt-[25vh] pb-4">
 			{@render children()}
 			<Footer />
 		</div>
