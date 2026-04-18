@@ -10,6 +10,7 @@
 	--font-mono: 'JetBrains Mono Variable', monospace;
 
 	--animate-spring: spring 0.3s;
+	--animate-blink: blink 1s steps(1) infinite;
 
 	@keyframes spring {
 		0% {
@@ -22,6 +23,12 @@
 
 		100% {
 			transform: scale(1);
+		}
+	}
+
+	@keyframes blink {
+		50% {
+			opacity: 0;
 		}
 	}
 }
