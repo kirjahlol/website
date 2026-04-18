@@ -1,4 +1,5 @@
 <script lang="ts">
+	import { tooltip } from '$lib';
 	import ProfilePicture from '$lib/assets/profile-picture.webp';
 	import Age from '$lib/components/Age.svelte';
 	import DateAndTime from '$lib/components/DateAndTime.svelte';
@@ -46,45 +47,25 @@
 					href="https://svelte.dev/docs/kit/introduction"
 					target="_blank">SvelteKit</a
 				>
-				and
-				<a href="https://tailwindcss.com/" target="_blank">Tailwind CSS</a>. For it, I'm using the
-				color theme
-
+				and <a href="https://tailwindcss.com/" target="_blank">Tailwind CSS</a>. It uses the
 				<a
 					href="https://catppuccin.com/"
 					target="_blank"
 					class="bg-linear-to-r from-ctp-peach-400 to-ctp-mauve-400 bg-clip-text text-transparent!"
 					>Catppuccin</a
 				>
-				and the icon set <a href="https://tabler.io/icons">Tabler Icons</a>. You can find it hosted
-				on both
-				<a href="https://docs.github.com/en/pages" target="_blank">GitHub Pages</a> and
-				<a href="https://neocities.org/" target="_blank">Neocities</a>.
+				color theme and the <a href="https://tabler.io/icons">Tabler Icons</a> icon set. The
+				tooltips that appear when you mouse over certain things (like
+				<span
+					class="underline decoration-dotted"
+					{@attach tooltip("I'm a Tippy.js tooltip!", 'bottom')}>this</span
+				>) were made using the
+				<a href="https://atomiks.github.io/tippyjs/" target="_blank">Tippy.js</a>
+				library. You can find this site hosted on both
+				<a href="https://docs.github.com/en/pages" target="_blank">GitHub Pages</a>
+				and <a href="https://neocities.org/" target="_blank">Neocities</a>.
 			</p>
 		</section>
-		<!-- <section> -->
-		<!-- 	<h3>About Website</h3> -->
-		<!-- 	<p> -->
-		<!-- 		This website was built using <a -->
-		<!-- 			href="https://svelte.dev/docs/kit/introduction" -->
-		<!-- 			target="_blank">SvelteKit</a -->
-		<!-- 		> -->
-		<!-- 		and -->
-		<!-- 		<a href="https://tailwindcss.com/" target="_blank">Tailwind CSS</a>. For it, I'm using the -->
-		<!-- 		color theme -->
-		<!---->
-		<!-- 		<a -->
-		<!-- 			href="https://catppuccin.com/" -->
-		<!-- 			target="_blank" -->
-		<!-- 			class="bg-linear-to-r from-ctp-peach-400 to-ctp-mauve-400 bg-clip-text text-transparent!" -->
-		<!-- 			>Catppuccin</a -->
-		<!-- 		> -->
-		<!-- 		and the icon set <a href="https://tabler.io/icons">Tabler Icons</a>. You can find it hosted -->
-		<!-- 		on both -->
-		<!-- 		<a href="https://docs.github.com/en/pages" target="_blank">GitHub Pages</a> and -->
-		<!-- 		<a href="https://neocities.org/" target="_blank">Neocities</a>. -->
-		<!-- 	</p> -->
-		<!-- </section> -->
 	</main>
 	<hr class="col-span-2 mb-2" />
 </div>
