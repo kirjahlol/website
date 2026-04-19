@@ -8,7 +8,7 @@
 	import Status from '$lib/components/Status.svelte';
 </script>
 
-<div class="grid w-5xl grid-cols-[1fr_3fr] gap-2 rounded-lg">
+<div class="flex max-w-5xl grid-cols-[1fr_3fr] flex-col gap-2 rounded-lg sm:grid">
 	<aside class="flex flex-col items-center gap-2 [&_section]:w-full">
 		<img src={ProfilePicture} alt="PFP" class="size-48 rounded-full bg-ctp-mantle" />
 		<Status />
