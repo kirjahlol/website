@@ -1,48 +1,47 @@
 <script lang="ts">
 	import { IconDeviceDesktop, IconMoon, IconSun, type Icon } from '@tabler/icons-svelte';
 
-	interface Option {
-		id: string;
-		icon: Icon;
+	interface Theme {
+		id: number;
+		name: string;
+		ThemeIcon: Icon;
 	}
 
-	const options: Option[] = [
+	const themes: Theme[] = [
 		{
-			id: 'light',
-			icon: IconSun
+			id: 1,
+			name: 'light',
+			ThemeIcon: IconSun
 		},
 		{
-			id: 'dark',
-			icon: IconMoon
+			id: 2,
+			name: 'dark',
+			ThemeIcon: IconMoon
 		},
 		{
-			id: 'system',
-			icon: IconDeviceDesktop
+			id: 3,
+			name: 'system',
+			ThemeIcon: IconDeviceDesktop
 		}
 	];
-
-	let theme: 'latte' | 'mocha' = $state('latte');
-
-	function handleThemeSwitch() {
-		if (theme === 'latte') {
-			theme = 'mocha';
-		} else {
-			theme = 'latte';
-		}
-	}
-
-	$effect(() => {
-		document.documentElement.className = theme;
-	});
 </script>
 
-<button
-	onclick={handleThemeSwitch}
-	class="fixed top-4 right-4 cursor-pointer transition-[scale] duration-150 hover:scale-110 active:scale-90"
+<form
+	class="fixed top-4 right-4 flex gap-2 rounded-full border border-ctp-surface0 bg-ctp-mantle p-2"
 >
-	{#if theme === 'latte'}
-		<IconSun size={48} class="animate-spring" />
-	{:else}
-		<IconMoon size={48} class="animate-spring" />
-	{/if}
-</button>
+	{#each themes as theme (theme.id)}
+		<div class="flex">
+			<input
+				type="radio"
+				name="theme"
+				id={theme.name}
+				value={theme.name}
+				aria-hidden="true"
+				class="peer hidden"
+			/>
+			<label for={theme.name} class="rounded-full p-2 peer-checked:bg-ctp-surface0/50"
+				><theme.ThemeIcon /></label
+			>
+		</div>
+	{/each}
+</form>
