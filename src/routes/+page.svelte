@@ -27,9 +27,9 @@
 				Some of my hobbies are coding things, drawing digitally (you can find my art on Twitter),
 				and playing
 				<a href="https://lounge.mkcentral.com/mkworld" target="_blank"
-					>competitive Mario Kart World</a
+					>competitive Mario Kart World Lounge</a
 				>
-				(you can find my Lounge stats
+				(you can find my stats
 				<a
 					href="https://lounge.mkcentral.com/mkworld/PlayerDetails/79021?season=2&p=12"
 					target="_blank">here</a
