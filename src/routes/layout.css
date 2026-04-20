@@ -42,7 +42,7 @@ hr {
 }
 
 section {
-	@apply rounded-lg border border-ctp-surface0 bg-ctp-mantle px-4 py-2;
+	@apply rounded-lg border border-ctp-surface0 bg-ctp-mantle p-4;
 }
 
 section h3 {
