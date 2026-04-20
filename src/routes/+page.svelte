@@ -67,5 +67,4 @@
 			</p>
 		</section>
 	</main>
-	<hr class="col-span-2 mb-2" />
 </div>
