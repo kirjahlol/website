@@ -62,8 +62,17 @@
 				>) were made using the
 				<a href="https://atomiks.github.io/tippyjs/" target="_blank">Tippy.js</a>
 				library. You can find this site hosted on both
-				<a href="https://docs.github.com/en/pages" target="_blank">GitHub Pages</a>
-				and <a href="https://neocities.org/" target="_blank">Neocities</a>.
+				<a
+					href="https://docs.github.com/en/pages"
+					target="_blank"
+					{@attach tooltip('<code>kirjah.lol</code>', 'bottom')}>GitHub Pages</a
+				>
+				and
+				<a
+					href="https://neocities.org/"
+					target="_blank"
+					{@attach tooltip('<code>kirjah.neocities.org</code>', 'bottom')}>Neocities</a
+				>.
 			</p>
 		</section>
 	</main>

@@ -6,6 +6,7 @@ export function tooltip(content: string, placement: Placement): Attachment {
 		const tooltip = tippy(node, {
 			content,
 			placement,
+			allowHTML: true,
 			theme: 'ctp',
 			animation: 'shift-away-subtle'
 		});
