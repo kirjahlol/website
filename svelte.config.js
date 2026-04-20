@@ -12,7 +12,7 @@ const config = {
 			fallback: '404.html'
 		}),
 		paths: {
-			base: process.env.BASE_PATH
+			base: 'website'
 		},
 		version: { name: execSync('git rev-parse --short HEAD').toString().trim() }
 	}
