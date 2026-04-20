@@ -24,6 +24,9 @@ jobs:
         with:
           path: build/
 
+      - name: Rename fallback page to `not_found.html`
+        run: mv build/404.html build/not_found.html
+
       - name: Deploy to Neocities
         uses: bcomnes/deploy-to-neocities@v3
         with:
