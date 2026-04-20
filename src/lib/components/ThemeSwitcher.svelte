@@ -1,5 +1,25 @@
 <script lang="ts">
-	import { IconMoon, IconSun } from '@tabler/icons-svelte';
+	import { IconDeviceDesktop, IconMoon, IconSun, type Icon } from '@tabler/icons-svelte';
+
+	interface Option {
+		id: string;
+		icon: Icon;
+	}
+
+	const options: Option[] = [
+		{
+			id: 'light',
+			icon: IconSun
+		},
+		{
+			id: 'dark',
+			icon: IconMoon
+		},
+		{
+			id: 'system',
+			icon: IconDeviceDesktop
+		}
+	];
 
 	let theme: 'latte' | 'mocha' = $state('latte');
 
