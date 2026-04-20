@@ -11,7 +11,10 @@ const config = {
 		adapter: adapter({
 			fallback: '404.html'
 		}),
-		version: { name: execSync('git rev-parse --short HEAD').toString().trim() }
+		version: { name: execSync('git rev-parse --short HEAD').toString().trim() },
+		paths: {
+			base: process.env.NODE_ENV === 'production' ? '/website' : ''
+		}
 	}
 };
 
