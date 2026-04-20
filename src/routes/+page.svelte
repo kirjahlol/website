@@ -25,7 +25,7 @@
 			</p>
 			<p>
 				Some of my hobbies are coding things, drawing digitally (you can find my art on Twitter),
-				and playing
+				and playing in the
 				<a href="https://lounge.mkcentral.com/mkworld" target="_blank"
 					>competitive Mario Kart World Lounge</a
 				>
