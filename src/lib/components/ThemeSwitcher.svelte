@@ -81,7 +81,9 @@
 				aria-hidden="true"
 				class="peer hidden"
 			/>
-			<label for={theme.name} class="rounded-full p-2 peer-checked:bg-ctp-surface0/50"
+			<label
+				for={theme.name}
+				class="cursor-pointer rounded-full p-2 peer-checked:bg-ctp-surface0/50"
 				><theme.ThemeIcon /></label
 			>
 		</div>
