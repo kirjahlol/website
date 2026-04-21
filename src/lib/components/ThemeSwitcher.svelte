@@ -28,19 +28,16 @@
 
 	function handleThemeChange() {
 		if (selected === 'system') {
-			console.log('system selected');
 			const isThemeDarkPreferred = window.matchMedia('(prefers-color-scheme: dark)').matches;
 			const defaultTheme = isThemeDarkPreferred ? 'mocha' : 'latte';
 			document.documentElement.className = defaultTheme;
 			localStorage.setItem('theme', defaultTheme);
 			localStorage.setItem('theme-system', 'true');
-			console.log(`setting theme to ${defaultTheme}`);
 		} else {
 			const theme = selected === 'dark' ? 'mocha' : 'latte';
 			document.documentElement.className = theme;
 			localStorage.setItem('theme', theme);
 			localStorage.setItem('theme-system', 'false');
-			console.log(`setting theme to ${theme}`);
 		}
 	}
 
@@ -54,8 +51,8 @@
 			selected = 'system';
 		} else {
 			const theme = localStorage.getItem('theme');
-			if (!theme || (theme !== 'light' && theme !== 'dark')) return;
-			selected = theme;
+			if (theme && (theme === 'mocha' || theme === 'latte'))
+				selected = theme === 'mocha' ? 'dark' : 'light';
 		}
 	});
 
