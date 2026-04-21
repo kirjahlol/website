@@ -6,6 +6,7 @@
 	import DateAndTime from '$lib/components/DateAndTime.svelte';
 	import Footer from '$lib/components/Footer.svelte';
 	import Header from '$lib/components/Header.svelte';
+	import Navbar from '$lib/components/Navbar.svelte';
 	import Socials from '$lib/components/Socials.svelte';
 	import Status from '$lib/components/Status.svelte';
 	import ThemeSwitcher from '$lib/components/ThemeSwitcher.svelte';
@@ -67,6 +68,7 @@
 					<Socials />
 				</aside>
 				<main class="flex flex-col gap-4 [&_section]:w-full">
+					<Navbar />
 					{@render children()}
 				</main>
 			</div>

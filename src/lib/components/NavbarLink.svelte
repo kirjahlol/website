@@ -16,7 +16,7 @@
 </script>
 
 <!-- eslint-disable svelte/no-navigation-without-resolve -->
-<a {href} class={['flex gap-2 rounded-lg px-4 py-2 transition-[scale] duration-150', { active }]}
+<a {href} class={['flex gap-2 rounded-lg p-2 transition-[scale] duration-150', { active }]}
 	><LinkIcon /> {name}</a
 >
 
@@ -24,7 +24,7 @@
 	@reference '@routes/layout.css';
 
 	a.active {
-		@apply pointer-events-none animate-spring bg-ctp-green-400 font-semibold text-ctp-mantle;
+		@apply pointer-events-none animate-spring bg-ctp-green-400 text-ctp-mantle;
 	}
 
 	a:not(.active) {

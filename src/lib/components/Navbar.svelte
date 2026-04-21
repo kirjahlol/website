@@ -12,8 +12,8 @@
 	];
 </script>
 
-<nav class="fixed bottom-0 z-50 w-screen border-t border-ctp-surface0 bg-ctp-mantle p-2">
-	<li class="flex justify-center gap-2">
+<nav class="rounded-lg border border-ctp-surface0 bg-ctp-mantle p-2">
+	<li class="flex gap-2">
 		{#each links as link (link.id)}
 			<NavbarLink {...link} />
 		{/each}
