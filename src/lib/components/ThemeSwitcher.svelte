@@ -11,18 +11,18 @@
 	const themes: Theme[] = [
 		{
 			id: 1,
+			name: 'system',
+			ThemeIcon: IconDeviceDesktop
+		},
+		{
+			id: 2,
 			name: 'light',
 			ThemeIcon: IconSun
 		},
 		{
-			id: 2,
+			id: 3,
 			name: 'dark',
 			ThemeIcon: IconMoon
-		},
-		{
-			id: 3,
-			name: 'system',
-			ThemeIcon: IconDeviceDesktop
 		}
 	];
 
