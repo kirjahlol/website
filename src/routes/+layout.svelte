@@ -42,10 +42,10 @@
 	<meta property="og:url" content="https://kirjah.lol" />
 	<meta property="og:description" content="kirjah's website." />
 	<meta property="og:site_name" content="kirjah" />
-	<meta property="twitter:title" content="kirjah" />
-	<meta property="twitter:type" content="website" />
-	<meta property="twitter:image" content={preview} />
-	<meta property="twitter:description" content="kirjah's website." />
+	<meta name="twitter:title" content="kirjah" />
+	<meta name="twitter:type" content="website" />
+	<meta name="twitter:image" content={preview} />
+	<meta name="twitter:description" content="kirjah's website." />
 	<meta name="twitter:card" content="summary_large_image" />
 	<meta name="twitter:site" content="@kirjahlol" />
 </svelte:head>
