@@ -10,7 +10,11 @@
 
 <div class="flex max-w-5xl grid-cols-[1fr_3fr] flex-col gap-4 rounded-lg sm:grid">
 	<aside class="flex flex-col items-center gap-4 [&_section]:w-full">
-		<img src={profilePicture} alt="PFP" class="size-48 rounded-full bg-ctp-mantle" />
+		<img
+			src={profilePicture}
+			alt="A Scolipede from Pokémon Rumble Rush"
+			class="size-48 rounded-full bg-ctp-mantle"
+		/>
 		<Status />
 		<DateAndTime />
 		<Socials />

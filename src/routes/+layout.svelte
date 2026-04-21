@@ -39,6 +39,7 @@
 	<meta property="og:title" content="kirjah" />
 	<meta property="og:type" content="website" />
 	<meta property="og:image" content={preview} />
+	<meta property="og:image:alt" content="A Scolipede from Pokémon Rumble Rush" />
 	<meta property="og:url" content="https://kirjah.lol" />
 	<meta property="og:description" content="kirjah's website." />
 	<meta property="og:site_name" content="kirjah" />
