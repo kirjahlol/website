@@ -1,6 +1,27 @@
 <script lang="ts">
 	import { IconCalendar, IconClock } from '@tabler/icons-svelte';
 
+	function getTimeZoneDiff(): number {
+		const myDate = new Date();
+
+		const clientTimeZone = Intl.DateTimeFormat().resolvedOptions().timeZone;
+		const clientDate = new Date(myDate.toLocaleString('en-US', { timeZone: clientTimeZone }));
+
+		const diffInMs = myDate.getTime() - clientDate.getTime();
+		return Number((diffInMs / (1000 * 60 * 60)).toFixed(2));
+	}
+
+	function getTimeZoneDiffText(): string {
+		const timeZoneDiff = getTimeZoneDiff();
+		if (timeZoneDiff === 0) {
+			return 'same time';
+		} else if (timeZoneDiff > 0) {
+			return `${timeZoneDiff}h ahead`;
+		} else {
+			return `${Math.abs(timeZoneDiff)}h behind`;
+		}
+	}
+
 	const myTimeZone = 'America/New_York';
 
 	let time = $state(
@@ -37,27 +58,6 @@
 
 		return () => clearInterval(id);
 	});
-
-	function getTimeZoneDiff(): number {
-		const myDate = new Date();
-
-		const clientTimeZone = Intl.DateTimeFormat().resolvedOptions().timeZone;
-		const clientDate = new Date(myDate.toLocaleString('en-US', { timeZone: clientTimeZone }));
-
-		const diffInMs = myDate.getTime() - clientDate.getTime();
-		return Number((diffInMs / (1000 * 60 * 60)).toFixed(2));
-	}
-
-	function getTimeZoneDiffText(): string {
-		const timeZoneDiff = getTimeZoneDiff();
-		if (timeZoneDiff === 0) {
-			return 'same time';
-		} else if (timeZoneDiff > 0) {
-			return `${timeZoneDiff}h ahead`;
-		} else {
-			return `${Math.abs(timeZoneDiff)}h behind`;
-		}
-	}
 
 	let timeZoneDiffText = getTimeZoneDiffText();
 </script>

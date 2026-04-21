@@ -31,11 +31,13 @@
 			const isThemeDarkPreferred = window.matchMedia('(prefers-color-scheme: dark)').matches;
 			const defaultTheme = isThemeDarkPreferred ? 'mocha' : 'latte';
 			document.documentElement.className = defaultTheme;
+
 			localStorage.setItem('theme', defaultTheme);
 			localStorage.setItem('theme-system', 'true');
 		} else {
 			const theme = selected === 'dark' ? 'mocha' : 'latte';
 			document.documentElement.className = theme;
+
 			localStorage.setItem('theme', theme);
 			localStorage.setItem('theme-system', 'false');
 		}
@@ -51,6 +53,7 @@
 			selected = 'system';
 		} else {
 			const theme = localStorage.getItem('theme');
+
 			if (theme && (theme === 'mocha' || theme === 'latte'))
 				selected = theme === 'mocha' ? 'dark' : 'light';
 		}
@@ -60,6 +63,7 @@
 	isThemeDarkPreferred.addEventListener('change', (event) => {
 		const isThemeSystem = localStorage.getItem('theme-system');
 		if (isThemeSystem !== 'true') return;
+
 		const defaultTheme = event.matches ? 'mocha' : 'latte';
 		document.documentElement.className = defaultTheme;
 		localStorage.setItem('theme', defaultTheme);
