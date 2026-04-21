@@ -31,7 +31,10 @@
 	let { children } = $props();
 </script>
 
-<svelte:head><link rel="icon" href={favicon} /></svelte:head>
+<svelte:head>
+	<title>kirjah's website</title>
+	<link rel="icon" href={favicon} />
+</svelte:head>
 {#if visible}
 	<div transition:fade={{ duration: 300 }}>
 		<Header />
