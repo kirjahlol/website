@@ -32,6 +32,7 @@
 			const isThemeDarkPreferred = window.matchMedia('(prefers-color-scheme: dark)').matches;
 			const defaultTheme = isThemeDarkPreferred ? 'mocha' : 'latte';
 			document.documentElement.className = defaultTheme;
+			localStorage.setItem('theme', defaultTheme);
 			localStorage.setItem('theme-system', 'true');
 			console.log(`setting theme to ${defaultTheme}`);
 		} else {

@@ -17,7 +17,6 @@
 		}
 
 		const theme = localStorage.getItem('theme');
-		console.log(theme);
 		if (theme) {
 			document.documentElement.className = theme;
 		}
