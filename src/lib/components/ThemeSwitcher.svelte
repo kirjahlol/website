@@ -67,7 +67,7 @@
 </script>
 
 <form
-	class="fixed top-4 right-4 flex gap-2 rounded-full border border-ctp-surface0 bg-ctp-mantle p-2"
+	class="absolute top-4 right-4 flex gap-2 rounded-full border border-ctp-surface0 bg-ctp-mantle p-2"
 >
 	{#each themes as theme (theme.id)}
 		<div class="flex">
