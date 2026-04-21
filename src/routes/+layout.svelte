@@ -10,12 +10,14 @@
 		const isThemeSystem = localStorage.getItem('theme-system');
 		if (isThemeSystem === null) {
 			const isThemeDarkPreferred = window.matchMedia('(prefers-color-scheme: dark)').matches;
+			console.log(isThemeDarkPreferred);
 			const defaultTheme = isThemeDarkPreferred ? 'mocha' : 'latte';
 			localStorage.setItem('theme', defaultTheme);
 			localStorage.setItem('theme-system', 'true');
 		}
 
 		const theme = localStorage.getItem('theme');
+		console.log(theme);
 		if (theme) {
 			document.documentElement.className = theme;
 		}
