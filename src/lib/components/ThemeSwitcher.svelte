@@ -1,4 +1,5 @@
 <script lang="ts">
+	import { browser } from '$app/environment';
 	import { IconDeviceDesktop, IconMoon, IconSun, type Icon } from '@tabler/icons-svelte';
 
 	interface Theme {
@@ -24,6 +25,44 @@
 			ThemeIcon: IconDeviceDesktop
 		}
 	];
+
+	function handleThemeChange() {
+		if (selected === 'system') {
+			const isThemeDarkPreferred = window.matchMedia('(prefers-color-scheme: dark)').matches;
+			const defaultTheme = isThemeDarkPreferred ? 'mocha' : 'latte';
+			document.documentElement.className = defaultTheme;
+			localStorage.setItem('theme-system', 'true');
+		} else {
+			const theme = selected === 'dark' ? 'mocha' : 'latte';
+			document.documentElement.className = theme;
+			localStorage.setItem('theme', theme);
+			localStorage.setItem('theme-system', 'false');
+		}
+	}
+
+	let selected: 'light' | 'dark' | 'system' = $state('system');
+
+	$effect(() => {
+		if (!browser) return;
+
+		const isThemeSystem = localStorage.getItem('theme-system');
+		if (isThemeSystem === 'true') {
+			selected = 'system';
+		} else {
+			const theme = localStorage.getItem('theme');
+			if (!theme || (theme !== 'light' && theme !== 'dark')) return;
+			selected = theme;
+		}
+	});
+
+	const isThemeDarkPreferred = window.matchMedia('(prefers-color-scheme: dark)');
+	isThemeDarkPreferred.addEventListener('change', (event) => {
+		const isThemeSystem = localStorage.getItem('theme-system');
+		if (isThemeSystem !== 'true') return;
+		const defaultTheme = event.matches ? 'mocha' : 'latte';
+		document.documentElement.className = defaultTheme;
+		localStorage.setItem('theme', defaultTheme);
+	});
 </script>
 
 <form
@@ -33,9 +72,11 @@
 		<div class="flex">
 			<input
 				type="radio"
-				name="theme"
+				name="themes"
 				id={theme.name}
 				value={theme.name}
+				bind:group={selected}
+				onchange={handleThemeChange}
 				aria-hidden="true"
 				class="peer hidden"
 			/>
