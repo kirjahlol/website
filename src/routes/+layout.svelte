@@ -1,6 +1,7 @@
 <script lang="ts">
 	import { browser } from '$app/environment';
 	import favicon from '$lib/assets/favicon.svg';
+	import preview from '$lib/assets/preview.webp';
 	import Footer from '$lib/components/Footer.svelte';
 	import Header from '$lib/components/Header.svelte';
 	import ThemeSwitcher from '$lib/components/ThemeSwitcher.svelte';
@@ -32,8 +33,16 @@
 </script>
 
 <svelte:head>
-	<title>kirjah's website</title>
+	<title>kirjah</title>
 	<link rel="icon" href={favicon} />
+	<meta name="description" content="kirjah's website." />
+	<meta property="og:title" content="kirjah" />
+	<meta property="og:type" content="website" />
+	<meta property="og:image" content={preview} />
+	<meta property="og:url" content="https://kirjah.lol" />
+	<meta property="og:description" content="kirjah's website." />
+	<meta name="twitter:card" content="summary_large_image" />
+	<meta name="tiwtter:site" content="@kirjahlol" />
 </svelte:head>
 {#if visible}
 	<div transition:fade={{ duration: 300 }}>

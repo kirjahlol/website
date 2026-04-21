@@ -1,6 +1,6 @@
 <script lang="ts">
 	import { tooltip } from '$lib';
-	import ProfilePicture from '$lib/assets/profile-picture.webp';
+	import profilePicture from '$lib/assets/profile-picture.webp';
 	import Age from '$lib/components/Age.svelte';
 	import DateAndTime from '$lib/components/DateAndTime.svelte';
 	import Labels from '$lib/components/Labels.svelte';
@@ -10,7 +10,7 @@
 
 <div class="flex max-w-5xl grid-cols-[1fr_3fr] flex-col gap-4 rounded-lg sm:grid">
 	<aside class="flex flex-col items-center gap-4 [&_section]:w-full">
-		<img src={ProfilePicture} alt="PFP" class="size-48 rounded-full bg-ctp-mantle" />
+		<img src={profilePicture} alt="PFP" class="size-48 rounded-full bg-ctp-mantle" />
 		<Status />
 		<DateAndTime />
 		<Socials />
