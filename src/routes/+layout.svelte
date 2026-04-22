@@ -10,6 +10,7 @@
 	import Socials from '$lib/components/Socials.svelte';
 	import Status from '$lib/components/Status.svelte';
 	import ThemeSwitcher from '$lib/components/ThemeSwitcher.svelte';
+	import Webrings from '$lib/components/Webrings.svelte';
 	import './layout.css';
 	import { fade } from 'svelte/transition';
 
@@ -69,6 +70,7 @@
 			<Status />
 			<DateAndTime />
 			<Socials />
+			<Webrings />
 		</aside>
 		<main class="flex flex-col gap-4 [&_section]:w-full">
 			<Navbar />
