@@ -99,7 +99,7 @@
 <section>
 	<h3>Tools</h3>
 	{#each tools as tool (tool.id)}
-		<h2 class="mb-2 font-semibold">{tool.name}:</h2>
+		<h2 class="mb-2 font-semibold text-ctp-subtext1">{tool.name}</h2>
 		<div class="flex flex-wrap gap-2 not-last-of-type:mb-4">
 			{#each tool.labels as label (label.id)}
 				<div
