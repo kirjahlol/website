@@ -19,7 +19,7 @@
 <a
 	{href}
 	data-sveltekit-noscroll
-	class={['flex gap-2 rounded-lg p-2 transition-[scale] duration-150', { active }]}
+	class={['flex gap-2 rounded-md p-2 transition-[scale] duration-150', { active }]}
 	><LinkIcon /> {name}</a
 >
 
