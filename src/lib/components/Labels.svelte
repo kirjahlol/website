@@ -54,7 +54,7 @@
 	]);
 </script>
 
-<div class="flex gap-2">
+<div class="flex flex-wrap gap-2">
 	{#each labels as label (label.id)}
 		<div
 			class="flex items-center gap-2 rounded-md bg-ctp-green-400/25 p-2 text-ctp-green-400"

@@ -95,7 +95,7 @@
 	<h3>Tools</h3>
 	{#each tools as tool (tool.id)}
 		<h2 class="mb-2 font-semibold">{tool.name}:</h2>
-		<div class="flex gap-2 not-last-of-type:mb-4">
+		<div class="flex flex-wrap gap-2 not-last-of-type:mb-4">
 			{#each tool.labels as label (label.id)}
 				<div
 					class="flex items-center gap-2 rounded-md border border-ctp-surface0 bg-ctp-surface0/50 p-2"
