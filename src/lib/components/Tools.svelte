@@ -1,6 +1,7 @@
 <script lang="ts">
 	import {
 		IconBrandSvelte,
+		IconBrandTailwind,
 		IconBrandTypescript,
 		IconBrandVscode,
 		IconLetterL,
@@ -66,6 +67,11 @@
 					id: 1,
 					ToolLabelIcon: IconBrandSvelte,
 					name: 'SvelteKit'
+				},
+				{
+					id: 2,
+					ToolLabelIcon: IconBrandTailwind,
+					name: 'Tailwind CSS'
 				}
 			]
 		}
