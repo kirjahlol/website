@@ -63,13 +63,13 @@
 
 <section class="">
 	<h3>Socials</h3>
-	<div class="grid grid-cols-5 gap-2">
+	<div class="grid grid-cols-4 gap-2">
 		{#each socials as social (social.id)}
 			<!-- eslint-disable svelte/no-navigation-without-resolve -->
 			<a
 				href={social.href}
 				target="_blank"
-				class="flex justify-center rounded-md border border-ctp-surface0 bg-ctp-surface0/50 py-1 text-ctp-text!"
+				class="flex justify-center rounded-md border border-ctp-surface0 bg-ctp-surface0/50 p-2 text-ctp-text!"
 				{@attach tooltip(social.name, 'bottom')}
 			>
 				<Icon icon={social.icon} class="size-6" />
