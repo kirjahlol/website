@@ -1,6 +1,6 @@
 <script lang="ts">
 	import NavbarLink, { type LinkProps } from './NavbarLink.svelte';
-	import { IconHome } from '@tabler/icons-svelte';
+	import { IconHome, IconMail } from '@tabler/icons-svelte';
 
 	const links: LinkProps[] = [
 		{
@@ -8,6 +8,12 @@
 			href: '/',
 			LinkIcon: IconHome,
 			name: 'Home'
+		},
+		{
+			id: 2,
+			href: '/contact',
+			LinkIcon: IconMail,
+			name: 'Contact'
 		}
 	];
 </script>
