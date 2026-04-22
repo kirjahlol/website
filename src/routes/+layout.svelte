@@ -11,7 +11,6 @@
 	import Status from '$lib/components/Status.svelte';
 	import ThemeSwitcher from '$lib/components/ThemeSwitcher.svelte';
 	import './layout.css';
-	import { fade } from 'svelte/transition';
 
 	if (browser) {
 		const isThemeSystem = localStorage.getItem('theme-system');
@@ -27,12 +26,6 @@
 			document.documentElement.className = theme;
 		}
 	}
-
-	let visible = $state(false);
-
-	$effect(() => {
-		visible = true;
-	});
 
 	let { children } = $props();
 </script>
@@ -51,28 +44,24 @@
 	<meta name="twitter:card" content="summary_large_image" />
 	<meta name="twitter:site" content="@kirjahlol" />
 </svelte:head>
-{#if visible}
-	<div transition:fade={{ duration: 300 }}>
-		<Header />
-		<ThemeSwitcher />
-		<div class="flex flex-col items-center px-4 pt-[25vh] pb-4">
-			<div class="flex max-w-5xl grid-cols-[1fr_3fr] flex-col gap-4 rounded-lg sm:grid">
-				<aside class="flex flex-col items-center gap-4 [&_section]:w-full">
-					<img
-						src={profilePicture}
-						alt="A Scolipede from Pokémon Rumble Rush"
-						class="size-48 rounded-full bg-ctp-mantle"
-					/>
-					<Status />
-					<DateAndTime />
-					<Socials />
-				</aside>
-				<main class="flex flex-col gap-4 [&_section]:w-full">
-					<Navbar />
-					{@render children()}
-				</main>
-			</div>
-			<Footer />
-		</div>
+<Header />
+<ThemeSwitcher />
+<div class="flex flex-col items-center px-4 pt-[25vh] pb-4">
+	<div class="flex max-w-5xl flex-col gap-4 rounded-lg md:grid md:grid-cols-[1fr_3fr]">
+		<aside class="flex flex-col items-center gap-4 [&_section]:w-full">
+			<img
+				src={profilePicture}
+				alt="A Scolipede from Pokémon Rumble Rush"
+				class="size-48 rounded-full bg-ctp-mantle"
+			/>
+			<Status />
+			<DateAndTime />
+			<Socials />
+		</aside>
+		<main class="flex flex-col gap-4 [&_section]:w-full">
+			<Navbar />
+			{@render children()}
+		</main>
 	</div>
-{/if}
+	<Footer />
+</div>

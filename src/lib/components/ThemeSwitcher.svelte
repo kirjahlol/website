@@ -27,6 +27,8 @@
 	];
 
 	function handleThemeChange() {
+		if (!browser) return;
+
 		if (selected === 'system') {
 			const isThemeDarkPreferred = window.matchMedia('(prefers-color-scheme: dark)').matches;
 			const defaultTheme = isThemeDarkPreferred ? 'mocha' : 'latte';
@@ -46,8 +48,6 @@
 	let selected: 'light' | 'dark' | 'system' = $state('system');
 
 	$effect(() => {
-		if (!browser) return;
-
 		const isThemeSystem = localStorage.getItem('theme-system');
 		if (isThemeSystem === 'true') {
 			selected = 'system';
@@ -57,16 +57,16 @@
 			if (theme && (theme === 'mocha' || theme === 'latte'))
 				selected = theme === 'mocha' ? 'dark' : 'light';
 		}
-	});
 
-	const isThemeDarkPreferred = window.matchMedia('(prefers-color-scheme: dark)');
-	isThemeDarkPreferred.addEventListener('change', (event) => {
-		const isThemeSystem = localStorage.getItem('theme-system');
-		if (isThemeSystem !== 'true') return;
+		const isThemeDarkPreferred = window.matchMedia('(prefers-color-scheme: dark)');
+		isThemeDarkPreferred.addEventListener('change', (event) => {
+			const isThemeSystem = localStorage.getItem('theme-system');
+			if (isThemeSystem !== 'true') return;
 
-		const defaultTheme = event.matches ? 'mocha' : 'latte';
-		document.documentElement.className = defaultTheme;
-		localStorage.setItem('theme', defaultTheme);
+			const defaultTheme = event.matches ? 'mocha' : 'latte';
+			document.documentElement.className = defaultTheme;
+			localStorage.setItem('theme', defaultTheme);
+		});
 	});
 </script>
 
