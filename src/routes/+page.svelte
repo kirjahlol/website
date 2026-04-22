@@ -41,8 +41,8 @@
 			class="bg-linear-to-r from-ctp-peach-400 to-ctp-mauve-400 bg-clip-text text-transparent!"
 			>Catppuccin</a
 		>
-		color theme and the <a href="https://tabler.io/icons">Tabler Icons</a> icon set. The tooltips
-		that appear when you mouse over certain things (like
+		color theme and <a href="https://iconify.design/" target="_blank">Iconify</a> for managing
+		icons. The tooltips that appear when you mouse over certain things (like
 		<span class="underline decoration-dotted" {@attach tooltip("I'm a Tippy.js tooltip!", 'bottom')}
 			>this</span
 		>) were made using the
