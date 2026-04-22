@@ -1,20 +1,10 @@
 <script lang="ts">
 	import { tooltip } from '$lib';
-	import {
-		IconBrandBluesky,
-		IconBrandGithub,
-		IconBrandLastfm,
-		IconBrandReddit,
-		IconBrandSpotify,
-		IconBrandTwitch,
-		IconBrandTwitter,
-		IconBrandYoutube,
-		type Icon
-	} from '@tabler/icons-svelte';
+	import Icon from '@iconify/svelte';
 
 	interface Social {
 		id: number;
-		SocialIcon: Icon;
+		icon: string;
 		href: string;
 		name: string;
 	}
@@ -22,49 +12,49 @@
 	const socials: Social[] = [
 		{
 			id: 1,
-			SocialIcon: IconBrandGithub,
+			icon: 'tabler:brand-github',
 			href: 'https://github.com/kirjahlol',
 			name: 'GitHub'
 		},
 		{
 			id: 2,
-			SocialIcon: IconBrandBluesky,
+			icon: 'tabler:brand-bluesky',
 			href: 'https://bsky.app/profile/kirjah.lol',
 			name: 'Bluesky'
 		},
 		{
 			id: 3,
-			SocialIcon: IconBrandTwitter,
+			icon: 'tabler:brand-twitter',
 			href: 'https://twitter.com/kirjahlol',
 			name: 'Twitter'
 		},
 		{
 			id: 4,
-			SocialIcon: IconBrandReddit,
+			icon: 'tabler:brand-reddit',
 			href: 'https://www.reddit.com/user/kirjahlol/',
 			name: 'Reddit'
 		},
 		{
 			id: 5,
-			SocialIcon: IconBrandYoutube,
+			icon: 'tabler:brand-youtube',
 			href: 'https://www.youtube.com/@kirjahlol',
 			name: 'YouTube'
 		},
 		{
 			id: 6,
-			SocialIcon: IconBrandTwitch,
+			icon: 'tabler:brand-twitch',
 			href: 'https://www.twitch.tv/kirjahlol',
 			name: 'Twitch'
 		},
 		{
 			id: 7,
-			SocialIcon: IconBrandSpotify,
+			icon: 'tabler:brand-spotify',
 			href: 'https://open.spotify.com/user/31zrxefog5wdzykdwqlqwul4nkdu',
 			name: 'Spotify'
 		},
 		{
 			id: 8,
-			SocialIcon: IconBrandLastfm,
+			icon: 'tabler:brand-lastfm',
 			href: 'https://www.last.fm/user/kirjahri',
 			name: 'Last.fm'
 		}
@@ -82,7 +72,7 @@
 				class="flex justify-center rounded-md border border-ctp-surface0 bg-ctp-surface0/50 py-1 text-ctp-text!"
 				{@attach tooltip(social.name, 'bottom')}
 			>
-				<social.SocialIcon />
+				<Icon icon={social.icon} class="size-6" />
 			</a>
 		{/each}
 	</div>
