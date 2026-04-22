@@ -22,7 +22,9 @@
 	}
 
 	let status: Status | undefined = $state();
-	getStatus().then((value) => (status = value));
+	$effect(() => {
+		getStatus().then((value) => (status = value));
+	});
 </script>
 
 <section>

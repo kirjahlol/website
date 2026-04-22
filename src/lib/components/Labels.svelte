@@ -34,7 +34,9 @@
 	}
 
 	let pronouns = $state('Loading...');
-	getPronouns().then((value) => (pronouns = value));
+	$effect(() => {
+		getPronouns().then((value) => (pronouns = value));
+	});
 
 	const labels: Label[] = $derived([
 		{
