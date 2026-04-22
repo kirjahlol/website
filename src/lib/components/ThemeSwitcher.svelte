@@ -1,28 +1,28 @@
 <script lang="ts">
 	import { browser } from '$app/environment';
-	import { IconDeviceDesktop, IconMoon, IconSun, type Icon } from '@tabler/icons-svelte';
+	import Icon from '@iconify/svelte';
 
 	interface Theme {
 		id: number;
 		name: string;
-		ThemeIcon: Icon;
+		icon: string;
 	}
 
 	const themes: Theme[] = [
 		{
 			id: 1,
 			name: 'system',
-			ThemeIcon: IconDeviceDesktop
+			icon: 'tabler:device-desktop'
 		},
 		{
 			id: 2,
 			name: 'light',
-			ThemeIcon: IconSun
+			icon: 'tabler:sun'
 		},
 		{
 			id: 3,
 			name: 'dark',
-			ThemeIcon: IconMoon
+			icon: 'tabler:moon'
 		}
 	];
 
@@ -88,7 +88,7 @@
 			<label
 				for={theme.name}
 				class="cursor-pointer rounded-full p-2 peer-checked:bg-ctp-surface0/50 peer-checked:font-semibold"
-				><theme.ThemeIcon /></label
+				><Icon icon={theme.icon} class="size-6" /></label
 			>
 		</div>
 	{/each}
