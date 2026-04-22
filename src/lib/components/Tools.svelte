@@ -1,17 +1,9 @@
 <script lang="ts">
-	import {
-		IconBrandSvelte,
-		IconBrandTailwind,
-		IconBrandTypescript,
-		IconBrandVscode,
-		IconLetterL,
-		IconLetterN,
-		type Icon
-	} from '@tabler/icons-svelte';
+	import Icon from '@iconify/svelte';
 
 	interface ToolLabel {
 		id: number;
-		ToolLabelIcon: Icon;
+		icon: string;
 		name: string;
 	}
 
@@ -28,12 +20,12 @@
 			labels: [
 				{
 					id: 1,
-					ToolLabelIcon: IconLetterN,
+					icon: 'devicon-plain:neovim',
 					name: 'Neovim'
 				},
 				{
 					id: 2,
-					ToolLabelIcon: IconBrandVscode,
+					icon: 'devicon-plain:vscode',
 					name: 'VSCode'
 				}
 			]
@@ -44,17 +36,17 @@
 			labels: [
 				{
 					id: 1,
-					ToolLabelIcon: IconBrandTypescript,
+					icon: 'devicon-plain:typescript',
 					name: 'TypeScript'
 				},
 				{
 					id: 2,
-					ToolLabelIcon: IconBrandSvelte,
+					icon: 'devicon-plain:svelte',
 					name: 'Svelte'
 				},
 				{
 					id: 3,
-					ToolLabelIcon: IconLetterL,
+					icon: 'devicon-plain:luau',
 					name: 'Luau'
 				}
 			]
@@ -65,12 +57,12 @@
 			labels: [
 				{
 					id: 1,
-					ToolLabelIcon: IconBrandSvelte,
+					icon: 'devicon-plain:svelte',
 					name: 'SvelteKit'
 				},
 				{
 					id: 2,
-					ToolLabelIcon: IconBrandTailwind,
+					icon: 'file-icons:tailwind',
 					name: 'Tailwind CSS'
 				}
 			]
@@ -84,8 +76,10 @@
 		<h2 class="mb-2 font-semibold">{tool.name}:</h2>
 		<div class="flex gap-2 not-last-of-type:mb-4">
 			{#each tool.labels as label (label.id)}
-				<div class="flex gap-2 rounded-md border border-ctp-surface0 bg-ctp-surface0/50 px-2 py-1">
-					<label.ToolLabelIcon />
+				<div
+					class="flex items-center gap-2 rounded-md border border-ctp-surface0 bg-ctp-surface0/50 p-2"
+				>
+					<Icon icon={label.icon} class="size-6" />
 					{label.name}
 				</div>
 			{/each}
