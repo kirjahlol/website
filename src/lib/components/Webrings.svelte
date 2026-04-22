@@ -8,7 +8,7 @@
 	<a href="https://ctp-webr.ing/kirjah/previous">
 		<Icon icon="tabler:arrow-left" class="size-6" />
 	</a>
-	<a href="https://ctp-webr.ing/" {@attach tooltip('Catppuccin Webring', 'bottom')}>
+	<a href="https://ctp-webr.ing/" target="_blank" {@attach tooltip('Catppuccin Webring', 'bottom')}>
 		<img src={catppuccinLogo} alt="Catppuccin logo" class="size-24" />
 	</a>
 	<a href="https://ctp-webr.ing/kirjah/next">
