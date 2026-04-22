@@ -55,7 +55,7 @@
 <div class="flex gap-2">
 	{#each labels as label (label.id)}
 		<div
-			class="flex items-center gap-2 rounded-md bg-ctp-green-400/25 px-2 py-1 text-ctp-green-400"
+			class="flex items-center gap-2 rounded-md bg-ctp-green-400/25 p-2 text-ctp-green-400"
 			{@attach tooltip(label.name, 'bottom')}
 		>
 			<Icon icon={label.icon} class="size-6" />
