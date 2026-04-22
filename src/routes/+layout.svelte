@@ -11,6 +11,7 @@
 	import Status from '$lib/components/Status.svelte';
 	import ThemeSwitcher from '$lib/components/ThemeSwitcher.svelte';
 	import './layout.css';
+	import { fade } from 'svelte/transition';
 
 	if (browser) {
 		const isThemeSystem = localStorage.getItem('theme-system');
@@ -26,6 +27,11 @@
 			document.documentElement.className = theme;
 		}
 	}
+
+	let isUnmounted = $state(true);
+	$effect(() => {
+		isUnmounted = false;
+	});
 
 	let { children } = $props();
 </script>
@@ -44,6 +50,12 @@
 	<meta name="twitter:card" content="summary_large_image" />
 	<meta name="twitter:site" content="@kirjahlol" />
 </svelte:head>
+{#if isUnmounted}
+	<div
+		out:fade={{ duration: 300 }}
+		class="fixed inset-0 z-50 flex items-center justify-center bg-ctp-base"
+	></div>
+{/if}
 <Header />
 <ThemeSwitcher />
 <div class="flex flex-col items-center px-4 pt-[25vh] pb-4">
