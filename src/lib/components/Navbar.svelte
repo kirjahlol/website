@@ -5,12 +5,12 @@
 		{
 			id: 1,
 			href: '/',
-			name: '~/'
+			name: 'Home'
 		},
 		{
 			id: 2,
 			href: '/contact',
-			name: '~/contact'
+			name: 'Contact'
 		}
 	];
 </script>

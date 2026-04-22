@@ -14,7 +14,7 @@
 </script>
 
 <!-- eslint-disable svelte/no-navigation-without-resolve -->
-<a {href} data-sveltekit-noscroll class={[' rounded-md font-mono', { active }]}>{name}</a>
+<a {href} data-sveltekit-noscroll class={[{ active }]}>{name}</a>
 
 <style>
 	@reference '@routes/layout.css';
