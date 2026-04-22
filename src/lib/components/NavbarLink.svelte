@@ -16,7 +16,10 @@
 </script>
 
 <!-- eslint-disable svelte/no-navigation-without-resolve -->
-<a {href} class={['flex gap-2 rounded-lg p-2 transition-[scale] duration-150', { active }]}
+<a
+	{href}
+	data-sveltekit-noscroll
+	class={['flex gap-2 rounded-lg p-2 transition-[scale] duration-150', { active }]}
 	><LinkIcon /> {name}</a
 >
 
