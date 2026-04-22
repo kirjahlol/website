@@ -24,7 +24,7 @@
 	@reference '@routes/layout.css';
 
 	a.active {
-		@apply pointer-events-none animate-spring bg-ctp-green-400 text-ctp-mantle;
+		@apply pointer-events-none animate-spring bg-ctp-green-400 font-semibold text-ctp-mantle;
 	}
 
 	a:not(.active) {
