@@ -60,7 +60,7 @@
 <Header />
 <ThemeSwitcher />
 <div class="flex flex-col items-center px-4 pt-[25vh] pb-4">
-	<div class="flex max-w-5xl flex-col gap-4 rounded-lg lg:grid lg:grid-cols-[1fr_3fr]">
+	<div class="flex max-w-7xl flex-col gap-4 rounded-lg lg:grid lg:grid-cols-[1fr_3fr_1fr]">
 		<aside class="flex flex-col items-center gap-4 [&_section]:w-full">
 			<img
 				src={profilePicture}
@@ -70,12 +70,14 @@
 			<Status />
 			<DateAndTime />
 			<Socials />
-			<Webrings />
 		</aside>
 		<main class="flex flex-col gap-4 [&_section]:w-full">
 			<Navbar />
 			{@render children()}
 		</main>
+		<aside class="flex flex-col items-center gap-4 [&_section]:w-full">
+			<Webrings />
+		</aside>
 	</div>
 	<Footer />
 </div>
