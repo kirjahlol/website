@@ -2,6 +2,7 @@
 	import { tooltip } from '$lib';
 	import Age from '$lib/components/Age.svelte';
 	import Labels from '$lib/components/Labels.svelte';
+	import Tools from '$lib/components/Tools.svelte';
 </script>
 
 <section>
@@ -60,3 +61,4 @@
 		>.
 	</p>
 </section>
+<Tools />
