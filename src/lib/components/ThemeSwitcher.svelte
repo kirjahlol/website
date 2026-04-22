@@ -87,7 +87,7 @@
 			/>
 			<label
 				for={theme.name}
-				class="cursor-pointer rounded-full p-2 peer-checked:bg-ctp-surface0/50"
+				class="cursor-pointer rounded-full p-2 peer-checked:bg-ctp-surface0/50 peer-checked:font-semibold"
 				><theme.ThemeIcon /></label
 			>
 		</div>
