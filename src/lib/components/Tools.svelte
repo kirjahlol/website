@@ -16,15 +16,25 @@
 	const tools: Tool[] = [
 		{
 			id: 1,
-			name: 'Editors',
+			name: 'Software',
 			labels: [
 				{
 					id: 1,
+					icon: 'devicon-plain:archlinux',
+					name: 'Arch Linux'
+				},
+				{
+					id: 2,
+					icon: 'simple-icons:wezterm',
+					name: 'Wezterm'
+				},
+				{
+					id: 3,
 					icon: 'devicon-plain:neovim',
 					name: 'Neovim'
 				},
 				{
-					id: 2,
+					id: 4,
 					icon: 'devicon-plain:vscode',
 					name: 'VSCode'
 				}
@@ -41,16 +51,11 @@
 				},
 				{
 					id: 2,
-					icon: 'devicon-plain:svelte',
-					name: 'Svelte'
-				},
-				{
-					id: 3,
 					icon: 'devicon-plain:godot',
 					name: 'GDScript'
 				},
 				{
-					id: 4,
+					id: 3,
 					icon: 'devicon-plain:luau',
 					name: 'Luau'
 				}
@@ -63,7 +68,7 @@
 				{
 					id: 1,
 					icon: 'devicon-plain:svelte',
-					name: 'SvelteKit'
+					name: 'Svelte/SvelteKit'
 				},
 				{
 					id: 2,
