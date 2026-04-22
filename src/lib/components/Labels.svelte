@@ -1,10 +1,10 @@
 <script lang="ts">
 	import { tooltip } from '$lib';
-	import { IconMapPin, IconTags, type Icon } from '@tabler/icons-svelte';
+	import Icon from '@iconify/svelte';
 
 	interface Label {
 		id: number;
-		LabelIcon: Icon;
+		icon: string;
 		name: string;
 		content: string;
 	}
@@ -39,13 +39,13 @@
 	const labels: Label[] = $derived([
 		{
 			id: 1,
-			LabelIcon: IconTags,
+			icon: 'tabler:tags',
 			name: 'Pronouns',
 			content: pronouns
 		},
 		{
 			id: 2,
-			LabelIcon: IconMapPin,
+			icon: 'tabler:map-pin',
 			name: 'Location',
 			content: 'United States'
 		}
@@ -55,10 +55,10 @@
 <div class="flex gap-2">
 	{#each labels as label (label.id)}
 		<div
-			class="flex gap-2 rounded-md bg-ctp-green-400/25 px-2 py-1 text-ctp-green-400"
+			class="flex items-center gap-2 rounded-md bg-ctp-green-400/25 px-2 py-1 text-ctp-green-400"
 			{@attach tooltip(label.name, 'bottom')}
 		>
-			<label.LabelIcon />
+			<Icon icon={label.icon} class="size-6" />
 			{label.content}
 		</div>
 	{/each}
