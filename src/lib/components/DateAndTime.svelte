@@ -1,5 +1,5 @@
 <script lang="ts">
-	import { IconCalendar, IconClock } from '@tabler/icons-svelte';
+	import Icon from '@iconify/svelte';
 
 	function getTimeZoneDiff(): number {
 		const myDate = new Date();
@@ -66,11 +66,11 @@
 	<h3>Date and Time</h3>
 	<div class="flex flex-col items-center">
 		<p class="flex items-center gap-2 font-mono">
-			<IconCalendar />
+			<Icon icon="tabler:calendar" class="size-6" />
 			<code>{date}</code>
 		</p>
 		<div class="flex items-center gap-2">
-			<IconClock />
+			<Icon icon="tabler:clock" class="size-6" />
 			<div class="flex flex-col items-center gap-y-1">
 				<code>{time}</code>
 				<span class="text-sm text-ctp-subtext0 italic">({timeZoneDiffText})</span>
