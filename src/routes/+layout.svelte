@@ -3,6 +3,7 @@
 	import favicon from '$lib/assets/favicon.svg';
 	import preview from '$lib/assets/preview.webp';
 	import profilePicture from '$lib/assets/profile-picture.webp';
+	import Buttons from '$lib/components/Buttons.svelte';
 	import DateAndTime from '$lib/components/DateAndTime.svelte';
 	import Footer from '$lib/components/Footer.svelte';
 	import Header from '$lib/components/Header.svelte';
@@ -76,6 +77,7 @@
 			{@render children()}
 		</main>
 		<aside class="flex flex-col items-center gap-4 [&_section]:w-full">
+			<Buttons />
 			<Webrings />
 		</aside>
 	</div>
