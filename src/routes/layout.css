@@ -62,26 +62,26 @@ footer a {
 	@apply text-ctp-green-400 hover:underline;
 }
 
-.tippy-box[data-theme~='ctp'] {
+.tippy-box[data-theme~='ctp-green'] {
 	@apply bg-ctp-base text-ctp-green-400;
 }
 
-.tippy-box[data-theme~='ctp'] .tippy-content {
+.tippy-box[data-theme~='ctp-green'] .tippy-content {
 	@apply rounded-[inherit] border border-ctp-green-400 bg-ctp-green-400/25;
 }
 
-.tippy-box[data-theme~='ctp'][data-placement^='top'] > .tippy-arrow::before {
+.tippy-box[data-theme~='ctp-green'][data-placement^='top'] > .tippy-arrow::before {
 	@apply border-t-ctp-green-400;
 }
 
-.tippy-box[data-theme~='ctp'][data-placement^='bottom'] > .tippy-arrow::before {
+.tippy-box[data-theme~='ctp-green'][data-placement^='bottom'] > .tippy-arrow::before {
 	@apply border-b-ctp-green-400;
 }
 
-.tippy-box[data-theme~='ctp'][data-placement^='left'] > .tippy-arrow::before {
+.tippy-box[data-theme~='ctp-green'][data-placement^='left'] > .tippy-arrow::before {
 	@apply border-l-ctp-green-400;
 }
 
-.tippy-box[data-theme~='ctp'][data-placement^='right'] > .tippy-arrow::before {
+.tippy-box[data-theme~='ctp-green'][data-placement^='right'] > .tippy-arrow::before {
 	@apply border-r-ctp-green-400;
 }

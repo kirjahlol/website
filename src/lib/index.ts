@@ -7,7 +7,7 @@ export function tooltip(content: string, placement: Placement): Attachment {
 			content,
 			placement,
 			allowHTML: true,
-			theme: 'ctp',
+			theme: 'ctp-green',
 			animation: 'shift-away-subtle'
 		});
 		return tooltip.destroy;
