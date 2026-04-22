@@ -46,6 +46,11 @@
 				},
 				{
 					id: 3,
+					icon: 'devicon-plain:godot',
+					name: 'GDScript'
+				},
+				{
+					id: 4,
 					icon: 'devicon-plain:luau',
 					name: 'Luau'
 				}
@@ -64,6 +69,22 @@
 					id: 2,
 					icon: 'file-icons:tailwind',
 					name: 'Tailwind CSS'
+				}
+			]
+		},
+		{
+			id: 4,
+			name: 'Game Engines',
+			labels: [
+				{
+					id: 1,
+					icon: 'devicon-plain:godot',
+					name: 'Godot'
+				},
+				{
+					id: 2,
+					icon: 'simple-icons:robloxstudio',
+					name: 'Roblox Studio'
 				}
 			]
 		}
