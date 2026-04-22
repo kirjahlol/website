@@ -1,27 +1,6 @@
 <script lang="ts">
 	import Icon from '@iconify/svelte';
 
-	function getTimeZoneDiff(): number {
-		const myDate = new Date();
-
-		const clientTimeZone = Intl.DateTimeFormat().resolvedOptions().timeZone;
-		const clientDate = new Date(myDate.toLocaleString('en-US', { timeZone: clientTimeZone }));
-
-		const diffInMs = myDate.getTime() - clientDate.getTime();
-		return Number((diffInMs / (1000 * 60 * 60)).toFixed(2));
-	}
-
-	function getTimeZoneDiffText(): string {
-		const timeZoneDiff = getTimeZoneDiff();
-		if (timeZoneDiff === 0) {
-			return 'same time';
-		} else if (timeZoneDiff > 0) {
-			return `${timeZoneDiff}h ahead`;
-		} else {
-			return `${Math.abs(timeZoneDiff)}h behind`;
-		}
-	}
-
 	const myTimeZone = 'America/New_York';
 
 	let time = $state(
@@ -58,8 +37,6 @@
 
 		return () => clearInterval(id);
 	});
-
-	let timeZoneDiffText = getTimeZoneDiffText();
 </script>
 
 <section>
@@ -73,7 +50,6 @@
 			<Icon icon="tabler:clock" class="size-6" />
 			<div class="flex flex-col items-center gap-y-1">
 				<code>{time}</code>
-				<span class="text-sm text-ctp-subtext0 italic">({timeZoneDiffText})</span>
 			</div>
 		</div>
 	</div>
