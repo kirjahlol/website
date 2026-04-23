@@ -3,12 +3,10 @@
 
 	const links: LinkProps[] = [
 		{
-			id: 1,
 			href: '/',
 			name: 'Home'
 		},
 		{
-			id: 2,
 			href: '/contact',
 			name: 'Contact'
 		}
@@ -17,7 +15,7 @@
 
 <nav class="rounded-lg border border-ctp-surface0 bg-ctp-mantle p-4">
 	<li class="flex gap-4">
-		{#each links as link (link.id)}
+		{#each links as link, i (i)}
 			<NavbarLink {...link} />
 		{/each}
 	</li>

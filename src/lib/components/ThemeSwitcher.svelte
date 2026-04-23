@@ -3,24 +3,20 @@
 	import Icon from '@iconify/svelte';
 
 	interface Theme {
-		id: number;
 		name: string;
 		icon: string;
 	}
 
 	const themes: Theme[] = [
 		{
-			id: 1,
 			name: 'system',
 			icon: 'tabler:device-desktop'
 		},
 		{
-			id: 2,
 			name: 'light',
 			icon: 'tabler:sun'
 		},
 		{
-			id: 3,
 			name: 'dark',
 			icon: 'tabler:moon'
 		}
@@ -51,13 +47,16 @@
 		const isThemeSystem = localStorage.getItem('theme-system');
 		if (isThemeSystem === 'true') {
 			selected = 'system';
+
+			const isThemeDarkPreferred = window.matchMedia('(prefers-color-scheme: dark)').matches;
+			const defaultTheme = isThemeDarkPreferred ? 'mocha' : 'latte';
+			document.documentElement.className = defaultTheme;
 		} else {
 			const theme = localStorage.getItem('theme');
 
 			if (theme && (theme === 'mocha' || theme === 'latte'))
 				selected = theme === 'mocha' ? 'dark' : 'light';
 		}
-		handleThemeChange();
 
 		const isThemeDarkPreferred = window.matchMedia('(prefers-color-scheme: dark)');
 		isThemeDarkPreferred.addEventListener('change', (event) => {
@@ -74,22 +73,22 @@
 <form
 	class="absolute top-4 right-4 flex gap-2 rounded-full border border-ctp-surface0 bg-ctp-mantle p-2"
 >
-	{#each themes as theme (theme.id)}
+	{#each themes as { name, icon }, i (i)}
 		<div class="flex">
 			<input
 				type="radio"
 				name="themes"
-				id={theme.name}
-				value={theme.name}
+				id={name}
+				value={name}
 				bind:group={selected}
 				onchange={handleThemeChange}
 				aria-hidden="true"
 				class="peer hidden"
 			/>
 			<label
-				for={theme.name}
+				for={name}
 				class="cursor-pointer rounded-full p-2 peer-checked:bg-ctp-surface0/50 peer-checked:font-semibold"
-				><Icon icon={theme.icon} class="size-6" /></label
+				><Icon {icon} class="size-6" /></label
 			>
 		</div>
 	{/each}

@@ -3,7 +3,6 @@
 	import type { ResolvedPathname } from '$app/types';
 
 	export interface LinkProps {
-		id: number;
 		href: ResolvedPathname;
 		name: string;
 	}
