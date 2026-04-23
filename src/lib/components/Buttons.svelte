@@ -46,7 +46,7 @@
 
 <section>
 	<h3>Buttons</h3>
-	<div class="flex flex-wrap justify-center">
+	<div class="flex flex-wrap justify-center gap-2">
 		{#each buttons as { href, src, alt }, i (i)}
 			{#if href}
 				<a {href} rel="external" target="_blank">
