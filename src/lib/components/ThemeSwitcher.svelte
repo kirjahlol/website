@@ -45,7 +45,7 @@
 		}
 	}
 
-	let selected: 'light' | 'dark' | 'system' = $state('light');
+	let selected: 'light' | 'dark' | 'system' = $state('system');
 
 	$effect(() => {
 		const isThemeSystem = localStorage.getItem('theme-system');
