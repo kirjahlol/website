@@ -57,6 +57,7 @@
 			if (theme && (theme === 'mocha' || theme === 'latte'))
 				selected = theme === 'mocha' ? 'dark' : 'light';
 		}
+		handleThemeChange();
 
 		const isThemeDarkPreferred = window.matchMedia('(prefers-color-scheme: dark)');
 		isThemeDarkPreferred.addEventListener('change', (event) => {
