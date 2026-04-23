@@ -54,7 +54,7 @@
 
 <section class="">
 	<h3>Socials</h3>
-	<div class="grid grid-cols-4 gap-2">
+	<div class="flex flex-wrap justify-center gap-2">
 		{#each socials as { href, name, icon }, i (i)}
 			<!-- eslint-disable svelte/no-navigation-without-resolve -->
 			<a
