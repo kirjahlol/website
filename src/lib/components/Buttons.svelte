@@ -7,6 +7,11 @@
 
 	const buttons: Button[] = [
 		{
+			href: 'https://status.cafe',
+			src: 'https://status.cafe/assets/button.png',
+			alt: 'Button for Status Cafe'
+		},
+		{
 			href: 'https://trafficlunar.net/',
 			src: 'https://trafficlunar.net/88x31.gif',
 			alt: "Button for trafficlunar's website"
