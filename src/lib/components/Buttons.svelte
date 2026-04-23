@@ -40,10 +40,10 @@
 		{#each buttons as { href, src, alt }, i (i)}
 			{#if href}
 				<a {href} rel="external" target="_blank">
-					<img {src} {alt} class="h-7.75 w-22 [image-rendering:pixelated]" />
+					<img {src} {alt} class="h-7.75 w-22 [image-rendering:crisp-edges]" />
 				</a>
 			{:else}
-				<img {src} {alt} class="h-7.75 w-22 [image-rendering:pixelated]" />
+				<img {src} {alt} class="h-7.75 w-22 [image-rendering:crisp-edges]" />
 			{/if}
 		{/each}
 	</div>
