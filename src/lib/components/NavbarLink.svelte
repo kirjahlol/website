@@ -13,16 +13,16 @@
 </script>
 
 <!-- eslint-disable svelte/no-navigation-without-resolve -->
-<a {href} data-sveltekit-noscroll class={[{ active }]}>{name}</a>
+<a {href} data-sveltekit-noscroll class={['-mb-px p-2', { active }]}>{name}</a>
 
 <style>
 	@reference '@routes/layout.css';
 
 	a.active {
-		@apply pointer-events-none font-semibold text-ctp-green;
+		@apply pointer-events-none border-b border-b-ctp-green font-semibold text-ctp-green;
 	}
 
 	a:not(.active) {
-		@apply hover:underline;
+		@apply text-ctp-text hover:border-b hover:border-b-ctp-text;
 	}
 </style>
