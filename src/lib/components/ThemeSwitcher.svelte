@@ -85,9 +85,7 @@
 				aria-hidden="true"
 				class="peer hidden"
 			/>
-			<label
-				for={name}
-				class="cursor-pointer rounded-full p-2 peer-checked:bg-ctp-surface0/50 peer-checked:font-semibold"
+			<label for={name} class="cursor-pointer rounded-full p-2 peer-checked:bg-ctp-surface0/50"
 				><Icon {icon} class="size-6" /></label
 			>
 		</div>
