@@ -22,6 +22,11 @@
 			alt: "Button for Petra's website, petrapixel"
 		},
 		{
+			href: 'https://doqmeat.com/',
+			src: 'https://doqmeat.com/!g/web/doqmeat.png',
+			alt: "Button for des' website"
+		},
+		{
 			href: 'https://jeith.com/',
 			src: 'https://neocities.jeith.com/jeith.gif',
 			alt: "Button for jeith's website"
