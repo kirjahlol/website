@@ -27,9 +27,14 @@
 			alt: "Button for jeith's website"
 		},
 		{
+			href: 'https://isabelroses.com/',
+			src: 'https://isabelroses.com/badges/me.gif',
+			alt: "Button for isabel's website"
+		},
+		{
 			href: 'https://dimden.dev/',
 			src: 'https://dimden.dev/services/images/88x31.gif',
-			alt: "Button for dimden's site"
+			alt: "Button for dimden's website"
 		}
 	];
 </script>
