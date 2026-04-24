@@ -1,17 +1,17 @@
 <script lang="ts">
 	import { browser } from '$app/environment';
-	import favicon from '$lib/assets/favicon.svg';
-	import preview from '$lib/assets/preview.webp';
-	import profilePicture from '$lib/assets/profile-picture.webp';
-	import Buttons from '$lib/components/Buttons.svelte';
-	import DateAndTime from '$lib/components/DateAndTime.svelte';
-	import Footer from '$lib/components/Footer.svelte';
-	import Header from '$lib/components/Header.svelte';
-	import Navbar from '$lib/components/Navbar.svelte';
-	import Socials from '$lib/components/Socials.svelte';
-	import Status from '$lib/components/Status.svelte';
-	import ThemeSwitcher from '$lib/components/ThemeSwitcher.svelte';
-	import Webrings from '$lib/components/Webrings.svelte';
+	import favicon from '$assets/favicon.svg';
+	import preview from '$assets/preview.webp';
+	import profilePicture from '$assets/profile-picture.webp';
+	import Buttons from '$components/global/Buttons.svelte';
+	import DateAndTime from '$components/global/DateAndTime.svelte';
+	import Footer from '$components/global/Footer.svelte';
+	import Header from '$components/global/Header.svelte';
+	import Navbar from '$components/global/Navbar.svelte';
+	import Socials from '$components/global/Socials.svelte';
+	import Status from '$components/global/Status.svelte';
+	import ThemeSwitcher from '$components/global/ThemeSwitcher.svelte';
+	import Webrings from '$components/global/Webrings.svelte';
 	import './layout.css';
 	import { fade } from 'svelte/transition';
 

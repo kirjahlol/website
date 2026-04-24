@@ -5,5 +5,11 @@ import { defineConfig } from 'vite';
 
 export default defineConfig({
 	plugins: [tailwindcss(), sveltekit()],
-	resolve: { alias: { '@routes': resolve(__dirname, './src/routes') } }
+	resolve: {
+		alias: {
+			$assets: resolve(__dirname, './src/assets'),
+			$components: resolve(__dirname, './src/components'),
+			$routes: resolve(__dirname, './src/routes')
+		}
+	}
 });

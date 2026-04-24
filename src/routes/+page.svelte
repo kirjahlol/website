@@ -1,8 +1,8 @@
 <script lang="ts">
+	import Age from '$components/home/Age.svelte';
+	import Labels from '$components/home/Labels.svelte';
+	import Tools from '$components/home/Tools.svelte';
 	import { tooltip } from '$lib';
-	import Age from '$lib/components/Age.svelte';
-	import Labels from '$lib/components/Labels.svelte';
-	import Tools from '$lib/components/Tools.svelte';
 </script>
 
 <section>

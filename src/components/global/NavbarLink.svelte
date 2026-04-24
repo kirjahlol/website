@@ -16,7 +16,7 @@
 <a {href} data-sveltekit-noscroll class={['-mb-px p-2', { active }]}>{name}</a>
 
 <style>
-	@reference '@routes/layout.css';
+	@reference '$routes/layout.css';
 
 	a.active {
 		@apply pointer-events-none border-b border-b-ctp-green font-semibold text-ctp-green;

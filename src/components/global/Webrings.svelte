@@ -1,6 +1,6 @@
 <script lang="ts">
+	import catppuccinLogo from '$assets/catppuccin-logo.webp';
 	import { tooltip } from '$lib';
-	import catppuccinLogo from '$lib/assets/catppuccin-logo.webp';
 	import Icon from '@iconify/svelte';
 </script>
 
