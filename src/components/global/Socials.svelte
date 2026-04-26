@@ -60,7 +60,7 @@
 			<a
 				{href}
 				target="_blank"
-				class="flex justify-center rounded-md border border-ctp-surface0 bg-ctp-surface0/50 p-2 text-ctp-text!"
+				class="rounded-md border border-ctp-surface0 bg-ctp-surface0/50 p-2 text-ctp-text!"
 				{@attach tooltip(name, 'bottom')}
 			>
 				<Icon {icon} class="size-6" />
