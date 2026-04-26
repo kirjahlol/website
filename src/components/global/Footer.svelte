@@ -1,6 +1,5 @@
 <script lang="ts">
 	import { version } from '$app/environment';
-	import Icon from '@iconify/svelte';
 
 	interface Item {
 		href?: string;
@@ -29,6 +28,6 @@
 		{:else}
 			{content}
 		{/if}
-		<Icon icon="tabler:point-filled" class="size-2 last-of-type:hidden" />
+		<span class="text-[0.5rem] last-of-type:hidden">&bull;</span>
 	{/each}
 </footer>
