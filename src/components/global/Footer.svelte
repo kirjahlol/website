@@ -8,7 +8,7 @@
 
 	const items: Item[] = [
 		{
-			content: `© ${new Date().getFullYear()} kirjah`
+			content: `&copy; ${new Date().getFullYear()} kirjah`
 		},
 		{
 			href: 'https://github.com/kirjahlol/website',
@@ -24,9 +24,11 @@
 <footer class="flex items-center gap-2">
 	{#each items as { href, content }, i (i)}
 		{#if href}
-			<a {href} rel="external" target="_blank">{content}</a>
+			<!-- eslint-disable-next-line svelte/no-at-html-tags -->
+			<a {href} rel="external" target="_blank">{@html content}</a>
 		{:else}
-			{content}
+			<!-- eslint-disable-next-line svelte/no-at-html-tags -->
+			{@html content}
 		{/if}
 		<span class="text-[0.5rem] last-of-type:hidden">&bull;</span>
 	{/each}
