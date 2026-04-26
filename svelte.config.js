@@ -11,6 +11,10 @@ const config = {
 		adapter: adapter({
 			fallback: '404.html'
 		}),
+		alias: {
+			$assets: 'src/assets',
+			$components: 'src/components'
+		},
 		version: { name: execSync('git rev-parse --short HEAD').toString().trim() }
 	}
 };
