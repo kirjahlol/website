@@ -12,18 +12,13 @@
 	let active = $derived(page.url.pathname === href);
 </script>
 
-<!-- eslint-disable svelte/no-navigation-without-resolve -->
-<a
-	{href}
-	data-sveltekit-noscroll
-	class={['-mb-px p-2 transition-[font-weight,color] duration-150', { active }]}>{name}</a
->
+<a {href} data-sveltekit-noscroll class={['-mb-px p-2 font-semibold', { active }]}>{name}</a>
 
 <style>
 	@reference '@routes/layout.css';
 
 	a.active {
-		@apply pointer-events-none border-b border-b-ctp-green font-semibold text-ctp-green;
+		@apply pointer-events-none border-b border-b-ctp-green text-ctp-green;
 	}
 
 	a:not(.active) {
