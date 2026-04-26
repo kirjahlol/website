@@ -46,6 +46,10 @@ hr {
 	@apply text-ctp-surface0;
 }
 
+code {
+	@apply font-features-(--font-mono-features);
+}
+
 section {
 	@apply rounded-lg border border-ctp-surface0 bg-ctp-mantle p-4;
 }
