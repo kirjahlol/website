@@ -1,5 +1,6 @@
 <script lang="ts">
 	import { browser } from '$app/environment';
+	import { page } from '$app/state';
 	import favicon from '$assets/favicon.svg';
 	import preview from '$assets/preview.webp';
 	import profilePicture from '$assets/profile-picture.webp';
@@ -13,7 +14,7 @@
 	import ThemeSwitcher from '$components/global/ThemeSwitcher.svelte';
 	import Webrings from '$components/global/Webrings.svelte';
 	import './layout.css';
-	import { fade } from 'svelte/transition';
+	import { fade, fly } from 'svelte/transition';
 
 	if (browser) {
 		const isThemeSystem = localStorage.getItem('theme-system');
@@ -74,7 +75,15 @@
 		</aside>
 		<main class="flex flex-col gap-4 [&_section]:w-full">
 			<Navbar />
-			{@render children()}
+			{#key page.url.pathname}
+				<div
+					in:fly={{ duration: 150, delay: 150, y: 15 }}
+					out:fly={{ duration: 150, y: 15 }}
+					class="min-h-screen"
+				>
+					{@render children()}
+				</div>
+			{/key}
 		</main>
 		<aside class="flex flex-col items-center gap-4 [&_section]:w-full">
 			<Buttons />
