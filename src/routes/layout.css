@@ -12,7 +12,7 @@
 	--font-mono: 'Maple Mono', monospace;
 	--font-mono-features:
 		'cv01', 'cv02', 'cv07', 'cv33', 'cv34', 'cv35', 'cv36', 'cv40', 'cv61', 'cv62', 'cv66', 'ss05',
-		'ss06', 'ss07', 'ss11';
+		'ss06', 'ss07', 'ss11', 'zero';
 
 	--animate-spring: spring 0.3s;
 	--animate-blink: blink 1s steps(1) infinite;
