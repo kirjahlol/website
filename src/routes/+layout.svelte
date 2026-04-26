@@ -59,8 +59,10 @@
 		class="fixed inset-0 z-50 flex items-center justify-center bg-ctp-base"
 	></div>
 {/if}
-<Header />
-<ThemeSwitcher />
+<div class="absolute flex w-screen justify-between p-4">
+	<Header />
+	<ThemeSwitcher />
+</div>
 <div class="flex flex-col items-center px-4 pt-[25vh] pb-4">
 	<div
 		class="flex max-w-lg flex-col gap-4 rounded-lg lg:grid lg:max-w-7xl lg:grid-cols-[1fr_3fr_1fr]"

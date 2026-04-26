@@ -8,6 +8,6 @@
 	}
 </script>
 
-<header class="absolute top-4 left-4 font-mono text-xl font-medium">
+<header class="font-mono text-xl font-medium">
 	<a href={resolve('/')}>{hostname}</a>
 </header>
