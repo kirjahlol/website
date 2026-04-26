@@ -62,7 +62,9 @@
 <Header />
 <ThemeSwitcher />
 <div class="flex flex-col items-center px-4 pt-[25vh] pb-4">
-	<div class="flex max-w-7xl flex-col gap-4 rounded-lg lg:grid lg:grid-cols-[1fr_3fr_1fr]">
+	<div
+		class="flex max-w-lg flex-col gap-4 rounded-lg lg:grid lg:max-w-7xl lg:grid-cols-[1fr_3fr_1fr]"
+	>
 		<aside class="flex flex-col items-center gap-4 [&_section]:w-full">
 			<img
 				src={profilePicture}
