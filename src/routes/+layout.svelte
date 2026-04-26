@@ -76,11 +76,7 @@
 		<main class="flex flex-col gap-4 [&_section]:w-full">
 			<Navbar />
 			{#key page.url.pathname}
-				<div
-					in:fly={{ duration: 150, delay: 150, y: 15 }}
-					out:fly={{ duration: 150, y: 15 }}
-					class="min-h-screen"
-				>
+				<div in:fly={{ duration: 150, delay: 150, y: 15 }} out:fly={{ duration: 150, y: 15 }}>
 					{@render children()}
 				</div>
 			{/key}
