@@ -24,7 +24,7 @@
 <footer class="flex items-center gap-2">
 	{#each items as { href, content }, i (i)}
 		{#if href}
-			<a {href} rel="external">{content}</a>
+			<a {href} rel="external" target="_blank">{content}</a>
 		{:else}
 			{content}
 		{/if}
