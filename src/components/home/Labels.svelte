@@ -27,7 +27,7 @@
 					return p.pronouns;
 				}
 			})
-			.filter(Boolean) // prevent unmapped pronouns from adding extra slashes
+			.filter(Boolean) // prevent non-favorite pronouns from adding extra slashes
 			.join('/');
 		return pronouns;
 	}
