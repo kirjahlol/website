@@ -13,7 +13,7 @@
 	];
 </script>
 
-<nav class="rounded-lg border border-ctp-surface0 bg-ctp-mantle p-4">
+<nav>
 	<li class="flex gap-4 border-b border-b-ctp-surface0">
 		{#each links as link, i (i)}
 			<NavbarLink {...link} />
