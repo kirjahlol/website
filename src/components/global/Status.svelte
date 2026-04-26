@@ -31,9 +31,9 @@
 	<h3>Status</h3>
 	<div class="flex flex-col items-center">
 		{#if status}
-			<div class="flex gap-2">
+			<div class="mb-2 flex items-center gap-2">
 				<span>{status.face}</span>
-				<span class="mb-2 text-sm text-ctp-subtext0">({status.timeAgo})</span>
+				<span class="text-sm text-ctp-subtext0">({status.timeAgo})</span>
 			</div>
 			<code class="mb-2 bg-ctp-base! p-4!"
 				><span class="text-ctp-green-400">> <span class="font-semibold">echo</span></span>
