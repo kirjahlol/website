@@ -72,11 +72,15 @@ footer a {
 }
 
 .tippy-box[data-theme~='ctp-green'] {
-	@apply bg-ctp-base text-ctp-green-400;
+	@apply rounded-lg bg-ctp-base text-ctp-green-400;
 }
 
 .tippy-box[data-theme~='ctp-green'] .tippy-content {
 	@apply rounded-[inherit] border border-ctp-green-400 bg-ctp-green-400/25;
+}
+
+.tippy-box[data-theme~='ctp-green'] > .tippy-arrow::before {
+	@apply scale-75;
 }
 
 .tippy-box[data-theme~='ctp-green'][data-placement^='top'] > .tippy-arrow::before {

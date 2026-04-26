@@ -7,8 +7,8 @@ export function tooltip(content: string, placement: Placement): Attachment {
 			content,
 			placement,
 			allowHTML: true,
-			theme: 'ctp-green',
-			animation: 'shift-away-subtle'
+			animation: 'shift-away-subtle',
+			theme: 'ctp-green'
 		});
 		return tooltip.destroy;
 	};
