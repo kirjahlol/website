@@ -56,9 +56,9 @@
 	<h3>Socials</h3>
 	<div class="flex flex-wrap justify-center gap-2">
 		{#each socials as { href, name, icon }, i (i)}
-			<!-- eslint-disable svelte/no-navigation-without-resolve -->
 			<a
 				{href}
+				rel="external"
 				target="_blank"
 				class="rounded-md border border-ctp-surface0 bg-ctp-surface0/50 p-2 text-ctp-text!"
 				{@attach tooltip(name, 'bottom')}
