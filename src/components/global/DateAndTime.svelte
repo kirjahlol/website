@@ -41,16 +41,14 @@
 
 <section>
 	<h3>Date and Time</h3>
-	<div class="flex flex-col items-center">
-		<p class="flex items-center gap-2 font-mono">
+	<div class="flex flex-col items-center font-mono">
+		<div class="mb-2 flex items-center gap-2">
 			<Icon icon="tabler:calendar" class="size-6" />
 			<code>{date}</code>
-		</p>
+		</div>
 		<div class="flex items-center gap-2">
 			<Icon icon="tabler:clock" class="size-6" />
-			<div class="flex flex-col items-center gap-y-1">
-				<code>{time}</code>
-			</div>
+			<code>{time}</code>
 		</div>
 	</div>
 </section>
