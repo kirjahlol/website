@@ -41,7 +41,7 @@
 
 <svelte:head>
 	<title>kirjah</title>
-	<link rel="icon" href={favicon} />
+	<link rel="icon" type="image/svg+xml" href={favicon} />
 	<meta name="description" content="kirjah's website." />
 
 	<!-- Open Graph -->
