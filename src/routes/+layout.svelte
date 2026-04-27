@@ -55,13 +55,6 @@
 	<!-- Twitter -->
 	<meta name="twitter:card" content="summary_large_image" />
 	<meta name="twitter:site" content="@kirjahlol" />
-
-	<!-- Umami tracking code -->
-	<script
-		defer
-		src="https://cloud.umami.is/script.js"
-		data-website-id="aa8bf441-9d51-4869-bde3-8d72c19d312c"
-	></script>
 </svelte:head>
 {#if isUnmounted}
 	<div

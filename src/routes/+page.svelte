@@ -60,12 +60,5 @@
 			{@attach tooltip('<code>kirjah.neocities.org</code>', 'bottom')}>Neocities</a
 		>.
 	</p>
-	<p>
-		This website anonymously (without storing browser cookies) collects analytics with <a
-			href="https://umami.is/"
-			target="_blank">Umami</a
-		>. In the interest of maintaining transparency, the collected data can can be viewed publicy
-		<a href="https://cloud.umami.is/analytics/us/share/PWpFGAV6wgoNrczp" target="_blank">here</a>.
-	</p>
 </section>
 <!-- <Tools /> -->
