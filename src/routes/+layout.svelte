@@ -43,6 +43,7 @@
 	<title>kirjah</title>
 	<link rel="icon" type="image/svg+xml" href={favicon} />
 	<meta name="description" content="kirjah's website." />
+	<meta name="theme-color" content="#40a02b" />
 
 	<!-- Open Graph -->
 	<meta property="og:title" content="kirjah" />
