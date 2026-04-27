@@ -42,22 +42,26 @@
 			>Catppuccin</a
 		>
 		color theme and <a href="https://iconify.design/" target="_blank">Iconify</a> for managing
-		icons. The tooltips that appear when you mouse over certain things (like
+		icons. The tooltips that appear when certan things are hovered over (like
 		<span class="underline decoration-dotted" {@attach tooltip("I'm a Tippy.js tooltip!", 'bottom')}
 			>this</span
 		>) were made using the
 		<a href="https://atomiks.github.io/tippyjs/" target="_blank">Tippy.js</a>
-		library. You can find this site hosted on both
+		library. This site is hosted on
 		<a
 			href="https://docs.github.com/en/pages"
 			target="_blank"
 			{@attach tooltip('<code>kirjah.lol</code>', 'bottom')}>GitHub Pages</a
-		>
-		and
+		>,
 		<a
 			href="https://neocities.org/"
 			target="_blank"
 			{@attach tooltip('<code>kirjah.neocities.org</code>', 'bottom')}>Neocities</a
+		>, and
+		<a
+			href="https://nekoweb.org/"
+			target="_blank"
+			{@attach tooltip('<code>kirjah.nekoweb.org</code>', 'bottom')}>Nekoweb</a
 		>.
 	</p>
 </section>
