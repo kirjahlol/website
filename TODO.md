@@ -2,3 +2,4 @@
 - [ ] Create Scolipede easter egg
 - [ ] Fix pronouns not loading on mobile
 - [ ] Make it so that data is loaded through `+page.ts` instead of individual components
+- [ ] Switch from Tippy.js to Floating UI
