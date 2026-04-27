@@ -30,8 +30,16 @@ jobs:
       - name: Deploy to Neocities
         uses: bcomnes/deploy-to-neocities@v3
         with:
-          api_key: ${{ secrets.NEOCITIES_API_TOKEN }}
+          api_key: ${{ secrets.NEOCITIES_API_KEY }}
           dist_dir: build
+
+      - name: Deploy to Nekoweb
+        uses: indiefellas/deploy2nekoweb@main
+        with:
+          nekoweb-api-key: ${{ secrets.NEKOWEB_API_KEY }}
+          nekoweb-domain: kirjah.nekoweb.org
+          nekoweb-username: kirjah
+          directory: build
 
   deploy:
     runs-on: ubuntu-latest
