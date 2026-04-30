@@ -10,14 +10,13 @@
 		return Number((diffInMs / msInYear).toFixed(digits));
 	}
 
-	// You know, if you wanted my birth date, you *could* have just asked me personally
-	// But no, you have to be weird and snoop around in my code without my approval
-	// Shame on you!
-	let age = $state(getAge(new Date('2010-03-29T00:00:00.000Z'), 5));
+	const dateOfBirth = '2010-03-29T00:00:00.000Z';
+
+	let age = $state(getAge(new Date(dateOfBirth), 5));
 
 	$effect(() => {
 		const id = setInterval(() => {
-			age = getAge(new Date('2010-03-29T00:00:00.000Z'), 5);
+			age = getAge(new Date(dateOfBirth), 5);
 		}, 315600);
 
 		return () => clearInterval(id);
