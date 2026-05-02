@@ -1,3 +1,7 @@
+<script lang="ts">
+	import Shrines from '$components/shrines/Shrines.svelte';
+</script>
+
 <section>
 	<h3>What are Shrines?</h3>
 	<p>
@@ -6,5 +10,5 @@
 		Check them out if you have the time!
 	</p>
 	<hr />
-	<p>shrines here</p>
+	<Shrines />
 </section>
