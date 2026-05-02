@@ -1,12 +1,12 @@
 <script lang="ts">
+	import pbgHardcoreLogo from '$assets/shrines/pbg-hardcore-logo.webp';
 	import Shrines from '$components/shrines/Shrines.svelte';
 	import type { Shrine } from '$components/shrines/Shrines.svelte';
-	import pbgHardcoreLogo from '$assets/shrines/pbg-hardcore-logo.webp';
 
 	let shrines: Shrine[] = [
 		{
 			id: 1,
-			pathname: '/shrines',
+			pathname: '/shrines/pbg-hardcore',
 			name: "PeanutButterGamer's Hardcore series",
 			imageSource: pbgHardcoreLogo
 		}
