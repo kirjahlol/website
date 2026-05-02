@@ -13,6 +13,7 @@
 	import Status from '$components/global/Status.svelte';
 	import ThemeSwitcher from '$components/global/ThemeSwitcher.svelte';
 	import Webrings from '$components/global/Webrings.svelte';
+	import type { LayoutProps } from '../$types';
 	import './layout.css';
 	import { fade, fly } from 'svelte/transition';
 
@@ -36,7 +37,7 @@
 		isUnmounted = false;
 	});
 
-	let { children } = $props();
+	let { children }: LayoutProps = $props();
 </script>
 
 <svelte:head>
