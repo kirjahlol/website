@@ -1,5 +1,16 @@
 <script lang="ts">
 	import Shrines from '$components/shrines/Shrines.svelte';
+	import type { Shrine } from '$components/shrines/Shrines.svelte';
+	import pbgHardcoreLogo from '$assets/shrines/pbg-hardcore-logo.webp';
+
+	let shrines: Shrine[] = [
+		{
+			id: 1,
+			pathname: '/shrines',
+			name: "PeanutButterGamer's Hardcore series",
+			imageSource: pbgHardcoreLogo
+		}
+	];
 </script>
 
 <section>
@@ -10,5 +21,5 @@
 		Check them out if you have the time!
 	</p>
 	<hr />
-	<Shrines />
+	<Shrines {shrines} />
 </section>
