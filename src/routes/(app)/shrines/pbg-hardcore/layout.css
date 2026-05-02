@@ -1,0 +1,97 @@
+@import 'tailwindcss';
+@import '@fontsource-variable/inter';
+@import '@fontsource-variable/jetbrains-mono';
+@import '@catppuccin/tailwindcss/mocha.css';
+@import 'tippy.js/dist/tippy.css';
+@import 'tippy.js/animations/shift-away-subtle.css';
+
+@custom-variant dark (&:where(.mocha, .mocha *));
+
+@theme {
+	--font-sans: 'Inter Variable', sans-serif;
+	--font-mono: 'JetBrains Mono Variable', monospace;
+
+	--animate-spring: spring 0.3s;
+	--animate-blink: blink 1s steps(1) infinite;
+
+	@keyframes spring {
+		0% {
+			transform: scale(0.9);
+		}
+
+		50% {
+			transform: scale(1.05);
+		}
+
+		100% {
+			transform: scale(1);
+		}
+	}
+
+	@keyframes blink {
+		50% {
+			opacity: 0;
+		}
+	}
+}
+
+body {
+	@apply bg-ctp-base text-ctp-text;
+}
+
+hr {
+	@apply text-ctp-surface0;
+}
+
+section {
+	@apply rounded-lg border border-ctp-surface0 bg-ctp-mantle p-4;
+}
+
+section h3 {
+	@apply mb-2 font-mono text-sm font-medium text-ctp-subtext0 uppercase;
+}
+
+section p {
+	@apply not-last:mb-2;
+}
+
+section code {
+	@apply rounded-md border border-ctp-surface0 bg-ctp-surface0/50 px-1 font-medium;
+}
+
+section hr {
+	@apply not-last:my-4;
+}
+
+section a,
+footer a {
+	@apply text-ctp-green-400 hover:underline;
+}
+
+.tippy-box[data-theme~='ctp-green'] {
+	@apply rounded-lg bg-ctp-base text-ctp-green-400;
+}
+
+.tippy-box[data-theme~='ctp-green'] .tippy-content {
+	@apply rounded-[inherit] border border-ctp-green-400 bg-ctp-green-400/25;
+}
+
+.tippy-box[data-theme~='ctp-green'] > .tippy-arrow::before {
+	@apply scale-75;
+}
+
+.tippy-box[data-theme~='ctp-green'][data-placement^='top'] > .tippy-arrow::before {
+	@apply border-t-ctp-green-400;
+}
+
+.tippy-box[data-theme~='ctp-green'][data-placement^='bottom'] > .tippy-arrow::before {
+	@apply border-b-ctp-green-400;
+}
+
+.tippy-box[data-theme~='ctp-green'][data-placement^='left'] > .tippy-arrow::before {
+	@apply border-l-ctp-green-400;
+}
+
+.tippy-box[data-theme~='ctp-green'][data-placement^='right'] > .tippy-arrow::before {
+	@apply border-r-ctp-green-400;
+}
