@@ -1,8 +1,6 @@
 <script lang="ts">
 	import { browser } from '$app/environment';
 	import { page } from '$app/state';
-	import favicon from '$assets/favicon.svg';
-	import preview from '$assets/preview.webp';
 	import profilePicture from '$assets/profile-picture.webp';
 	import Buttons from '$components/global/Buttons.svelte';
 	import DateAndTime from '$components/global/DateAndTime.svelte';
