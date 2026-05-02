@@ -1,6 +1,6 @@
 @import 'tailwindcss';
-@import '@fontsource-variable/nunito';
-@import '@fontsource/maple-mono';
+@import '@fontsource-variable/inter';
+@import '@fontsource-variable/jetbrains-mono';
 @import '@catppuccin/tailwindcss/mocha.css';
 @import 'tippy.js/dist/tippy.css';
 @import 'tippy.js/animations/shift-away-subtle.css';
@@ -8,11 +8,8 @@
 @custom-variant dark (&:where(.mocha, .mocha *));
 
 @theme {
-	--font-sans: 'Nunito Variable', sans-serif;
-	--font-mono: 'Maple Mono', monospace;
-	--font-mono-features:
-		'cv01', 'cv02', 'cv07', 'cv33', 'cv34', 'cv35', 'cv36', 'cv40', 'cv61', 'cv62', 'cv66', 'ss05',
-		'ss06', 'ss07', 'ss11', 'zero';
+	--font-sans: 'Inter Variable', sans-serif;
+	--font-mono: 'JetBrains Mono Variable', monospace;
 
 	--animate-spring: spring 0.3s;
 	--animate-blink: blink 1s steps(1) infinite;
@@ -46,10 +43,6 @@ hr {
 	@apply text-ctp-surface0;
 }
 
-code {
-	@apply font-features-(--font-mono-features);
-}
-
 section {
 	@apply rounded-lg border border-ctp-surface0 bg-ctp-mantle p-4;
 }
@@ -73,10 +66,6 @@ section hr {
 section a,
 footer a {
 	@apply text-ctp-green-400 hover:underline;
-}
-
-.font-mono {
-	@apply font-features-(--font-mono-features);
 }
 
 .tippy-box[data-theme~='ctp-green'] {
