@@ -58,12 +58,16 @@ section h3 {
 	@apply mb-2 font-mono text-sm font-medium text-ctp-subtext0 uppercase;
 }
 
-section p:not(:last-child) {
-	@apply mb-2;
+section p {
+	@apply not-last:mb-2;
 }
 
 section code {
 	@apply rounded-md border border-ctp-surface0 bg-ctp-surface0/50 px-1 font-medium;
+}
+
+section hr {
+	@apply not-last:my-4;
 }
 
 section a,

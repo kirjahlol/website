@@ -93,6 +93,6 @@
 				</div>
 			{/each}
 		</div>
-		<hr class="my-4 last:hidden" />
+		<hr class="last:hidden" />
 	{/each}
 </section>

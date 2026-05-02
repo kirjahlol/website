@@ -28,7 +28,7 @@
 		Twitter.
 	</p>
 	<Labels />
-	<hr class="my-4" />
+	<hr />
 	<h3>About Website</h3>
 	<p>
 		This website was built using <a href="https://svelte.dev/docs/kit/introduction" target="_blank"
