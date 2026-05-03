@@ -3,6 +3,7 @@
 	import Icon from '@iconify/svelte';
 
 	interface Label {
+		id: number;
 		name: string;
 		icon: string;
 		content: string;
@@ -39,11 +40,13 @@
 
 	const labels: Label[] = $derived([
 		{
+			id: 1,
 			name: 'Pronouns',
 			icon: 'tabler:tags',
 			content: pronouns
 		},
 		{
+			id: 2,
 			name: 'Location',
 			icon: 'tabler:map-pin',
 			content: 'United States'
@@ -52,7 +55,7 @@
 </script>
 
 <div class="flex flex-wrap gap-2">
-	{#each labels as { name, icon, content }, i (i)}
+	{#each labels as { id, name, icon, content } (id)}
 		<div
 			class="flex items-center gap-2 rounded-md bg-ctp-green-400/25 p-2 text-ctp-green-400"
 			{@attach tooltip(name, 'bottom')}

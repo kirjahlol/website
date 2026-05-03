@@ -3,14 +3,17 @@
 
 	const links: LinkProps[] = [
 		{
+			id: 1,
 			href: '/',
 			name: 'Home'
 		},
 		{
+			id: 2,
 			href: '/shrines',
 			name: 'Shrines'
 		},
 		{
+			id: 3,
 			href: '/contact',
 			name: 'Contact'
 		}
@@ -20,7 +23,7 @@
 <nav>
 	<ul>
 		<li class="flex gap-4 border-b border-b-ctp-surface0">
-			{#each links as link, i (i)}
+			{#each links as link (link.id)}
 				<NavbarLink {...link} />
 			{/each}
 		</li>

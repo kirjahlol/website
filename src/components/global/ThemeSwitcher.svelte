@@ -3,20 +3,24 @@
 	import Icon from '@iconify/svelte';
 
 	interface Theme {
+		id: number;
 		name: string;
 		icon: string;
 	}
 
 	const themes: Theme[] = [
 		{
+			id: 1,
 			name: 'system',
 			icon: 'tabler:device-desktop'
 		},
 		{
+			id: 2,
 			name: 'light',
 			icon: 'tabler:sun'
 		},
 		{
+			id: 3,
 			name: 'dark',
 			icon: 'tabler:moon'
 		}
@@ -71,7 +75,7 @@
 </script>
 
 <form class="flex gap-2 rounded-full border border-ctp-surface0 bg-ctp-mantle p-2">
-	{#each themes as { name, icon }, i (i)}
+	{#each themes as { id, name, icon } (id)}
 		<div class="flex">
 			<input
 				type="radio"
