@@ -7,12 +7,12 @@
 			name: 'Home'
 		},
 		{
-			href: '/contact',
-			name: 'Contact'
-		},
-		{
 			href: '/shrines',
 			name: 'Shrines'
+		},
+		{
+			href: '/contact',
+			name: 'Contact'
 		}
 	];
 </script>
