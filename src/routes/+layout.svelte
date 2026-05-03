@@ -1,5 +1,4 @@
 <script lang="ts">
-	import favicon from '$assets/favicon.svg';
 	import preview from '$assets/preview.webp';
 	import type { LayoutProps } from './$types';
 
@@ -8,7 +7,6 @@
 
 <svelte:head>
 	<title>kirjah</title>
-	<link rel="icon" type="image/svg+xml" href={favicon} />
 	<meta name="description" content="kirjah's website." />
 	<meta name="theme-color" content="#40a02b" />
 
