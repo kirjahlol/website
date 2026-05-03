@@ -9,41 +9,42 @@
 		content: string;
 	}
 
-	async function getPronounsData<T>(): Promise<T> {
-		const url = 'https://pronouns.cc/api/v1/users/416264399091130400';
+	// async function getPronounsData<T>(): Promise<T> {
+	// 	const url = 'https://pronouns.cc/api/v1/users/416264399091130400';
+	//
+	// 	const response = await fetch(url);
+	// 	if (!response.ok) {
+	// 		throw new Error(`Fetch failed: ${response.status}`);
+	// 	}
+	//
+	// 	return (await response.json()) as T;
+	// }
 
-		const response = await fetch(url);
-		if (!response.ok) {
-			throw new Error(`Fetch failed: ${response.status}`);
-		}
+	// async function getPronouns(): Promise<string> {
+	// 	const data = await getPronounsData<{ pronouns: { pronouns: string; status: string }[] }>();
+	// 	const pronouns = data.pronouns
+	// 		.map((p) => {
+	// 			if (p.status === 'favourite') {
+	// 				return p.pronouns;
+	// 			}
+	// 		})
+	// 		.filter(Boolean) // prevent non-favorite pronouns from adding extra slashes
+	// 		.join('/');
+	// 	return pronouns;
+	// }
 
-		return (await response.json()) as T;
-	}
-
-	async function getPronouns(): Promise<string> {
-		const data = await getPronounsData<{ pronouns: { pronouns: string; status: string }[] }>();
-		const pronouns = data.pronouns
-			.map((p) => {
-				if (p.status === 'favourite') {
-					return p.pronouns;
-				}
-			})
-			.filter(Boolean) // prevent non-favorite pronouns from adding extra slashes
-			.join('/');
-		return pronouns;
-	}
-
-	let pronouns = $state('Loading...');
-	$effect(() => {
-		getPronouns().then((value) => (pronouns = value));
-	});
+	// let pronouns = $state('Loading...');
+	// $effect(() => {
+	// 	getPronouns().then((value) => (pronouns = value));
+	// });
 
 	const labels: Label[] = $derived([
 		{
 			id: 1,
 			name: 'Pronouns',
 			icon: 'tabler:tags',
-			content: pronouns
+			// content: pronouns
+			content: 'he/she/it'
 		},
 		{
 			id: 2,
