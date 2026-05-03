@@ -3,7 +3,6 @@
 	import { page } from '$app/state';
 	import Footer from '$components/global/Footer.svelte';
 	import Header from '$components/global/Header.svelte';
-	import ThemeSwitcher from '$components/global/ThemeSwitcher.svelte';
 	import './layout.css';
 	import { fade, fly } from 'svelte/transition';
 
@@ -38,9 +37,8 @@
 {/if}
 <div class="absolute flex w-screen justify-between p-4">
 	<Header headerStyle="shrine" />
-	<ThemeSwitcher />
 </div>
-<div class="flex flex-col items-center gap-4 px-4 pt-[25vh] pb-4">
+<div class="flex min-h-screen flex-col items-center gap-4 px-4 pt-[25vh] pb-4">
 	<div class="flex max-w-lg flex-col gap-4 rounded-lg lg:grid lg:max-w-7xl lg:grid-cols-[1fr]">
 		<main class="flex flex-col gap-4 [&_section]:w-full">
 			{#key page.url.pathname}
@@ -50,5 +48,5 @@
 			{/key}
 		</main>
 	</div>
-	<Footer />
 </div>
+<Footer />

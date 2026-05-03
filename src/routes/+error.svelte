@@ -2,8 +2,8 @@
 	import { browser } from '$app/environment';
 	import { resolve } from '$app/paths';
 	import { page } from '$app/state';
+	import Footer from '$components/global/Footer.svelte';
 	import Header from '$components/global/Header.svelte';
-	import ThemeSwitcher from '$components/global/ThemeSwitcher.svelte';
 	import './(app)/layout.css';
 
 	if (browser) {
@@ -24,9 +24,8 @@
 
 <div class="absolute flex w-screen justify-between p-4">
 	<Header />
-	<ThemeSwitcher />
 </div>
-<div class="flex h-screen flex-col items-center justify-center p-4">
+<div class="flex min-h-screen flex-col items-center justify-center p-4">
 	{#if page.status === 404}
 		<h1 class="font-mono text-7xl font-semibold">404</h1>
 		<p class="mb-2 text-center text-xl/8 font-medium">Page not found. Sorry!</p>
@@ -38,3 +37,4 @@
 		>Go back home</a
 	>
 </div>
+<Footer />
