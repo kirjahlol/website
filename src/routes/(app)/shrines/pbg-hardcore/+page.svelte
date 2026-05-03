@@ -1,1 +1,1 @@
-<section>squid squid ward ward</section>
+This page is <b>under construction</b>. Check back later!
