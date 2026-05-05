@@ -12,6 +12,6 @@
 		marginwidth="0"
 		scrolling="auto"
 		title="Cbox"
-		class="mb-2 rounded-md border border-ctp-surface0"
+		class="rounded-md border border-ctp-surface0"
 	></iframe>
 </section>
