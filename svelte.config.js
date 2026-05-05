@@ -13,7 +13,8 @@ const config = {
 		}),
 		alias: {
 			$assets: 'src/assets',
-			$components: 'src/components'
+			$components: 'src/components',
+			$routes: 'src/routes'
 		},
 		version: { name: execSync('git rev-parse --short HEAD').toString().trim() }
 	}
