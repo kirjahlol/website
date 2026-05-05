@@ -1,4 +1,6 @@
 <script lang="ts">
+	import { onMount } from 'svelte';
+
 	interface Status {
 		content: string;
 		face: string;
@@ -17,7 +19,10 @@
 		return status;
 	}
 
-	let statusPromise = getStatus();
+	let statusPromise: Promise<Status> | undefined = $state();
+	onMount(() => {
+		statusPromise = getStatus();
+	});
 </script>
 
 <section>
@@ -35,17 +40,19 @@
 				></code
 			>
 		{:then status}
-			<div class="mb-2 flex items-center gap-2">
-				<span>{status.face}</span>
-				<span class="text-sm text-ctp-subtext0">({status.timeAgo})</span>
-			</div>
-			<code class="mb-2 bg-ctp-base! p-4!"
-				><span class="text-ctp-green-400">> <span class="font-semibold">echo</span></span>
-				<!-- eslint-disable-next-line svelte/no-at-html-tags -->
-				<span class="text-ctp-yellow-400">"{@html status.content}"</span><span
-					class="animate-blink text-ctp-rosewater-400">_</span
-				></code
-			>
+			{#if status}
+				<div class="mb-2 flex items-center gap-2">
+					<span>{status.face}</span>
+					<span class="text-sm text-ctp-subtext0">({status.timeAgo})</span>
+				</div>
+				<code class="mb-2 bg-ctp-base! p-4!"
+					><span class="text-ctp-green-400">> <span class="font-semibold">echo</span></span>
+					<!-- eslint-disable-next-line svelte/no-at-html-tags -->
+					<span class="text-ctp-yellow-400">"{@html status.content}"</span><span
+						class="animate-blink text-ctp-rosewater-400">_</span
+					></code
+				>
+			{/if}
 		{:catch error}
 			<div class="mb-2 flex items-center gap-2">
 				<span>❌</span>
