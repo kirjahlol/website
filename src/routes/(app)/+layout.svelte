@@ -12,6 +12,7 @@
 	import Webrings from '$components/global/Webrings.svelte';
 	import type { LayoutProps } from '../$types';
 	import './layout.css';
+	import { onMount } from 'svelte';
 	import { fade, fly } from 'svelte/transition';
 
 	if (browser) {
@@ -29,15 +30,15 @@
 		}
 	}
 
-	let isUnmounted = $state(true);
-	$effect(() => {
-		isUnmounted = false;
+	let isMounted = $state(false);
+	onMount(() => {
+		isMounted = true;
 	});
 
 	let { children }: LayoutProps = $props();
 </script>
 
-{#if isUnmounted}
+{#if !isMounted}
 	<div
 		out:fade={{ duration: 300 }}
 		class="fixed inset-0 z-50 flex items-center justify-center bg-ctp-base"

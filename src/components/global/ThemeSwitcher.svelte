@@ -1,6 +1,7 @@
 <script lang="ts">
 	import { browser } from '$app/environment';
 	import Icon from '@iconify/svelte';
+	import { onMount } from 'svelte';
 
 	interface Theme {
 		id: number;
@@ -47,7 +48,7 @@
 
 	let selected: 'light' | 'dark' | 'system' = $state('system');
 
-	$effect(() => {
+	onMount(() => {
 		const isThemeSystem = localStorage.getItem('theme-system');
 		if (isThemeSystem === 'true') {
 			selected = 'system';
