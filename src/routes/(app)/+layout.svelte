@@ -3,6 +3,7 @@
 	import { page } from '$app/state';
 	import profilePicture from '$assets/profile-picture.webp';
 	import Buttons from '$components/global/Buttons.svelte';
+	import Chatbox from '$components/global/Chatbox.svelte';
 	import DateAndTime from '$components/global/DateAndTime.svelte';
 	import Footer from '$components/global/Footer.svelte';
 	import Header from '$components/global/Header.svelte';
@@ -58,6 +59,7 @@
 				class="size-48 rounded-full bg-ctp-mantle"
 			/>
 			<Status />
+			<Chatbox />
 			<DateAndTime />
 			<Socials />
 		</aside>
