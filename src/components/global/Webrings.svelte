@@ -7,13 +7,13 @@
 <!-- Catppuccin Webring -->
 <div class="flex items-center gap-2">
 	<a href="https://ctp-webr.ing/kirjah/previous">
-		<Icon icon="tabler:arrow-left" class="size-6" />
+		<Icon icon="tabler:arrow-left" class="size-6 text-ctp-text!" />
 	</a>
 	<a href="https://ctp-webr.ing/" target="_blank" {@attach tooltip('Catppuccin Webring', 'bottom')}>
 		<img src={catppuccinLogo} alt="Catppuccin logo" class="size-12" />
 	</a>
 	<a href="https://ctp-webr.ing/kirjah/next">
-		<Icon icon="tabler:arrow-right" class="size-6" />
+		<Icon icon="tabler:arrow-right" class="size-6 text-ctp-text!" />
 	</a>
 </div>
 

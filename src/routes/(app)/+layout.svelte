@@ -9,7 +9,6 @@
 	import Navbar from '$components/global/Navbar.svelte';
 	import Socials from '$components/global/Socials.svelte';
 	import Status from '$components/global/Status.svelte';
-	import Webrings from '$components/global/Webrings.svelte';
 	import type { LayoutProps } from '../$types';
 	import './layout.css';
 	import { onMount } from 'svelte';
@@ -48,31 +47,32 @@
 	<Header />
 </div>
 <div class="flex min-h-screen flex-col items-center gap-4 px-4 pt-[25vh] pb-4">
-	<div
-		class="flex max-w-lg flex-col gap-4 rounded-lg lg:grid lg:max-w-7xl lg:grid-cols-[1fr_3fr_1fr]"
-	>
-		<aside class="flex flex-col items-center gap-4 [&_section]:w-full">
+	<div class="flex max-w-lg flex-col gap-4 rounded-lg lg:grid lg:max-w-5xl lg:grid-cols-[1fr_3fr]">
+		<aside class="flex flex-col items-center gap-4">
 			<img
 				src={profilePicture}
 				alt="A Scolipede from Pokémon Rumble Rush"
 				class="size-48 rounded-full bg-ctp-mantle"
 			/>
-			<Status />
-			<Chatbox />
-			<DateAndTime />
-			<Socials />
+			<div class="flex w-full flex-col gap-4">
+				<Status />
+				<Chatbox />
+				<DateAndTime />
+				<Socials />
+			</div>
 		</aside>
-		<main class="flex flex-col gap-4 [&_section]:w-full">
+		<main class="flex flex-col gap-4">
 			<Navbar />
 			{#key page.url.pathname}
-				<div in:fly={{ duration: 200, delay: 100, y: 20 }} out:fly={{ duration: 100, y: 10 }}>
+				<div
+					in:fly={{ duration: 200, delay: 100, y: 20 }}
+					out:fly={{ duration: 100, y: 10 }}
+					class="w-full"
+				>
 					{@render children()}
 				</div>
 			{/key}
 		</main>
-		<aside class="flex flex-col items-center gap-4 [&_section]:w-full">
-			<Webrings />
-		</aside>
 	</div>
 </div>
 <Footer />

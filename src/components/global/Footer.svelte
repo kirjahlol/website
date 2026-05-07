@@ -2,6 +2,7 @@
 	import { version } from '$app/environment';
 	import Buttons from './Buttons.svelte';
 	import ThemeSwitcher from './ThemeSwitcher.svelte';
+	import Webrings from './Webrings.svelte';
 
 	interface Item {
 		id: number;
@@ -28,7 +29,7 @@
 </script>
 
 <footer class="flex w-screen flex-col border-t border-t-ctp-surface0 bg-ctp-mantle p-4">
-	<div class="flex items-center py-4">
+	<div class="flex items-center sm:py-4">
 		<div class="sm:absolute sm:left-4">
 			<ThemeSwitcher />
 		</div>
@@ -49,4 +50,8 @@
 	</div>
 	<hr class="my-4" />
 	<Buttons />
+	<hr class="my-4" />
+	<div class="flex flex-col items-center justify-center gap-4 sm:flex-row">
+		<Webrings />
+	</div>
 </footer>
