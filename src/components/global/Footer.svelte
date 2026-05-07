@@ -26,7 +26,9 @@
 	];
 </script>
 
-<footer class="flex w-screen items-center justify-between bg-ctp-mantle p-4">
+<footer
+	class="flex w-screen items-center justify-between border-t border-t-ctp-surface0 bg-ctp-mantle p-4"
+>
 	<ThemeSwitcher />
 	<div class="flex flex-col items-center sm:flex-row sm:gap-2">
 		{#each items as { id, href, content } (id)}
