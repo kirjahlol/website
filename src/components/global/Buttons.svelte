@@ -62,10 +62,18 @@
 	{#each buttons as { id, href, src, alt } (id)}
 		{#if href}
 			<a {href} rel="external" target="_blank">
-				<img {src} {alt} class="h-7.75 w-22 [image-rendering:crisp-edges]" />
+				<img
+					{src}
+					{alt}
+					class="h-7.75 w-22 transition-[scale] duration-150 [image-rendering:crisp-edges] hover:scale-110"
+				/>
 			</a>
 		{:else}
-			<img {src} {alt} class="h-7.75 w-22 [image-rendering:crisp-edges]" />
+			<img
+				{src}
+				{alt}
+				class="h-7.75 w-22 transition-[scale] duration-150 [image-rendering:crisp-edges] hover:scale-110"
+			/>
 		{/if}
 	{/each}
 </div>
