@@ -2,7 +2,6 @@
 	import { browser } from '$app/environment';
 	import { page } from '$app/state';
 	import profilePicture from '$assets/profile-picture.webp';
-	import Buttons from '$components/global/Buttons.svelte';
 	import Chatbox from '$components/global/Chatbox.svelte';
 	import DateAndTime from '$components/global/DateAndTime.svelte';
 	import Footer from '$components/global/Footer.svelte';
@@ -72,7 +71,6 @@
 			{/key}
 		</main>
 		<aside class="flex flex-col items-center gap-4 [&_section]:w-full">
-			<Buttons />
 			<Webrings />
 		</aside>
 	</div>

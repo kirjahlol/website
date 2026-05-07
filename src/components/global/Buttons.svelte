@@ -58,17 +58,14 @@
 	];
 </script>
 
-<section>
-	<h3>Buttons</h3>
-	<div class="flex flex-wrap justify-center gap-2">
-		{#each buttons as { id, href, src, alt } (id)}
-			{#if href}
-				<a {href} rel="external" target="_blank">
-					<img {src} {alt} class="h-7.75 w-22 [image-rendering:crisp-edges]" />
-				</a>
-			{:else}
+<div class="flex flex-wrap justify-center gap-2">
+	{#each buttons as { id, href, src, alt } (id)}
+		{#if href}
+			<a {href} rel="external" target="_blank">
 				<img {src} {alt} class="h-7.75 w-22 [image-rendering:crisp-edges]" />
-			{/if}
-		{/each}
-	</div>
-</section>
+			</a>
+		{:else}
+			<img {src} {alt} class="h-7.75 w-22 [image-rendering:crisp-edges]" />
+		{/if}
+	{/each}
+</div>
