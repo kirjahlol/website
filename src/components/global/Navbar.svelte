@@ -9,11 +9,16 @@
 		},
 		{
 			id: 2,
+			href: '/about',
+			name: 'About'
+		},
+		{
+			id: 3,
 			href: '/shrines',
 			name: 'Shrines'
 		},
 		{
-			id: 3,
+			id: 4,
 			href: '/contact',
 			name: 'Contact'
 		}
