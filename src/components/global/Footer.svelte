@@ -17,11 +17,16 @@
 		},
 		{
 			id: 2,
+			href: 'https://neocities.org/site/kirjah',
+			content: 'Neocities profile'
+		},
+		{
+			id: 3,
 			href: 'https://github.com/kirjahlol/website',
 			content: 'Source code'
 		},
 		{
-			id: 3,
+			id: 4,
 			href: `https://github.com/kirjahlol/website/commit/${version}`,
 			content: version
 		}
