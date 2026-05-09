@@ -8,25 +8,24 @@
 
 	interface Banner {
 		imageSource: string;
-		credit: string;
 		creditUrl: string;
+		credit: string;
 	}
 
 	const banners: Banner[] = [
 		{
 			imageSource: banner1,
-			credit: '@yuuji7604 on Twitter',
-			creditUrl: 'https://x.com/yuuji7604'
+			creditUrl: 'https://x.com/yuuji7604',
+			credit: '@yuuji7604 on Twitter'
 		},
 		{
 			imageSource: banner2,
-			credit: '@ThatOneHaxorus on Twitter',
-			creditUrl: 'https://x.com/ThatOneHaxorus'
+			creditUrl: 'https://x.com/ThatOneHaxorus',
+			credit: '@ThatOneHaxorus on Twitter'
 		}
 	];
 
 	let banner = $state(banners[0]);
-
 	onMount(() => {
 		const randomBannerIndex = Math.floor(Math.random() * banners.length);
 		banner = banners[randomBannerIndex];
@@ -48,17 +47,22 @@
 			/>
 		</a>
 		<h1
-			class="absolute top-0 left-0 rounded-tl-lg rounded-br-lg bg-ctp-base/75 p-1 font-mono text-sm font-semibold lg:p-2 lg:text-lg"
+			class="absolute top-0 left-0 rounded-tl-lg rounded-br-lg p-1 font-mono text-base font-semibold text-ctp-base text-shadow-ctp-text text-shadow-md lg:p-2 lg:text-lg"
 		>
 			{hostname}
 		</h1>
 		<h2
-			class="absolute right-0 bottom-0 mb-px rounded-tl-lg bg-ctp-base/75 p-1 text-xs font-semibold lg:p-2 lg:text-base"
+			class="absolute right-0 bottom-0 mb-px rounded-tl-lg p-1 text-sm font-semibold text-ctp-base text-shadow-ctp-text text-shadow-md lg:p-2 lg:text-base"
 		>
 			Credit: <a href={banner.creditUrl} rel="external" target="_blank" class="hover:underline"
 				>{banner.credit}</a
 			>
 		</h2>
+		<h3
+			class="absolute top-0 right-0 p-1 text-xs font-semibold text-ctp-base text-shadow-ctp-text text-shadow-md lg:p-2 lg:text-sm"
+		>
+			({banners.map((value) => value.imageSource).indexOf(banner.imageSource) + 1}/{banners.length})
+		</h3>
 	</div>
 	<div class="p-2">
 		<SplashText />
