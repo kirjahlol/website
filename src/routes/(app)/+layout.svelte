@@ -51,29 +51,7 @@
 			<img
 				src="/profile-picture.webp"
 				alt="A Scolipede from Pokémon Rumble Rush"
-				onmouseenter={(event) => {
-					const element = event.currentTarget;
-					// Allow spin animation to run again
-					element.style.transition = '';
-					element.style.animation = '';
-					element.style.transform = '';
-				}}
-				onmouseleave={(event) => {
-					const element = event.currentTarget;
-					const style = window.getComputedStyle(element);
-					const transformValue = style.getPropertyValue('transform');
-
-					element.style.transform = transformValue;
-
-					element.style.animation = 'none';
-
-					// Fix transition back to normal rotation not working
-					void element.offsetWidth;
-
-					element.style.transition = 'transform 0.5s ease-out';
-					element.style.transform = 'rotate(0deg)';
-				}}
-				class="size-48 animate-spin rounded-full bg-ctp-mantle [animation-duration:2s] [animation-play-state:paused] hover:[animation-play-state:running]"
+				class="size-48 rounded-full bg-ctp-mantle"
 			/>
 			<div class="flex w-full flex-col gap-4">
 				<Status />
