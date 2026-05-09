@@ -1,10 +1,10 @@
 <script lang="ts">
 	import { browser } from '$app/environment';
 	import { page } from '$app/state';
+	import Banner from '$components/global/Banner.svelte';
 	import Chatbox from '$components/global/Chatbox.svelte';
 	import DateAndTime from '$components/global/DateAndTime.svelte';
 	import Footer from '$components/global/Footer.svelte';
-	import Header from '$components/global/Header.svelte';
 	import Navbar from '$components/global/Navbar.svelte';
 	import Socials from '$components/global/Socials.svelte';
 	import Status from '$components/global/Status.svelte';
@@ -42,36 +42,39 @@
 		class="fixed inset-0 z-50 flex items-center justify-center bg-ctp-base"
 	></div>
 {/if}
-<div class="absolute flex w-screen justify-between p-4">
-	<Header />
-</div>
-<div class="flex min-h-screen flex-col items-center gap-4 px-4 pt-[25vh] pb-4">
-	<div class="flex max-w-lg flex-col gap-4 rounded-lg lg:grid lg:max-w-5xl lg:grid-cols-[1fr_3fr]">
+<div class="flex min-h-screen flex-col items-center gap-4 p-4">
+	<div
+		class="flex max-w-lg flex-col gap-4 rounded-lg lg:grid lg:max-w-7xl lg:grid-cols-[1fr_3fr_1fr]"
+	>
+		<div class="col-span-3">
+			<Banner />
+		</div>
 		<aside class="flex flex-col items-center gap-4">
-			<img
-				src="/profile-picture.webp"
-				alt="A Scolipede from Pokémon Rumble Rush"
-				class="size-48 rounded-full bg-ctp-mantle"
-			/>
 			<div class="flex w-full flex-col gap-4">
 				<Status />
 				<Chatbox />
-				<DateAndTime />
-				<Socials />
 			</div>
 		</aside>
 		<main class="flex flex-col gap-4">
 			<Navbar />
-			{#key page.url.pathname}
-				<div
-					in:fly={{ duration: 200, delay: 100, y: 20 }}
-					out:fly={{ duration: 100, y: 10 }}
-					class="w-full"
-				>
-					{@render children()}
-				</div>
-			{/key}
+			<div class="grid">
+				{#key page.url.pathname}
+					<div
+						in:fly={{ duration: 200, delay: 100, y: 20 }}
+						out:fly={{ duration: 100, y: 10 }}
+						class="col-start-1 row-start-1 w-full"
+					>
+						{@render children()}
+					</div>
+				{/key}
+			</div>
 		</main>
+		<aside class="flex flex-col items-center gap-4">
+			<div class="flex w-full flex-col gap-4">
+				<DateAndTime />
+				<Socials />
+			</div>
+		</aside>
 	</div>
 </div>
 <Footer />
