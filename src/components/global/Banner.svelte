@@ -42,12 +42,12 @@
 		<img src={banner.imageSource} alt="Banner" class="rounded-lg" />
 	</a>
 	<h1
-		class="absolute top-2 left-2 rounded-md bg-ctp-base/50 p-1 font-mono text-sm font-semibold lg:top-4 lg:left-4 lg:p-2 lg:text-lg"
+		class="absolute top-0 left-0 rounded-br-lg bg-ctp-base/75 p-1 font-mono text-sm font-semibold lg:p-2 lg:text-lg"
 	>
 		{hostname}
 	</h1>
 	<h2
-		class="absolute right-2 bottom-2 rounded-md bg-ctp-base/50 p-1 text-xs font-semibold lg:right-4 lg:bottom-4 lg:p-2 lg:text-base"
+		class="absolute right-0 bottom-0 rounded-tl-lg bg-ctp-base/75 p-1 text-xs font-semibold lg:p-2 lg:text-base"
 	>
 		Credit: <a href={banner.creditUrl} rel="external" target="_blank" class="hover:underline"
 			>{banner.credit}</a
