@@ -1,7 +1,6 @@
 <script lang="ts">
 	import { browser } from '$app/environment';
 	import { page } from '$app/state';
-	import profilePicture from '$assets/profile-picture.webp';
 	import Chatbox from '$components/global/Chatbox.svelte';
 	import DateAndTime from '$components/global/DateAndTime.svelte';
 	import Footer from '$components/global/Footer.svelte';
@@ -50,7 +49,7 @@
 	<div class="flex max-w-lg flex-col gap-4 rounded-lg lg:grid lg:max-w-5xl lg:grid-cols-[1fr_3fr]">
 		<aside class="flex flex-col items-center gap-4">
 			<img
-				src={profilePicture}
+				src="/profile-picture.webp"
 				alt="A Scolipede from Pokémon Rumble Rush"
 				onmouseenter={(event) => {
 					const element = event.currentTarget;
