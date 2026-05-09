@@ -1,5 +1,5 @@
 <script lang="ts">
-	import { tooltip } from '$lib';
+	import { location, pronouns, tooltip } from '$lib';
 	import Icon from '@iconify/svelte';
 
 	interface Label {
@@ -44,13 +44,13 @@
 			name: 'Pronouns',
 			icon: 'tabler:tags',
 			// content: pronouns
-			content: 'he/she/it'
+			content: pronouns
 		},
 		{
 			id: 2,
 			name: 'Location',
 			icon: 'tabler:map-pin',
-			content: 'United States'
+			content: location
 		}
 	]);
 </script>

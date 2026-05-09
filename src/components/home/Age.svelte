@@ -1,16 +1,6 @@
 <script lang="ts">
+	import { dateOfBirth, getAge } from '$lib';
 	import numberToWords from 'number-to-words';
-
-	function getAge(birthday: Date, digits: number = 0): number {
-		const currentDate = new Date();
-
-		const diffInMs = currentDate.getTime() - birthday.getTime();
-		const msInYear = 365.25 * 24 * 60 * 60 * 1000;
-
-		return Number((diffInMs / msInYear).toFixed(digits));
-	}
-
-	const dateOfBirth = '2010-03-29T00:00:00.000Z';
 
 	let age = $state(getAge(new Date(dateOfBirth), 5));
 

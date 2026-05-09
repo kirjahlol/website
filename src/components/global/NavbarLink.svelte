@@ -19,7 +19,7 @@
 	@reference '$routes/(app)/layout.css';
 
 	a.active {
-		@apply pointer-events-none border-b border-b-ctp-green text-ctp-green;
+		@apply pointer-events-none border-b border-b-ctp-green-400 text-ctp-green-400;
 	}
 
 	a:not(.active) {

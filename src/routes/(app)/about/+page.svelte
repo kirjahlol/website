@@ -1,5 +1,27 @@
+<script lang="ts">
+	import ProfileCard, { type ProfileCardItem } from '$components/global/ProfileCard.svelte';
+	import { age, pronouns } from '$lib';
+
+	let profileCardItems: ProfileCardItem[] = [
+		{
+			id: 1,
+			name: 'Age',
+			content: `${age}`
+		},
+		{
+			id: 2,
+			name: 'Pronouns',
+			content: `${pronouns}`
+		},
+		{
+			id: 3,
+			name: 'Address',
+			styles: 'blur-sm',
+			content: '123 Fake St.'
+		}
+	];
+</script>
+
 <section>
-	Lorem ipsum dolor sit, amet consectetur adipisicing elit. Harum, enim vitae. Doloribus soluta ea,
-	quo libero labore quae minima temporibus magni, voluptas at perspiciatis voluptatem distinctio
-	quas porro omnis debitis!
+	<ProfileCard items={profileCardItems} />
 </section>
