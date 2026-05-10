@@ -13,8 +13,8 @@
 	let active = $derived(page.url.pathname === href);
 </script>
 
-<li class="-mb-0.5 pb-2">
-	<a {href} data-sveltekit-noscroll class={['pb-2 font-semibold', { active }]}>{name}</a>
+<li class="flex">
+	<a {href} data-sveltekit-noscroll class={['-mb-px pb-2 font-semibold', { active }]}>{name}</a>
 </li>
 
 <style>
