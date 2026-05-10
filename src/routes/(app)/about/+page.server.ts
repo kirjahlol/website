@@ -1,10 +1,8 @@
 import { STEAMGRIDDB_API_KEY } from '$env/static/private';
 import type { PageServerLoad } from './$types';
 
-function getGameCovers(gameIds: number[]): string[] {
-	const gameCovers: string[] = [];
-
-	gameIds.forEach(async (id) => {
+async function getGameCovers(gameIds: number[]): Promise<string[]> {
+	const promises = gameIds.map(async (id) => {
 		const response = await fetch(
 			`https://www.steamgriddb.com/api/v2/grids/game/${id}?dimensions=600x900`,
 			{
@@ -13,22 +11,22 @@ function getGameCovers(gameIds: number[]): string[] {
 				}
 			}
 		);
+
 		if (!response.ok) throw new Error(`Fetch failed: ${response.status}`);
 
 		const json: { data: [{ url: string }] } = await response.json();
-
-		gameCovers.push(json.data[0].url);
+		return json.data[0].url;
 	});
 
-	return gameCovers;
+	return Promise.all(promises);
 }
 
-export const load: PageServerLoad = () => {
+export const load: PageServerLoad = async () => {
 	const gameIds = [
 		5483943 // Mario Kart World
 	];
 
 	return {
-		gameCovers: getGameCovers(gameIds)
+		gameCovers: await getGameCovers(gameIds)
 	};
 };
