@@ -6,7 +6,15 @@
 		name: string;
 	}
 
-	let { steamGames }: { steamGames: SteamGames[] } = $props();
+	export interface OtherGames {
+		id: number;
+		isFavorite?: boolean;
+		href: string;
+		imageSource: string;
+		name: string;
+	}
+
+	let { steamGames, otherGames }: { steamGames: SteamGames[]; otherGames: OtherGames[] } = $props();
 </script>
 
 <div class="flex flex-col gap-2">
@@ -32,6 +40,28 @@
 				>
 					<img
 						src="https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/{appId}/library_600x900.jpg"
+						alt={name}
+						class="h-full rounded-md border border-ctp-surface0 transition-[scale] duration-150 hover:scale-105"
+					/>
+				</a>
+			{/if}
+		{/each}
+	</div>
+	<hr />
+	<div class="flex flex-wrap justify-center gap-2">
+		{#each otherGames as { id, isFavorite, href, imageSource, name } (id)}
+			{#if isFavorite}
+				<a {href} rel="external" target="_blank" class="aspect-600/900 max-h-48">
+					<img
+						src={imageSource}
+						alt={name}
+						class="h-full rounded-md border-2 border-ctp-green-400 transition-[scale] duration-150 hover:scale-105"
+					/>
+				</a>
+			{:else}
+				<a {href} rel="external" target="_blank" class="aspect-600/900 max-h-48">
+					<img
+						src={imageSource}
 						alt={name}
 						class="h-full rounded-md border border-ctp-surface0 transition-[scale] duration-150 hover:scale-105"
 					/>

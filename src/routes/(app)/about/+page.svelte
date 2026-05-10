@@ -1,7 +1,11 @@
 <script lang="ts">
-	import GameCollection, { type SteamGames } from '$components/about/GameCollection.svelte';
+	import GameCollection, {
+		type OtherGames,
+		type SteamGames
+	} from '$components/about/GameCollection.svelte';
 	import ProfileCard, { type ProfileCardItem } from '$components/about/ProfileCard.svelte';
 	import { age, pronouns, tooltip } from '$lib';
+	import type { PageProps } from './$types';
 
 	let profileCardItems: ProfileCardItem[] = [
 		{
@@ -75,6 +79,18 @@
 			name: 'Danganronpa V3: Killing Harmony'
 		}
 	];
+
+	let { data }: PageProps = $props();
+
+	const otherGames: OtherGames[] = $derived([
+		{
+			id: 1,
+			isFavorite: true,
+			href: 'https://www.nintendo.com/us/store/products/mario-kart-world-switch-2/',
+			imageSource: data.gameCovers[0],
+			name: 'Mario Kart World'
+		}
+	]);
 </script>
 
 <section>
@@ -103,7 +119,7 @@
 	<hr />
 	<div>
 		<h3>Game Collection</h3>
-		<GameCollection {steamGames} />
+		<GameCollection {steamGames} {otherGames} />
 	</div>
 </section>
 <section>
