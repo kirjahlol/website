@@ -15,12 +15,12 @@
 	const banners: Banner[] = [
 		{
 			imageSource: banner1,
-			creditUrl: 'https://x.com/yuuji7604',
+			creditUrl: 'https://twitter.com/yuuji7604',
 			credit: '@yuuji7604 on Twitter'
 		},
 		{
 			imageSource: banner2,
-			creditUrl: 'https://x.com/ThatOneHaxorus',
+			creditUrl: 'https://twitter.com/ThatOneHaxorus',
 			credit: '@ThatOneHaxorus on Twitter'
 		}
 	];
