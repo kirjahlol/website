@@ -52,7 +52,7 @@
 			{hostname}
 		</h1>
 		<h2
-			class="absolute right-0 bottom-0 mb-px rounded-tl-lg p-1 text-sm font-semibold text-ctp-base text-shadow-ctp-text text-shadow-md lg:p-2 lg:text-base"
+			class="absolute right-0 bottom-0 rounded-tl-lg p-1 text-sm font-semibold text-ctp-base text-shadow-ctp-text text-shadow-md lg:p-2 lg:text-base"
 		>
 			Credit: <a href={banner.creditUrl} rel="external" target="_blank" class="hover:underline"
 				>{banner.credit}</a
