@@ -22,11 +22,22 @@ async function getGameCovers(gameIds: number[]): Promise<string[]> {
 }
 
 export const load: PageServerLoad = async () => {
-	const gameIds = [
-		5483943 // Mario Kart World
-	];
+	const gameIdsDictionary: Record<string, number> = {
+		'Mario Kart World': 5483943,
+		'Mario Kart Wii': 36054,
+		'Super Mario Maker 2': 5249544,
+		'Splatoon 3': 5277939,
+		'Tomodachi Life: Living the Dream': 5483703
+	};
+	const gameIds = Object.values(gameIdsDictionary);
+
+	const gameCoversArray = await getGameCovers(gameIds);
+	const gameCovers: Record<string, string> = {};
+	Object.keys(gameIdsDictionary).forEach((name, index) => {
+		gameCovers[name] = gameCoversArray[index];
+	});
 
 	return {
-		gameCovers: await getGameCovers(gameIds)
+		gameCovers
 	};
 };

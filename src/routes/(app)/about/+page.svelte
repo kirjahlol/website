@@ -87,8 +87,32 @@
 			id: 1,
 			isFavorite: true,
 			href: 'https://www.nintendo.com/us/store/products/mario-kart-world-switch-2/',
-			imageSource: data.gameCovers[0],
+			imageSource: data.gameCovers['Mario Kart World'],
 			name: 'Mario Kart World'
+		},
+		{
+			id: 2,
+			href: 'https://www.mariowiki.com/Mario_Kart_Wii',
+			imageSource: data.gameCovers['Mario Kart Wii'],
+			name: 'Mario Kart Wii'
+		},
+		{
+			id: 3,
+			href: 'https://www.nintendo.com/us/store/products/super-mario-maker-2-switch/',
+			imageSource: data.gameCovers['Super Mario Maker 2'],
+			name: 'Super Mario Maker 2'
+		},
+		{
+			id: 4,
+			href: 'https://www.nintendo.com/us/store/products/splatoon-3-switch/',
+			imageSource: data.gameCovers['Splatoon 3'],
+			name: 'Splatoon 3'
+		},
+		{
+			id: 5,
+			href: 'https://www.nintendo.com/us/store/products/tomodachi-life-living-the-dream-switch/',
+			imageSource: data.gameCovers['Tomodachi Life: Living the Dream'],
+			name: 'Tomodachi Life: Living the Dream'
 		}
 	]);
 </script>
