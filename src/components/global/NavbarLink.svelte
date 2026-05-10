@@ -13,16 +13,18 @@
 	let active = $derived(page.url.pathname === href);
 </script>
 
-<a {href} data-sveltekit-noscroll class={['-mb-px p-2 font-semibold', { active }]}>{name}</a>
+<li class="-mb-0.5 pb-2">
+	<a {href} data-sveltekit-noscroll class={['pb-2 font-semibold', { active }]}>{name}</a>
+</li>
 
 <style>
 	@reference '$routes/(app)/layout.css';
 
 	a.active {
-		@apply pointer-events-none border-b border-b-ctp-green text-ctp-green;
+		@apply pointer-events-none border-b border-ctp-green-400 text-ctp-green-400;
 	}
 
 	a:not(.active) {
-		@apply text-ctp-text hover:border-b hover:border-b-ctp-text;
+		@apply hover:border-b hover:border-ctp-text;
 	}
 </style>

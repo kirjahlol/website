@@ -44,7 +44,7 @@
 {/if}
 <div class="flex min-h-screen flex-col items-center gap-4 p-4">
 	<div
-		class="flex max-w-lg flex-col gap-4 rounded-lg lg:grid lg:max-w-7xl lg:grid-cols-[1fr_3fr_1fr]"
+		class="flex w-full max-w-lg flex-col gap-4 rounded-lg lg:grid lg:max-w-7xl lg:grid-cols-[1fr_3fr_1fr]"
 	>
 		<div class="col-span-3">
 			<Banner />
@@ -62,7 +62,7 @@
 					<div
 						in:fly={{ duration: 200, delay: 100, y: 20 }}
 						out:fly={{ duration: 100, y: 10 }}
-						class="col-start-1 row-start-1 w-full"
+						class="col-start-1 row-start-1 flex w-full flex-col gap-4"
 					>
 						{@render children()}
 					</div>

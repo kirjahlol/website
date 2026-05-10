@@ -9,23 +9,26 @@
 		},
 		{
 			id: 2,
+			href: '/about',
+			name: 'About'
+		},
+		{
+			id: 3,
 			href: '/shrines',
 			name: 'Shrines'
 		},
 		{
-			id: 3,
+			id: 4,
 			href: '/contact',
 			name: 'Contact'
 		}
 	];
 </script>
 
-<nav>
-	<ul>
-		<li class="flex gap-4 border-b border-b-ctp-surface0">
-			{#each links as link (link.id)}
-				<NavbarLink {...link} />
-			{/each}
-		</li>
+<nav class="overflow-x-auto">
+	<ul class="mb-px flex gap-4 border-b border-ctp-surface0 whitespace-nowrap">
+		{#each links as link (link.id)}
+			<NavbarLink {...link} />
+		{/each}
 	</ul>
 </nav>

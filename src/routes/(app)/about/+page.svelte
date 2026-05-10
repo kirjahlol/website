@@ -1,0 +1,93 @@
+<script lang="ts">
+	import ProfileCard, { type ProfileCardItem } from '$components/about/ProfileCard.svelte';
+	import { age, pronouns, tooltip } from '$lib';
+
+	let profileCardItems: ProfileCardItem[] = [
+		{
+			id: 1,
+			name: 'Age',
+			content: `${age}`
+		},
+		{
+			id: 2,
+			name: 'Pronouns',
+			content: `${pronouns}`
+		},
+		{
+			id: 3,
+			name: 'Address',
+			styles: 'blur-sm',
+			content: '123 Fake St.'
+		}
+	];
+</script>
+
+<section>
+	<div class="flex flex-col items-center gap-2 sm:flex-row">
+		<ProfileCard items={profileCardItems} />
+		<div>
+			<h3>Bio</h3>
+			<p>
+				Hi! My name is <span class="font-semibold text-ctp-green-400">kirjah</span>. I'm a
+				self-taught programmer.
+			</p>
+			<p>
+				Some of my hobbies are coding things, listening to and (sometimes) producing music, drawing
+				digitally (you can find my art on Twitter), and playing in the
+				<a href="https://lounge.mkcentral.com/mkworld" target="_blank"
+					>competitive Mario Kart World Lounge</a
+				>
+				(you can find my stats
+				<a
+					href="https://lounge.mkcentral.com/mkworld/PlayerDetails/79021?season=2&p=12"
+					target="_blank">here</a
+				>).
+			</p>
+		</div>
+	</div>
+</section>
+<section>
+	<h3>Motivations for Creating Website</h3>
+	<p>
+		I just think that having a website that you can do anything with is fun and cool <span
+			class="text-sm text-ctp-subtext0"
+			>(and I guess rejecting modern social media is a bonus or whatever)</span
+		>. That's about it!
+	</p>
+	<hr />
+	<h3>Website Infrastructure</h3>
+	<p>
+		This website was built using <a href="https://svelte.dev/docs/kit/introduction" target="_blank"
+			>SvelteKit</a
+		>
+		and <a href="https://tailwindcss.com/" target="_blank">Tailwind CSS</a>. It uses the
+		<a
+			href="https://catppuccin.com/"
+			target="_blank"
+			class="bg-linear-to-r from-ctp-peach-400 to-ctp-mauve-400 bg-clip-text text-transparent!"
+			>Catppuccin</a
+		>
+		color theme and <a href="https://iconify.design/" target="_blank">Iconify</a> for working with
+		icons. The tooltips that appear when certan elements are hovered over (like
+		<span class="underline decoration-dotted" {@attach tooltip("I'm a Tippy.js tooltip!", 'bottom')}
+			>this one</span
+		>) were made using the
+		<a href="https://atomiks.github.io/tippyjs/" target="_blank">Tippy.js</a>
+		library. This site is hosted on
+		<a
+			href="https://docs.github.com/en/pages"
+			target="_blank"
+			{@attach tooltip('<code>kirjah.lol</code>', 'bottom')}>GitHub Pages</a
+		>,
+		<a
+			href="https://neocities.org/"
+			target="_blank"
+			{@attach tooltip('<code>kirjah.neocities.org</code>', 'bottom')}>Neocities</a
+		>, and
+		<a
+			href="https://nekoweb.org/"
+			target="_blank"
+			{@attach tooltip('<code>kirjah.nekoweb.org</code>', 'bottom')}>Nekoweb</a
+		>.
+	</p>
+</section>
