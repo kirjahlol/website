@@ -1,58 +1,15 @@
 <script lang="ts">
-	import { location, pronouns, tooltip } from '$lib';
+	import { tooltip } from '$lib';
 	import Icon from '@iconify/svelte';
 
-	interface Label {
+	export interface Label {
 		id: number;
 		name: string;
 		icon: string;
 		content: string;
 	}
 
-	// async function getPronounsData<T>(): Promise<T> {
-	// 	const url = 'https://pronouns.cc/api/v1/users/416264399091130400';
-	//
-	// 	const response = await fetch(url);
-	// 	if (!response.ok) {
-	// 		throw new Error(`Fetch failed: ${response.status}`);
-	// 	}
-	//
-	// 	return (await response.json()) as T;
-	// }
-
-	// async function getPronouns(): Promise<string> {
-	// 	const data = await getPronounsData<{ pronouns: { pronouns: string; status: string }[] }>();
-	// 	const pronouns = data.pronouns
-	// 		.map((p) => {
-	// 			if (p.status === 'favourite') {
-	// 				return p.pronouns;
-	// 			}
-	// 		})
-	// 		.filter(Boolean) // prevent non-favorite pronouns from adding extra slashes
-	// 		.join('/');
-	// 	return pronouns;
-	// }
-
-	// let pronouns = $state('Loading...');
-	// $effect(() => {
-	// 	getPronouns().then((value) => (pronouns = value));
-	// });
-
-	const labels: Label[] = $derived([
-		{
-			id: 1,
-			name: 'Pronouns',
-			icon: 'tabler:tags',
-			// content: pronouns
-			content: pronouns
-		},
-		{
-			id: 2,
-			name: 'Location',
-			icon: 'tabler:map-pin',
-			content: location
-		}
-	]);
+	let { labels }: { labels: Label[] } = $props();
 </script>
 
 <div class="flex flex-wrap gap-2">
