@@ -3,7 +3,6 @@
 	import { resolve } from '$app/paths';
 	import { page } from '$app/state';
 	import Footer from '$components/global/Footer.svelte';
-	import Header from '$components/global/Header.svelte';
 	import './(app)/layout.css';
 
 	if (browser) {
