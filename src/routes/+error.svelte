@@ -28,7 +28,12 @@
 <div class="flex min-h-screen flex-col items-center justify-center p-4">
 	{#if page.status === 404}
 		<h1 class="font-mono text-7xl font-semibold">404</h1>
-		<p class="mb-2 text-center text-xl/8 font-medium">Page not found. Sorry!</p>
+		<p class="mb-2 text-center text-xl/8 font-medium">
+			The page you're looking for doesn't exist. Sorry!
+		</p>
+	{:else if page.status === 500}
+		<h1 class="font-mono text-7xl font-semibold">500</h1>
+		<p class="mb-2 text-xl/8 font-medium">The website messed something up. Sorry!</p>
 	{:else}
 		<h1 class="font-mono text-7xl font-semibold">{page.status}</h1>
 		<p class="mb-2 text-xl/8 font-medium">{page.error?.message}</p>
