@@ -104,12 +104,18 @@
 		},
 		{
 			id: 4,
+			href: 'https://www.nintendo.com/us/store/products/pokemon-shield-switch/',
+			imageSource: data.gameCovers['Pokémon Shield'],
+			name: 'Pokémon Shield'
+		},
+		{
+			id: 5,
 			href: 'https://www.nintendo.com/us/store/products/splatoon-3-switch/',
 			imageSource: data.gameCovers['Splatoon 3'],
 			name: 'Splatoon 3'
 		},
 		{
-			id: 5,
+			id: 6,
 			href: 'https://www.nintendo.com/us/store/products/tomodachi-life-living-the-dream-switch/',
 			imageSource: data.gameCovers['Tomodachi Life: Living the Dream'],
 			name: 'Tomodachi Life: Living the Dream'

@@ -26,6 +26,7 @@ export const load: PageServerLoad = async () => {
 		'Mario Kart World': 5483943,
 		'Mario Kart Wii': 36054,
 		'Super Mario Maker 2': 5249544,
+		'Pokémon Shield': 5261356,
 		'Splatoon 3': 5277939,
 		'Tomodachi Life: Living the Dream': 5483703
 	};
