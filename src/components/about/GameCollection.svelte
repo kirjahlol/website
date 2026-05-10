@@ -31,7 +31,7 @@
 						<img
 							src="https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/{appId}/library_600x900.jpg"
 							alt={name}
-							class="h-full rounded-md border-2 border-ctp-green-400 transition-[scale] duration-150 hover:scale-105"
+							class="h-full rounded-sm border-2 border-ctp-green-400 transition-[scale] duration-150 hover:scale-105"
 						/>
 					</a>
 				{:else}
@@ -71,7 +71,7 @@
 						<img
 							src={imageSource}
 							alt={name}
-							class="h-full rounded-md border border-ctp-surface0 transition-[scale] duration-150 hover:scale-105"
+							class="h-full rounded-sm border border-ctp-surface0 transition-[scale] duration-150 hover:scale-105"
 						/>
 					</a>
 				{/if}
@@ -82,6 +82,6 @@
 		>
 	</div>
 	<div class="flex items-center justify-center gap-2">
-		<span class="size-4 rounded-md border-2 border-ctp-green-400"></span> Favorite
+		<span class="size-4 rounded-sm border-2 border-ctp-green-400"></span> Favorite
 	</div>
 </div>
