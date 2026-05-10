@@ -44,7 +44,7 @@
 {/if}
 <div class="flex min-h-screen flex-col items-center gap-4 p-4">
 	<div
-		class="flex max-w-lg flex-col gap-4 rounded-lg lg:grid lg:max-w-7xl lg:grid-cols-[1fr_3fr_1fr]"
+		class="flex w-full max-w-lg flex-col gap-4 rounded-lg lg:grid lg:max-w-7xl lg:grid-cols-[1fr_3fr_1fr]"
 	>
 		<div class="col-span-3">
 			<Banner />
