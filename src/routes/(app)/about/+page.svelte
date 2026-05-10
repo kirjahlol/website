@@ -49,7 +49,7 @@
 <section>
 	<h3>Motivations for Creating Website</h3>
 	<p>
-		I just think that having a website that you can do anything with is cool <span
+		I just think that having a website that you can do anything with is fun and cool <span
 			class="text-sm text-ctp-subtext0"
 			>(and I guess rejecting modern social media is a bonus or whatever)</span
 		>. That's about it!
