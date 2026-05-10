@@ -33,7 +33,7 @@
 				<span>❓</span>
 				<span class="text-sm text-ctp-subtext0">(Loading...)</span>
 			</div>
-			<code class="bg-ctp-base! p-4!"
+			<code class="self-stretch bg-ctp-base! p-4!"
 				><span class="text-ctp-green-400">> <span class="font-semibold">echo</span></span>
 				<span class="text-ctp-yellow-400">"Loading..."</span><span
 					class="animate-blink text-ctp-rosewater-400">_</span
@@ -45,7 +45,7 @@
 					<span>{status.face}</span>
 					<span class="text-sm text-ctp-subtext0">({status.timeAgo})</span>
 				</div>
-				<code class="bg-ctp-base! p-4!"
+				<code class="self-stretch bg-ctp-base! p-4!"
 					><span class="text-ctp-green-400">> <span class="font-semibold">echo</span></span>
 					<!-- eslint-disable-next-line svelte/no-at-html-tags -->
 					<span class="text-ctp-yellow-400">"{@html status.content}"</span><span
@@ -58,7 +58,7 @@
 				<span>❌</span>
 				<span class="text-sm text-ctp-subtext0">(Error)</span>
 			</div>
-			<code class="bg-ctp-base! p-4!"
+			<code class="self-stretch bg-ctp-base! p-4!"
 				><span class="font-semibold text-ctp-red-400">{error.message}</span></code
 			>
 		{/await}
