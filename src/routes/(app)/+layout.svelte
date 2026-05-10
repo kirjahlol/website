@@ -1,6 +1,6 @@
 <script lang="ts">
 	import { browser } from '$app/environment';
-	import { page } from '$app/state';
+	import { navigating, page } from '$app/state';
 	import Banner from '$components/global/Banner.svelte';
 	import Chatbox from '$components/global/Chatbox.svelte';
 	import DateAndTime from '$components/global/DateAndTime.svelte';
@@ -31,6 +31,23 @@
 	let isMounted = $state(false);
 	onMount(() => {
 		isMounted = true;
+	});
+
+	let shouldShowLoadingText = $state(false);
+	$effect(() => {
+		let timeout: ReturnType<typeof setTimeout> | undefined;
+
+		if (navigating.to) {
+			timeout = setTimeout(() => {
+				shouldShowLoadingText = true;
+			}, 50);
+		} else {
+			shouldShowLoadingText = false;
+		}
+
+		return () => {
+			if (timeout) clearTimeout(timeout);
+		};
 	});
 
 	let { children }: LayoutProps = $props();
@@ -64,7 +81,11 @@
 						out:fly={{ duration: 100, y: 10 }}
 						class="col-start-1 row-start-1 flex w-full flex-col gap-4"
 					>
-						{@render children()}
+						{#if shouldShowLoadingText}
+							<section>Loading...</section>
+						{:else}
+							{@render children()}
+						{/if}
 					</div>
 				{/key}
 			</div>
