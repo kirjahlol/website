@@ -22,9 +22,6 @@
 	}
 </script>
 
-<div class="absolute flex w-screen justify-between p-4">
-	<Header />
-</div>
 <div class="flex min-h-screen flex-col items-center justify-center p-4">
 	{#if page.status === 404}
 		<h1 class="font-mono text-7xl font-semibold">404</h1>
