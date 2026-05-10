@@ -17,7 +17,8 @@
 	let { steamGames, otherGames }: { steamGames: SteamGames[]; otherGames: OtherGames[] } = $props();
 </script>
 
-<div class="flex flex-col gap-2">
+<div class="flex flex-col rounded-md border border-ctp-surface0 bg-ctp-crust p-4">
+	<h3>Steam Games</h3>
 	<div class="flex flex-wrap justify-center gap-2">
 		{#each steamGames as { id, isFavorite, appId, name } (id)}
 			{#if isFavorite}
@@ -48,7 +49,8 @@
 		{/each}
 	</div>
 	<hr />
-	<div class="flex flex-wrap justify-center gap-2">
+	<h3>Other Games</h3>
+	<div class="mb-2 flex flex-wrap justify-center gap-2">
 		{#each otherGames as { id, isFavorite, href, imageSource, name } (id)}
 			{#if isFavorite}
 				<a {href} rel="external" target="_blank" class="aspect-600/900 max-h-48">
