@@ -1,4 +1,5 @@
 <script lang="ts">
+	import GameCollection, { type SteamGames } from '$components/about/GameCollection.svelte';
 	import ProfileCard, { type ProfileCardItem } from '$components/about/ProfileCard.svelte';
 	import { age, pronouns, tooltip } from '$lib';
 
@@ -18,6 +19,60 @@
 			name: 'Address',
 			styles: 'blur-sm',
 			content: '123 Fake St.'
+		}
+	];
+
+	let steamGames: SteamGames[] = [
+		{
+			id: 1,
+			isFavorite: true,
+			appId: 105600,
+			name: 'Terraria'
+		},
+		{
+			id: 2,
+			appId: 413150,
+			name: 'Stardew Valley'
+		},
+		{
+			id: 3,
+			appId: 504230,
+			name: 'Celeste'
+		},
+		{
+			id: 4,
+			appId: 391540,
+			name: 'UNDERTALE'
+		},
+		{
+			id: 5,
+			appId: 1671210,
+			name: 'DELTARUNE'
+		},
+		{
+			id: 6,
+			appId: 367520,
+			name: 'Hollow Knight'
+		},
+		{
+			id: 7,
+			appId: 322170,
+			name: 'Geometry Dash'
+		},
+		{
+			id: 8,
+			appId: 960090,
+			name: 'Bloons TD 6'
+		},
+		{
+			id: 9,
+			appId: 2379780,
+			name: 'Balatro'
+		},
+		{
+			id: 10,
+			appId: 567640,
+			name: 'Danganronpa V3: Killing Harmony'
 		}
 	];
 </script>
@@ -44,6 +99,11 @@
 				>).
 			</p>
 		</div>
+	</div>
+	<hr />
+	<div>
+		<h3>Game Collection</h3>
+		<GameCollection {steamGames} />
 	</div>
 </section>
 <section>
