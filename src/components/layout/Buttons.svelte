@@ -65,6 +65,7 @@
 				<img
 					{src}
 					{alt}
+					loading="lazy"
 					class="h-7.75 w-22 transition-[scale] duration-150 [image-rendering:crisp-edges] hover:scale-110"
 				/>
 			</a>
@@ -72,6 +73,7 @@
 			<img
 				{src}
 				{alt}
+				loading="lazy"
 				class="h-7.75 w-22 transition-[scale] duration-150 [image-rendering:crisp-edges] hover:scale-110"
 			/>
 		{/if}

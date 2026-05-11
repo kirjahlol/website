@@ -43,6 +43,7 @@
 			<img
 				src={banner.imageSource}
 				alt="Banner"
+				fetchpriority="high"
 				class="rounded-t-lg border-b border-ctp-surface0"
 			/>
 		</a>

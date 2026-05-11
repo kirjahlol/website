@@ -16,6 +16,7 @@
 		<img
 			src={catppuccinLogo}
 			alt="Catppuccin logo"
+			loading="lazy"
 			class="size-12 transition-[scale] duration-150 hover:scale-110"
 		/>
 	</a>

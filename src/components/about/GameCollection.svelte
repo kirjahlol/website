@@ -31,6 +31,7 @@
 						<img
 							src="https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/{appId}/library_600x900.jpg"
 							alt={name}
+							loading="lazy"
 							class="h-full rounded-sm border-2 border-ctp-green-400 transition-[scale] duration-150 hover:scale-105"
 						/>
 					</a>
@@ -43,6 +44,7 @@
 						<img
 							src="https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/{appId}/library_600x900.jpg"
 							alt={name}
+							loading="lazy"
 							class="h-full rounded-md border border-ctp-surface0 transition-[scale] duration-150 hover:scale-105"
 						/>
 					</a>
@@ -63,6 +65,7 @@
 						<img
 							src={imageSource}
 							alt={name}
+							loading="lazy"
 							class="h-full rounded-md border-2 border-ctp-green-400 transition-[scale] duration-150 hover:scale-105"
 						/>
 					</a>
@@ -71,6 +74,7 @@
 						<img
 							src={imageSource}
 							alt={name}
+							loading="lazy"
 							class="h-full rounded-sm border border-ctp-surface0 transition-[scale] duration-150 hover:scale-105"
 						/>
 					</a>
