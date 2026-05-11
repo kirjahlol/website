@@ -1,13 +1,13 @@
 <script lang="ts">
 	import { browser } from '$app/environment';
 	import { navigating, page } from '$app/state';
-	import Banner from '$components/global/Banner.svelte';
-	import Chatbox from '$components/global/Chatbox.svelte';
-	import DateAndTime from '$components/global/DateAndTime.svelte';
-	import Footer from '$components/global/Footer.svelte';
-	import Navbar from '$components/global/Navbar.svelte';
-	import Socials from '$components/global/Socials.svelte';
-	import Status from '$components/global/Status.svelte';
+	import Banner from '$components/layout/Banner.svelte';
+	import Chatbox from '$components/layout/Chatbox.svelte';
+	import DateAndTime from '$components/layout/DateAndTime.svelte';
+	import Footer from '$components/layout/Footer.svelte';
+	import Navbar from '$components/layout/Navbar.svelte';
+	import Socials from '$components/layout/Socials.svelte';
+	import Status from '$components/layout/Status.svelte';
 	import type { LayoutProps } from '../$types';
 	import './layout.css';
 	import { onMount } from 'svelte';

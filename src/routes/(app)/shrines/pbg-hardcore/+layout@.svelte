@@ -1,8 +1,8 @@
 <script lang="ts">
 	import { browser } from '$app/environment';
 	import { page } from '$app/state';
-	import Footer from '$components/global/Footer.svelte';
-	import Header from '$components/global/Header.svelte';
+	import Footer from '$components/layout/Footer.svelte';
+	import Header from '$components/layout/Header.svelte';
 	import type { LayoutProps } from './$types';
 	import './layout.css';
 	import { onMount } from 'svelte';

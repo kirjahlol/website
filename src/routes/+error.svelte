@@ -2,7 +2,7 @@
 	import { browser } from '$app/environment';
 	import { resolve } from '$app/paths';
 	import { page } from '$app/state';
-	import Footer from '$components/global/Footer.svelte';
+	import Footer from '$components/layout/Footer.svelte';
 	import './(app)/layout.css';
 	import Icon from '@iconify/svelte';
 
