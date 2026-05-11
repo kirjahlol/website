@@ -20,8 +20,7 @@
 {:else if headerStyle === 'shrine'}
 	<header class="text-xl font-medium">
 		<a href={resolve('/')} class="flex items-center gap-2"
-			><Icon icon="tabler:arrow-left" class="size-6" /> Back to
-			<span class="font-mono">{hostname}</span></a
+			><Icon icon="tabler:arrow-left" class="size-6" /> Back to home</a
 		>
 	</header>
 {/if}
