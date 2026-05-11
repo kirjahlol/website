@@ -4,6 +4,7 @@
 	import { page } from '$app/state';
 	import Footer from '$components/global/Footer.svelte';
 	import './(app)/layout.css';
+	import Icon from '@iconify/svelte';
 
 	if (browser) {
 		const isThemeSystem = localStorage.getItem('theme-system');
@@ -23,19 +24,19 @@
 
 <div class="flex min-h-screen flex-col items-center justify-center p-4">
 	{#if page.status === 404}
-		<h1 class="font-mono text-7xl font-semibold">404</h1>
-		<p class="mb-2 text-center text-xl/8 font-medium">
-			The page you're looking for doesn't exist. Sorry!
-		</p>
+		<h1 class="font-mono text-5xl font-semibold">404</h1>
+		<p class="mb-2 text-lg">The page you're looking for doesn't exist. Sorry!</p>
 	{:else if page.status === 500}
-		<h1 class="font-mono text-7xl font-semibold">500</h1>
-		<p class="mb-2 text-xl/8 font-medium">The website messed something up. Sorry!</p>
+		<h1 class="font-mono text-5xl font-semibold">500</h1>
+		<p class="mb-2 text-lg">The website messed something up. Sorry!</p>
 	{:else}
-		<h1 class="font-mono text-7xl font-semibold">{page.status}</h1>
-		<p class="mb-2 text-xl/8 font-medium">{page.error?.message}</p>
+		<h1 class="font-mono text-5xl font-semibold">{page.status}</h1>
+		<p class="mb-2 text-lg">{page.error?.message}</p>
 	{/if}
-	<a href={resolve('/')} class="mb-2 rounded-lg bg-ctp-green-400 px-4 py-2 text-ctp-base"
-		>Go back home</a
+	<a
+		href={resolve('/')}
+		class="flex items-center gap-2 rounded-lg bg-ctp-green-400 p-2 text-ctp-base"
+		><Icon icon="tabler:arrow-left" /> Back to home</a
 	>
 </div>
 <Footer />
