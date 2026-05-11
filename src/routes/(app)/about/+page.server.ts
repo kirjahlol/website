@@ -3,14 +3,12 @@ import type { PageServerLoad } from './$types';
 
 async function getGameCovers(gameIds: number[]): Promise<string[]> {
 	const promises = gameIds.map(async (id) => {
-		const response = await fetch(
-			`https://www.steamgriddb.com/api/v2/grids/game/${id}?dimensions=600x900`,
-			{
-				headers: {
-					Authorization: `Bearer ${STEAMGRIDDB_API_KEY}`
-				}
-			}
-		);
+		const url = new URL(`https://www.steamgriddb.com/api/v2/grids/game/${id}`);
+		url.searchParams.append('dimensions', '600x900');
+
+		const headers: HeadersInit = { Authorization: `Bearer ${STEAMGRIDDB_API_KEY}` };
+
+		const response = await fetch(url.toString(), { headers });
 
 		if (!response.ok) throw new Error(`Fetch failed: ${response.status}`);
 
