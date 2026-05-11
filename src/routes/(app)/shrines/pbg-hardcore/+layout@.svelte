@@ -40,14 +40,20 @@
 <div class="absolute flex w-screen justify-between p-4">
 	<Header headerStyle="shrine" />
 </div>
-<div class="flex min-h-screen flex-col items-center gap-4 px-4 pt-[25vh] pb-4">
-	<div class="flex max-w-lg flex-col gap-4 rounded-lg lg:grid lg:max-w-7xl lg:grid-cols-[1fr]">
-		<main class="flex flex-col gap-4 [&_section]:w-full">
-			{#key page.url.pathname}
-				<div in:fly={{ duration: 200, delay: 100, y: 20 }} out:fly={{ duration: 100, y: 10 }}>
-					{@render children()}
-				</div>
-			{/key}
+<div class="flex min-h-screen flex-col items-center px-4 pt-[25vh] pb-4">
+	<div class="flex max-w-2xl flex-col">
+		<main class="flex flex-col">
+			<div class="grid">
+				{#key page.url.pathname}
+					<div
+						in:fly={{ duration: 200, delay: 100, y: 20 }}
+						out:fly={{ duration: 100, y: 10 }}
+						class="col-start-1 row-start-1 flex w-full flex-col gap-4"
+					>
+						{@render children()}
+					</div>
+				{/key}
+			</div>
 		</main>
 	</div>
 </div>

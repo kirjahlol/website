@@ -59,14 +59,12 @@
 		class="fixed inset-0 z-50 flex items-center justify-center bg-ctp-base"
 	></div>
 {/if}
-<div class="flex min-h-screen flex-col items-center gap-4 p-4">
-	<div
-		class="flex w-full max-w-2xl flex-col gap-4 rounded-lg lg:grid lg:max-w-7xl lg:grid-cols-[1fr_3fr_1fr]"
-	>
+<div class="flex min-h-screen flex-col items-center p-4">
+	<div class="flex w-full max-w-2xl flex-col gap-4 lg:grid lg:max-w-7xl lg:grid-cols-[1fr_3fr_1fr]">
 		<div class="col-span-3">
 			<Banner />
 		</div>
-		<aside class="flex flex-col items-center gap-4">
+		<aside>
 			<div class="flex w-full flex-col gap-4">
 				{#await data.status}
 					<StatusWidget state="loading" />
@@ -96,7 +94,7 @@
 				{/key}
 			</div>
 		</main>
-		<aside class="flex flex-col items-center gap-4">
+		<aside>
 			<div class="flex w-full flex-col gap-4">
 				<DateAndTime />
 				<Socials />
