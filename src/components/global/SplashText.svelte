@@ -6,7 +6,12 @@
 		"Check out the Shrines page (or don't, I guess)!",
 		'gurt: yo',
 		'asdfjkl;',
-		'wow coming up with these is harder than i thought'
+		'wow coming up with these is harder than i thought',
+		'Mobile friendly!',
+		'Bugs are so cool...',
+		'Start digging in your butt, twin!',
+		'gorp',
+		':3'
 	];
 
 	let splashText = $state(splashTexts[0]);
