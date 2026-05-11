@@ -7,7 +7,8 @@
 	import Footer from '$components/layout/Footer.svelte';
 	import Navbar from '$components/layout/Navbar.svelte';
 	import Socials from '$components/layout/Socials.svelte';
-	import Status from '$components/layout/Status.svelte';
+	import StatusWidget from '$components/layout/StatusWidget.svelte';
+	import type { Status } from '$lib';
 	import type { LayoutProps } from '../$types';
 	import './layout.css';
 	import { onMount } from 'svelte';
@@ -50,7 +51,7 @@
 		};
 	});
 
-	let { children }: LayoutProps = $props();
+	let { children, data }: LayoutProps = $props();
 </script>
 
 {#if !isMounted}
@@ -68,7 +69,13 @@
 		</div>
 		<aside class="flex flex-col items-center gap-4">
 			<div class="flex w-full flex-col gap-4">
-				<Status />
+				{#await data.status}
+					<StatusWidget state="loading" />
+				{:then status}
+					<StatusWidget state="success" {status} />
+				{:catch error}
+					<StatusWidget state="error" errorMessage={error.message} />
+				{/await}
 				<Chatbox />
 			</div>
 		</aside>

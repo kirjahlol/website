@@ -1,6 +1,12 @@
 import type { Attachment } from 'svelte/attachments';
 import tippy, { type Placement } from 'tippy.js';
 
+export interface Status {
+	content: string;
+	face: string;
+	timeAgo: string;
+}
+
 export function getAge(birthday: Date, digits: number = 0): number {
 	const currentDate = new Date();
 
