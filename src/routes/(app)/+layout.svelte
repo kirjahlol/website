@@ -8,7 +8,6 @@
 	import Navbar from '$components/layout/Navbar.svelte';
 	import Socials from '$components/layout/Socials.svelte';
 	import StatusWidget from '$components/layout/StatusWidget.svelte';
-	import type { Status } from '$lib';
 	import type { LayoutProps } from '../$types';
 	import './layout.css';
 	import { onMount } from 'svelte';
