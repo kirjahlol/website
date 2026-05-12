@@ -1,13 +1,17 @@
-### About
-
 <script>
     import BlurredText from './BlurredText.svelte';
     import SmallText from './SmallText.svelte';
 </script>
 
+### Summary
+
 **Hardcore** is a web series hosted by YouTuber Austin Hargrave, also known as [PeanutButterGamer](https://www.youtube.com/user/PeanutButterGamer) and just PBG. The series was co-founded by PBG and his brother, <BlurredText>Stewart Hargrave (McJones)</BlurredText>, in 2012 and began with the release of the first season [Minecraft #1](https://www.youtube.com/playlist?list=PL96A812F2AAC7758F) (release spanning from July 23rd, 2012 to September 27th, 2012).
 
 The premise of the series is that a group of players (typically 7) work together to accomplish a goal in a videogame, with the catch being that if a player dies at any point during the game, they can not come back and are eliminated from the series. Players also can not talk after they die as to preserve the immersion of the viewer.
+
+---
+
+### History
 
 In the original Hardcore series, the main cast members were PBG, Jeff Fabre ([SpaceHamster](https://www.youtube.com/user/SpaceHamsterGames)), [Dean Elazab](https://twitter.com/deanelazab), and [Barry Kramer](https://www.youtube.com/barrykramer). <BlurredText>McJones</BlurredText> and <BlurredText>Jared Knabenbauer (ProJared)</BlurredText> were former mains. The series also featured a variety of guests, including <BlurredText>Jon Jafari (JonTron)</BlurredText>, Ross O'Donovan ([RubberRoss](https://www.youtube.com/RubberRoss)), and Jim Caddick ([Caddicarus](https://www.youtube.com/@Caddicarus/videos)).
 
