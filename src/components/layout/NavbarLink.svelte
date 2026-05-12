@@ -2,13 +2,7 @@
 	import { page } from '$app/state';
 	import type { ResolvedPathname } from '$app/types';
 
-	export interface LinkProps {
-		id: number;
-		href: ResolvedPathname;
-		name: string;
-	}
-
-	let { href, name }: LinkProps = $props();
+	let { href, name }: { href: ResolvedPathname; name: string } = $props();
 
 	let active = $derived(page.url.pathname === href);
 </script>

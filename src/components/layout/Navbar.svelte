@@ -1,28 +1,14 @@
 <script lang="ts">
-	import NavbarLink, { type LinkProps } from './NavbarLink.svelte';
+	import type { ResolvedPathname } from '$app/types';
+	import NavbarLink from './NavbarLink.svelte';
 
-	const links: LinkProps[] = [
-		{
-			id: 1,
-			href: '/',
-			name: 'Home'
-		},
-		{
-			id: 2,
-			href: '/about',
-			name: 'About'
-		},
-		{
-			id: 3,
-			href: '/shrines',
-			name: 'Shrines'
-		},
-		{
-			id: 4,
-			href: '/contact',
-			name: 'Contact'
-		}
-	];
+	export interface Link {
+		id: number;
+		href: ResolvedPathname;
+		name: string;
+	}
+
+	const { links }: { links: Link[] } = $props();
 </script>
 
 <nav class="overflow-x-auto">

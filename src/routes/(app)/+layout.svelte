@@ -5,7 +5,7 @@
 	import Chatbox from '$components/layout/Chatbox.svelte';
 	import DateAndTime from '$components/layout/DateAndTime.svelte';
 	import Footer from '$components/layout/Footer.svelte';
-	import Navbar from '$components/layout/Navbar.svelte';
+	import Navbar, { type Link } from '$components/layout/Navbar.svelte';
 	import Socials from '$components/layout/Socials.svelte';
 	import StatusWidget from '$components/layout/StatusWidget.svelte';
 	import type { LayoutProps } from '../$types';
@@ -50,6 +50,29 @@
 		};
 	});
 
+	const links: Link[] = [
+		{
+			id: 1,
+			href: '/',
+			name: 'Home'
+		},
+		{
+			id: 2,
+			href: '/about',
+			name: 'About'
+		},
+		{
+			id: 3,
+			href: '/shrines',
+			name: 'Shrines'
+		},
+		{
+			id: 4,
+			href: '/contact',
+			name: 'Contact'
+		}
+	];
+
 	let { children, data }: LayoutProps = $props();
 </script>
 
@@ -77,7 +100,7 @@
 			</div>
 		</aside>
 		<main class="flex flex-col gap-4">
-			<Navbar />
+			<Navbar {links} />
 			<div class="grid">
 				{#key page.url.pathname}
 					<div

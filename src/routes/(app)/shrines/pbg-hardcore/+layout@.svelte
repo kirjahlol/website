@@ -3,6 +3,7 @@
 	import { page } from '$app/state';
 	import Footer from '$components/layout/Footer.svelte';
 	import Header from '$components/layout/Header.svelte';
+	import Navbar, { type Link } from '$components/layout/Navbar.svelte';
 	import type { LayoutProps } from './$types';
 	import './layout.css';
 	import { onMount } from 'svelte';
@@ -28,6 +29,14 @@
 		isMounted = true;
 	});
 
+	const links: Link[] = [
+		{
+			id: 1,
+			href: '/shrines/pbg-hardcore',
+			name: 'About'
+		}
+	];
+
 	let { children }: LayoutProps = $props();
 </script>
 
@@ -41,7 +50,8 @@
 	<Header headerStyle="shrine" />
 </div>
 <div class="flex min-h-screen flex-col items-center px-4 pt-[25vh] pb-4">
-	<div class="flex max-w-2xl flex-col">
+	<div class="flex max-w-2xl flex-col gap-4">
+		<Navbar {links} />
 		<main class="flex flex-col">
 			<div class="grid">
 				{#key page.url.pathname}
