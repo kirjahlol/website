@@ -4,6 +4,6 @@
 	let { children }: { children: Snippet } = $props();
 </script>
 
-<span class="text-sm text-ctp-subtext0">
+<div class="text-sm text-ctp-subtext0">
 	{@render children()}
-</span>
+</div>
