@@ -39,6 +39,11 @@
 			id: 2,
 			href: '/shrines/pbg-hardcore/community',
 			name: 'Community'
+		},
+		{
+			id: 3,
+			href: '/shrines/pbg-hardcore/rankings',
+			name: 'Rankings'
 		}
 	];
 
