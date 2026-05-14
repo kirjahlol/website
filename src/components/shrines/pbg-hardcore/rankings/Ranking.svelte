@@ -40,14 +40,12 @@
 	<h3 class="mb-2">#{rankingInformation.rankingNumber}</h3>
 	<h1 class="text-lg">{rankingInformation.hardcoreName}</h1>
 	<h2 class="mb-2 text-ctp-subtext1">{rankingInformation.seriesName}</h2>
-	<div class="mb-2 flex justify-center">
-		<img
-			src={rankingInformation.thumbnail}
-			alt="Thumbnail"
-			loading="lazy"
-			class="max-h-84 w-fit rounded-sm border border-ctp-surface0 object-scale-down"
-		/>
-	</div>
+	<img
+		src={rankingInformation.thumbnail}
+		alt="Thumbnail"
+		loading="lazy"
+		class="mb-2 rounded-sm border border-ctp-surface0"
+	/>
 	<div class="grid grid-cols-3 gap-2">
 		<div>
 			<h3>Game</h3>
