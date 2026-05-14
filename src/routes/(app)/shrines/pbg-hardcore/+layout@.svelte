@@ -34,6 +34,11 @@
 			id: 1,
 			href: '/shrines/pbg-hardcore',
 			name: 'About'
+		},
+		{
+			id: 2,
+			href: '/shrines/pbg-hardcore/community',
+			name: 'Community'
 		}
 	];
 
@@ -52,7 +57,7 @@
 <div class="flex min-h-screen flex-col items-center px-4 pt-[25vh] pb-4">
 	<div class="flex max-w-2xl flex-col gap-4">
 		<Navbar {links} />
-		<main class="flex flex-col">
+		<main class="flex min-w-2xl flex-col">
 			<div class="grid">
 				{#key page.url.pathname}
 					<div

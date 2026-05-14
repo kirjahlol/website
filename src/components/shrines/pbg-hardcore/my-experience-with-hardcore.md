@@ -1,10 +1,12 @@
-### How I Found Hardcore
-
 <script>
     import SmallText from './SmallText.svelte';
 </script>
 
-<SmallText>(DISCLAIMER: Some of the details here might be a little off or flat out made up because this happened so long ago and at such a young age.)</SmallText>
+### How I Found Hardcore
+
+<p>
+    <SmallText>(DISCLAIMER: Some of the details here might be a little off or flat out made up because this happened so long ago and at such a young age.)</SmallText>
+</p>
 
 The way I found the Hardcore series is pretty odd. Let us go back to the year 2017 when I was 7, possibly 6 years old. Me and my sister used to play this Wii game called _Wipeout: The Game_ a whole lot as kids. The ragdoll physics in that game were incredibly funny and we would always die laughing whenever we played it. Since I enjoyed the game so much, I decided to look it up on YouTube and see if anybody had made content on it, and people had indeed made content on the game. The first result was "[RAGDOLL PHYSICS! - Wipeout (Part 1)](https://www.youtube.com/watch?v=n-4ZcXszAk8)" by [PBGGameplay](https://www.youtube.com/@PBGGameplay), and I clicked on it. Even though I had a hard time remembering who was who, I quickly fell in love with the humuor of the two dudes running the show, "PB" and "Jeff".
 
