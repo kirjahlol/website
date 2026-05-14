@@ -8,15 +8,15 @@
 
 	interface Editor {
 		id: number;
-		name: string;
 		href?: string;
+		name: string;
 	}
 
 	interface Artist {
 		id: number;
+		href?: string;
 		name: string;
 		contribution?: string;
-		href?: string;
 	}
 
 	export interface RankingInformation {
@@ -26,7 +26,7 @@
 		thumbnail: string;
 		game: string;
 		goals: Goal[];
-		numberOfEpisodes: number;
+		numberOfEpisodes: string;
 		editors: Editor[];
 		artists: Artist[];
 		playlistLink: string;
@@ -97,11 +97,11 @@
 				{#each rankingInformation.artists as { id, href, name, contribution } (id)}
 					<span class="not-last:after:content-[',_']">
 						{#if href}
-							<a {href} rel="external">{name}</a>
-							{#if contribution}<span>({contribution})</span>{/if}
+							<a {href} rel="external">{name}</a>{#if contribution}<span
+									>&nbsp;({contribution})</span
+								>{/if}
 						{:else}
-							{name}
-							{#if contribution}<span>({contribution})</span>{/if}
+							{name}{#if contribution}<span>&nbsp;({contribution})</span>{/if}
 						{/if}
 					</span>
 				{/each}
