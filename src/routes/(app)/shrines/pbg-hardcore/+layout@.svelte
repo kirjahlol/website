@@ -1,6 +1,8 @@
 <script lang="ts">
 	import { browser } from '$app/environment';
+	import { resolve } from '$app/paths';
 	import { page } from '$app/state';
+	import pbgHardcoreLogo from '$assets/shrines/pbg-hardcore-logo.webp';
 	import Footer from '$components/layout/Footer.svelte';
 	import Header from '$components/layout/Header.svelte';
 	import Navbar, { type Link } from '$components/layout/Navbar.svelte';
@@ -56,11 +58,14 @@
 		class="fixed inset-0 z-50 flex items-center justify-center bg-ctp-base"
 	></div>
 {/if}
-<div class="absolute flex w-screen justify-between p-4">
+<div class="p-4">
 	<Header headerStyle="shrine" />
 </div>
-<div class="flex min-h-screen flex-col items-center px-4 pt-[25vh] pb-4">
+<div class="flex min-h-screen flex-col items-center p-4">
 	<div class="grid max-w-2xl grid-cols-[1fr] gap-4">
+		<a href={resolve('/shrines/pbg-hardcore')} data-sveltekit-noscroll>
+			<img src={pbgHardcoreLogo} alt="Logo for PeanutButterGamer's Hardcore series" />
+		</a>
 		<Navbar {links} />
 		<main class="flex flex-col">
 			<div class="grid">
