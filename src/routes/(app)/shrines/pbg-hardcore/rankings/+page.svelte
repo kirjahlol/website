@@ -96,6 +96,7 @@
 				},
 				{
 					id: 2,
+					href: 'https://www.youtube.com/@toerin',
 					name: 'Torin',
 					contribution: 'Kekspert Mode'
 				}
