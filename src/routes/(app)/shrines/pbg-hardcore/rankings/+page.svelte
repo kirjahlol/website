@@ -1,6 +1,7 @@
 <script lang="ts">
 	import astraphobiaThumbnail from '$assets/shrines/pbg-hardcore/rankings/astraphobia-thumbnail.webp';
 	import boiledPeanutsMinecraft5Thumbnail from '$assets/shrines/pbg-hardcore/rankings/boiled-peanuts-minecraft-5-thumbnail.webp';
+	import ncicoreTerrariaCalamityThumbnail from '$assets/shrines/pbg-hardcore/rankings/ncicore-terraria-calamity-thumbnail.webp';
 	import teamScallopFoulPlayRebirthThumbnail from '$assets/shrines/pbg-hardcore/rankings/team-scallop-foul-play-rebirth-thumbnail.webp';
 	import Ranking, {
 		type RankingInformation
@@ -8,6 +9,7 @@
 	import About from '$components/shrines/pbg-hardcore/rankings/about.md';
 	import AstraphobiaSynopsis from '$components/shrines/pbg-hardcore/rankings/astraphobia-synopsis.md';
 	import BoiledPeanutsMinecraft5Synopsis from '$components/shrines/pbg-hardcore/rankings/boiled-peanuts-minecraft-5-synopsis.md';
+	import NCICORETerrariaCalamitySynopsis from '$components/shrines/pbg-hardcore/rankings/ncicore-terraria-calamity-synopsis.md';
 	import TeamScallopFoulPlayRebirthSynopsis from '$components/shrines/pbg-hardcore/rankings/team-scallop-foul-play-rebirth-synopsis.md';
 
 	const rankings: RankingInformation[] = [
@@ -16,7 +18,7 @@
 			hardcoreName: 'Minecraft #5',
 			seriesName: "Boiled Peanuts' Hardcore series",
 			thumbnail: boiledPeanutsMinecraft5Thumbnail,
-			game: 'Minecraft (Modded)',
+			game: '<i>Minecraft</i> (modded)',
 			goals: [
 				{
 					id: 1,
@@ -62,7 +64,7 @@
 			hardcoreName: 'Astraphobia',
 			seriesName: 'Astra & Kekspert Mode*',
 			thumbnail: astraphobiaThumbnail,
-			game: 'Minecraft (Modded)',
+			game: '<i>Minecraft</i> (modded)',
 			goals: [
 				{
 					id: 1,
@@ -102,7 +104,7 @@
 			hardcoreName: 'Foul Play Rebirth',
 			seriesName: 'Team Scallop',
 			thumbnail: teamScallopFoulPlayRebirthThumbnail,
-			game: 'Minecraft',
+			game: '<i>Minecraft</i>',
 			goals: [
 				{
 					id: 1,
@@ -122,7 +124,7 @@
 				},
 				{
 					id: 2,
-					href: 'https://www.youtube.com/@EthanComma',
+					href: 'https://twitter.com/ethancomma',
 					name: 'EthanComma'
 				}
 			],
@@ -141,6 +143,47 @@
 			],
 			playlistLink: 'https://www.youtube.com/playlist?list=PLzM3BZX6IaAiqha54QGB5oDfePCLLlinS',
 			synopsis: TeamScallopFoulPlayRebirthSynopsis
+		},
+		{
+			rankingNumber: 4,
+			hardcoreName: 'Terraria Calamity',
+			seriesName: 'NCICORE',
+			thumbnail: ncicoreTerrariaCalamityThumbnail,
+			game: '<i>Terraria</i> (<i>Calamity Mod)</i>',
+			goals: [
+				{
+					id: 1,
+					description: 'Defeat the Leviathan and Anahita'
+				}
+			],
+			numberOfEpisodes: '26',
+			editors: [
+				{
+					id: 1,
+					href: 'https://twitter.com/drewofdcc',
+					name: 'DrewOfDC'
+				},
+				{
+					id: 2,
+					href: 'https://twitter.com/ethancomma',
+					name: 'EthanComma'
+				}
+			],
+			artists: [
+				{
+					id: 1,
+					href: 'https://twitter.com/drewofdcc',
+					name: 'DrewOfDC'
+				},
+				{
+					id: 2,
+					href: 'https://twitter.com/RossHasDied',
+					name: 'Rosswell',
+					contribution: 'some portrait sketches'
+				}
+			],
+			playlistLink: 'https://www.youtube.com/playlist?list=PLYV4bNrm15VytThxFmfLXnEoC08rL1Ve0',
+			synopsis: NCICORETerrariaCalamitySynopsis
 		}
 	];
 </script>

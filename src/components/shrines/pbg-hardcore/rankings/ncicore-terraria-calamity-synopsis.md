@@ -1,0 +1,1 @@
+8 buffoons take on the dangerous world of _Terraria_'s _Calamity Mod_, with the goal of defeating the Leviathan and Anahita. Who will survive? Who will die? Who will leave half-way through to go watch _Attack on Titan_?

@@ -49,7 +49,8 @@
 	<div class="grid grid-cols-2 gap-2 sm:grid-cols-3">
 		<div>
 			<h3>Game</h3>
-			<span>{rankingInformation.game}</span>
+			<!-- eslint-disable-next-line svelte/no-at-html-tags -->
+			<span>{@html rankingInformation.game}</span>
 		</div>
 		<div>
 			{#if rankingInformation.goals.length > 1}
