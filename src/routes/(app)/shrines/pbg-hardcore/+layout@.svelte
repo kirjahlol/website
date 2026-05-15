@@ -60,9 +60,9 @@
 	<Header headerStyle="shrine" />
 </div>
 <div class="flex min-h-screen flex-col items-center px-4 pt-[25vh] pb-4">
-	<div class="flex max-w-2xl flex-col gap-4">
+	<div class="grid max-w-2xl grid-cols-[1fr] gap-4">
 		<Navbar {links} />
-		<main class="flex min-w-2xl flex-col">
+		<main class="flex flex-col">
 			<div class="grid">
 				{#key page.url.pathname}
 					<div

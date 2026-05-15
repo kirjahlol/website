@@ -46,7 +46,7 @@
 		loading="lazy"
 		class="mb-2 rounded-sm border border-ctp-surface0"
 	/>
-	<div class="grid grid-cols-3 gap-2">
+	<div class="grid grid-cols-2 gap-2 sm:grid-cols-3">
 		<div>
 			<h3>Game</h3>
 			<span>{rankingInformation.game}</span>
@@ -75,7 +75,7 @@
 			{/if}
 			<span>
 				{#each rankingInformation.editors as { id, href, name } (id)}
-					<span class="not-last:after:content-[',_']">
+					<span class="flex flex-wrap not-last:after:content-[',_']">
 						{#if href}
 							<a {href} rel="external">{name}</a>
 						{:else}
@@ -93,7 +93,7 @@
 			{/if}
 			<span>
 				{#each rankingInformation.artists as { id, href, name, contribution } (id)}
-					<span class="not-last:after:content-[',_']">
+					<span class="flex flex-wrap not-last:after:content-[',_']">
 						{#if href}
 							<a {href} rel="external">{name}</a>{#if contribution}<span
 									>&nbsp;({contribution})</span
