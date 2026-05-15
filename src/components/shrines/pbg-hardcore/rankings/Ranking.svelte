@@ -73,9 +73,9 @@
 			{:else}
 				<h3>Editor</h3>
 			{/if}
-			<span>
+			<span class="flex flex-wrap gap-x-1">
 				{#each rankingInformation.editors as { id, href, name } (id)}
-					<span class="flex flex-wrap not-last:after:content-[',_']">
+					<span class="not-last:after:content-[',']">
 						{#if href}
 							<a {href} rel="external">{name}</a>
 						{:else}
@@ -91,9 +91,9 @@
 			{:else}
 				<h3>Artist</h3>
 			{/if}
-			<span>
+			<span class="flex flex-wrap gap-x-1">
 				{#each rankingInformation.artists as { id, href, name, contribution } (id)}
-					<span class="flex flex-wrap not-last:after:content-[',_']">
+					<span class="not-last:after:content-[',']">
 						{#if href}
 							<a {href} rel="external">{name}</a>{#if contribution}<span
 									>&nbsp;({contribution})</span
