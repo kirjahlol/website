@@ -1,6 +1,7 @@
 <script lang="ts">
 	import astraphobiaThumbnail from '$assets/shrines/pbg-hardcore/rankings/astraphobia-thumbnail.webp';
 	import boiledPeanutsMinecraft5Thumbnail from '$assets/shrines/pbg-hardcore/rankings/boiled-peanuts-minecraft-5-thumbnail.webp';
+	import bonusHcDetonation2Thumbnail from '$assets/shrines/pbg-hardcore/rankings/bonus-hc-detonation-2-thumbnail.webp';
 	import ncicoreTerrariaCalamityThumbnail from '$assets/shrines/pbg-hardcore/rankings/ncicore-terraria-calamity-thumbnail.webp';
 	import teamScallopFoulPlayRebirthThumbnail from '$assets/shrines/pbg-hardcore/rankings/team-scallop-foul-play-rebirth-thumbnail.webp';
 	import Ranking, {
@@ -9,6 +10,7 @@
 	import About from '$components/shrines/pbg-hardcore/rankings/about.md';
 	import AstraphobiaSynopsis from '$components/shrines/pbg-hardcore/rankings/astraphobia-synopsis.md';
 	import BoiledPeanutsMinecraft5Synopsis from '$components/shrines/pbg-hardcore/rankings/boiled-peanuts-minecraft-5-synopsis.md';
+	import BonusHCDetonation2Synopsis from '$components/shrines/pbg-hardcore/rankings/bonus-hc-detonation-2-synopsis.md';
 	import NCICORETerrariaCalamitySynopsis from '$components/shrines/pbg-hardcore/rankings/ncicore-terraria-calamity-synopsis.md';
 	import TeamScallopFoulPlayRebirthSynopsis from '$components/shrines/pbg-hardcore/rankings/team-scallop-foul-play-rebirth-synopsis.md';
 
@@ -184,6 +186,36 @@
 			],
 			playlistLink: 'https://www.youtube.com/playlist?list=PLYV4bNrm15VytThxFmfLXnEoC08rL1Ve0',
 			synopsis: NCICORETerrariaCalamitySynopsis
+		},
+		{
+			rankingNumber: 5,
+			hardcoreName: 'Detonation 2',
+			seriesName: 'Bonus HC',
+			thumbnail: bonusHcDetonation2Thumbnail,
+			game: '<i>Minecraft</i> (modded)',
+			goals: [
+				{
+					id: 1,
+					description: 'Defeat the Ender Dragon'
+				}
+			],
+			numberOfEpisodes: '12',
+			editors: [
+				{
+					id: 1,
+					href: 'https://www.youtube.com/@nappy3swag',
+					name: 'Nappy3'
+				}
+			],
+			artists: [
+				{
+					id: 1,
+					href: 'https://www.youtube.com/@nappy3swag',
+					name: 'Nappy3'
+				}
+			],
+			playlistLink: 'https://www.youtube.com/playlist?list=PLj1dh7kyhfUk45Ry_3d15xYNxfUKwb7eL',
+			synopsis: BonusHCDetonation2Synopsis
 		}
 	];
 </script>
