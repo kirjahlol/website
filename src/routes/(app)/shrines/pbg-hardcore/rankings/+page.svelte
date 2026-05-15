@@ -40,6 +40,18 @@
 					id: 1,
 					href: 'https://twitter.com/JageRage7',
 					name: 'JageRage'
+				},
+				{
+					id: 2,
+					href: 'https://www.youtube.com/@damickey7334',
+					name: 'DaMickey',
+					contribution: 'art help'
+				},
+				{
+					id: 3,
+					href: 'https://www.youtube.com/@guynewie',
+					name: 'GuyFighter',
+					contribution: 'original music for trailer/intro and end credits'
 				}
 			],
 			playlistLink: 'https://www.youtube.com/playlist?list=PL3_W7xI7JCPLieJCpXiiAnOjurqkEttr5',
