@@ -22,6 +22,7 @@
 	export interface RankingInformation {
 		rankingNumber: number;
 		hardcoreName: string;
+		yearOfRelease: number;
 		seriesName: string;
 		thumbnail: string;
 		game: string;
@@ -38,7 +39,10 @@
 
 <div class="flex flex-col rounded-md border border-ctp-surface0 bg-ctp-crust p-4">
 	<h3 class="mb-2">#{rankingInformation.rankingNumber}</h3>
-	<h1 class="text-lg">{rankingInformation.hardcoreName}</h1>
+	<h1 class="text-lg">
+		{rankingInformation.hardcoreName}
+		<span class="text-ctp-subtext1">({rankingInformation.yearOfRelease})</span>
+	</h1>
 	<h2 class="mb-2 text-ctp-subtext1">{rankingInformation.seriesName}</h2>
 	<img
 		src={rankingInformation.thumbnail}

@@ -18,6 +18,7 @@
 		{
 			rankingNumber: 1,
 			hardcoreName: 'Minecraft #5',
+			yearOfRelease: 2021,
 			seriesName: "Boiled Peanuts' Hardcore series",
 			thumbnail: boiledPeanutsMinecraft5Thumbnail,
 			game: '<i>Minecraft</i> (modded)',
@@ -64,6 +65,7 @@
 		{
 			rankingNumber: 2,
 			hardcoreName: 'Astraphobia',
+			yearOfRelease: 2023,
 			seriesName: 'Astra & Kekspert Mode*',
 			thumbnail: astraphobiaThumbnail,
 			game: '<i>Minecraft</i> (modded)',
@@ -104,6 +106,7 @@
 		{
 			rankingNumber: 3,
 			hardcoreName: 'Foul Play Rebirth',
+			yearOfRelease: 2026,
 			seriesName: 'Team Scallop',
 			thumbnail: teamScallopFoulPlayRebirthThumbnail,
 			game: '<i>Minecraft</i>',
@@ -149,6 +152,7 @@
 		{
 			rankingNumber: 4,
 			hardcoreName: 'Terraria Calamity',
+			yearOfRelease: 2024,
 			seriesName: 'NCICORE',
 			thumbnail: ncicoreTerrariaCalamityThumbnail,
 			game: '<i>Terraria</i> (<i>Calamity Mod)</i>',
@@ -190,6 +194,7 @@
 		{
 			rankingNumber: 5,
 			hardcoreName: 'Detonation 2',
+			yearOfRelease: 2022,
 			seriesName: 'Bonus HC',
 			thumbnail: bonusHcDetonation2Thumbnail,
 			game: '<i>Minecraft</i> (modded)',
