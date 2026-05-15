@@ -15,11 +15,11 @@ The premise of the series is that a group of players (typically 7) work together
 
 To help the viewer keep track of who's alive, in danger, and dead, an overlay containing portraits of each of the cast members is edited on the screen.
 
-<Image src={minecraft1Overlay} alt="Minecraft #1's overlay." />
+<Image src={minecraft1Overlay} caption="Minecraft #1's overlay." />
 
 In order to give the viewer an easier time identifying them in the game, cast members also use unique player skins whenever the season's game is Minecraft.
 
-<Image src={minecraft1PbgSkin} alt="In Minecraft #1, PBG played as Link from The Legend of Zelda." caption="In Minecraft #1, PBG played as Link from <i>The Legend of Zelda</i>." />
+<Image src={minecraft1PbgSkin} caption="In Minecraft #1, PBG played as Link from <i>The Legend of Zelda</i>." />
 
 ---
 
@@ -31,7 +31,7 @@ There were a total of 15 full-length seasons in the original Hardcore series: 7 
 
 For the first 5 seasons, PBG was the main video editor of the series. This changed with the release of [Minecraft #3](https://www.youtube.com/playlist?list=PLr6uCN6eqr18Axdp5HnXXyr91Od2YTemS), which is when SpaceHamster became the editor. After [Minecraft #4](https://www.youtube.com/playlist?list=PLr6uCN6eqr18MAggNUNxIIfeJ65z0xtfk) finished its release in May 2015, the series went on a nearly 2-year hiatus, returning in December 2016 with the release of [Minecraft #5](https://www.youtube.com/playlist?list=PLr6uCN6eqr1_plMqEfqa0_XQi04zNAD5F). This return brought on some major changes to the series, most notably a change in editors from Jeff to [Todd Cameron](https://toddlyenough.carrd.co/) (who, as of now, has edited all the seasons past Minecraft #4) and the introduction of drawn portraits for the cast members by the artist [Krooked Glasses](https://twitter.com/Krooked_Glasses).
 
-<Image src={minecraft5Overlay} alt="Minecraft #5's overlay, featuring the newly drawn portraits." />
+<Image src={minecraft5Overlay} caption="Minecraft #5's overlay, featuring the newly drawn portraits." />
 
 The last season released in the original Hardcore series was [Minecraft #7](https://www.youtube.com/playlist?list=PLr6uCN6eqr1_XozD2DkPwQKHvdbJD0B71) (release spanning from November 23rd, 2018 to January 12th, 2019). After Minecraft #7 finished its release, the series went on another hiatus for a couple years.
 
