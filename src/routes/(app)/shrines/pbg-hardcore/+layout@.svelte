@@ -59,7 +59,6 @@
 		}
 	);
 	const quotes = Object.values(modules).map((module) => module.default);
-	console.log(quotes);
 
 	let { children }: LayoutProps = $props();
 </script>
