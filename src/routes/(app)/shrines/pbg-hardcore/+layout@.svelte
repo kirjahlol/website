@@ -6,9 +6,10 @@
 	import Footer from '$components/layout/Footer.svelte';
 	import Header from '$components/layout/Header.svelte';
 	import Navbar, { type Link } from '$components/layout/Navbar.svelte';
+	import Quote from '$components/shrines/pbg-hardcore/Quote.svelte';
 	import type { LayoutProps } from './$types';
 	import './layout.css';
-	import { onMount } from 'svelte';
+	import { onMount, type Snippet } from 'svelte';
 	import { fade, fly } from 'svelte/transition';
 
 	if (browser) {
@@ -49,6 +50,15 @@
 		}
 	];
 
+	const modules = import.meta.glob<{ default: Snippet }>(
+		'$components/shrines/pbg-hardcore/quotes/*.md',
+		{
+			eager: true
+		}
+	);
+	const quotes = Object.values(modules).map((module) => module.default);
+	console.log(quotes);
+
 	let { children }: LayoutProps = $props();
 </script>
 
@@ -78,7 +88,7 @@
 				/>
 			</a>
 			<aside class="flex w-full flex-col gap-4">
-				<section>sigam</section>
+				<Quote {quotes} />
 			</aside>
 			<main class="flex flex-col gap-4">
 				<Navbar {links} />
