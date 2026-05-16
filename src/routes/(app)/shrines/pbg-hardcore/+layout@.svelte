@@ -8,7 +8,9 @@
 	import Header from '$components/layout/Header.svelte';
 	import Navbar, { type Link } from '$components/layout/Navbar.svelte';
 	import FavoriteHardcoreGame from '$components/shrines/pbg-hardcore/FavoriteHardcoreGame.svelte';
+	import FavoriteHardcoreTwist from '$components/shrines/pbg-hardcore/FavoriteHardcoreTwist.svelte';
 	import Quote from '$components/shrines/pbg-hardcore/Quote.svelte';
+	import MolecoreExplanation from '$components/shrines/pbg-hardcore/molecore-explanation.md';
 	import type { LayoutProps } from './$types';
 	import './layout.css';
 	import { onMount, type Snippet } from 'svelte';
@@ -89,7 +91,12 @@
 				/>
 			</a>
 			<aside class="flex w-full flex-col gap-4">
-				<Quote {quotes} />
+				<FavoriteHardcoreGame
+					name="Minecraft"
+					imageSource={minecraftAppIcon}
+					imageAlt="Minecraft app icon"
+				/>
+				<FavoriteHardcoreTwist name="Molecore" game="Minecraft" Explanation={MolecoreExplanation} />
 			</aside>
 			<main class="flex flex-col gap-4">
 				<Navbar {links} />
@@ -106,11 +113,7 @@
 				</div>
 			</main>
 			<aside class="flex w-full flex-col gap-4">
-				<FavoriteHardcoreGame
-					name="Minecraft"
-					imageSource={minecraftAppIcon}
-					imageAlt="Minecraft app icon"
-				/>
+				<Quote {quotes} />
 			</aside>
 		</div>
 	</div>
