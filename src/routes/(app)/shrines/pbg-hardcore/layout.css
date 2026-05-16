@@ -32,10 +32,6 @@ section h3 {
 	@apply font-mono text-sm font-medium text-ctp-subtext0 uppercase;
 }
 
-section code {
-	@apply rounded-md border border-ctp-surface0 bg-ctp-surface0/50 px-1 font-medium;
-}
-
 section hr {
 	@apply not-last:my-4;
 }
@@ -43,32 +39,4 @@ section hr {
 .pbg-hardcore section a,
 .pbg-hardcore footer a {
 	@apply text-ctp-yellow hover:underline;
-}
-
-.tippy-box[data-theme~='ctp-green'] {
-	@apply rounded-lg bg-ctp-base text-ctp-green-400;
-}
-
-.tippy-box[data-theme~='ctp-green'] .tippy-content {
-	@apply rounded-[inherit] border border-ctp-green-400 bg-ctp-green-400/25;
-}
-
-.tippy-box[data-theme~='ctp-green'] > .tippy-arrow::before {
-	@apply scale-75;
-}
-
-.tippy-box[data-theme~='ctp-green'][data-placement^='top'] > .tippy-arrow::before {
-	@apply border-t-ctp-green-400;
-}
-
-.tippy-box[data-theme~='ctp-green'][data-placement^='bottom'] > .tippy-arrow::before {
-	@apply border-b-ctp-green-400;
-}
-
-.tippy-box[data-theme~='ctp-green'][data-placement^='left'] > .tippy-arrow::before {
-	@apply border-l-ctp-green-400;
-}
-
-.tippy-box[data-theme~='ctp-green'][data-placement^='right'] > .tippy-arrow::before {
-	@apply border-r-ctp-green-400;
 }
