@@ -69,7 +69,7 @@
 			class="fixed inset-0 z-50 flex items-center justify-center bg-ctp-base"
 		></div>
 	{/if}
-	<div class="p-4">
+	<div class="w-fit p-4">
 		<Header headerStyle="shrine" />
 	</div>
 	<div class="flex min-h-screen flex-col items-center p-4">
