@@ -31,7 +31,7 @@
 		editors: Editor[];
 		artists: Artist[];
 		playlistLink: string;
-		synopsis: Snippet;
+		Synopsis: Snippet;
 	}
 
 	let { rankingInformation }: { rankingInformation: RankingInformation } = $props();
@@ -117,5 +117,5 @@
 	</div>
 	<hr />
 	<h3 class="mb-2">Synopsis</h3>
-	<rankingInformation.synopsis />
+	<rankingInformation.Synopsis />
 </div>

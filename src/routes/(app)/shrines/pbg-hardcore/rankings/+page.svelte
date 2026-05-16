@@ -60,7 +60,7 @@
 				}
 			],
 			playlistLink: 'https://www.youtube.com/playlist?list=PL3_W7xI7JCPLieJCpXiiAnOjurqkEttr5',
-			synopsis: BoiledPeanutsMinecraft5Synopsis
+			Synopsis: BoiledPeanutsMinecraft5Synopsis
 		},
 		{
 			rankingNumber: 2,
@@ -102,7 +102,7 @@
 				}
 			],
 			playlistLink: 'https://www.youtube.com/playlist?list=PLpo6UFvrZHBzOiye4z5c-p_QmCg0efMuh',
-			synopsis: AstraphobiaSynopsis
+			Synopsis: AstraphobiaSynopsis
 		},
 		{
 			rankingNumber: 3,
@@ -148,7 +148,7 @@
 				}
 			],
 			playlistLink: 'https://www.youtube.com/playlist?list=PLzM3BZX6IaAiqha54QGB5oDfePCLLlinS',
-			synopsis: TeamScallopFoulPlayRebirthSynopsis
+			Synopsis: TeamScallopFoulPlayRebirthSynopsis
 		},
 		{
 			rankingNumber: 4,
@@ -190,7 +190,7 @@
 				}
 			],
 			playlistLink: 'https://www.youtube.com/playlist?list=PLYV4bNrm15VytThxFmfLXnEoC08rL1Ve0',
-			synopsis: NCICORETerrariaCalamitySynopsis
+			Synopsis: NCICORETerrariaCalamitySynopsis
 		},
 		{
 			rankingNumber: 5,
@@ -221,7 +221,7 @@
 				}
 			],
 			playlistLink: 'https://www.youtube.com/playlist?list=PLj1dh7kyhfUk45Ry_3d15xYNxfUKwb7eL',
-			synopsis: BonusHCDetonation2Synopsis
+			Synopsis: BonusHCDetonation2Synopsis
 		}
 	];
 </script>
