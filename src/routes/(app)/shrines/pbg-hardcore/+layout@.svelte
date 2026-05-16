@@ -7,6 +7,9 @@
 	import Footer from '$components/layout/Footer.svelte';
 	import Header from '$components/layout/Header.svelte';
 	import Navbar, { type Link } from '$components/layout/Navbar.svelte';
+	import ExternalLinks, {
+		type ExternalLink
+	} from '$components/shrines/pbg-hardcore/ExternalLinks.svelte';
 	import FavoriteHardcoreGame from '$components/shrines/pbg-hardcore/FavoriteHardcoreGame.svelte';
 	import FavoriteHardcoreTwist from '$components/shrines/pbg-hardcore/FavoriteHardcoreTwist.svelte';
 	import Quote from '$components/shrines/pbg-hardcore/Quote.svelte';
@@ -62,6 +65,19 @@
 	);
 	const quotes = Object.values(modules).map((module) => module.default);
 
+	const externalLinks: ExternalLink[] = [
+		{
+			id: 1,
+			href: 'https://discord.gg/trug74ffUx',
+			content: '"Hardcore Community!" Discord server'
+		},
+		{
+			id: 2,
+			href: 'https://hardcore.wiki/wiki/Hardcore_Wiki',
+			content: 'Hardcore Wiki main page'
+		}
+	];
+
 	let { children }: LayoutProps = $props();
 </script>
 
@@ -114,6 +130,7 @@
 			</main>
 			<aside class="flex w-full flex-col gap-4">
 				<Quote {quotes} />
+				<ExternalLinks {externalLinks} />
 			</aside>
 		</div>
 	</div>
