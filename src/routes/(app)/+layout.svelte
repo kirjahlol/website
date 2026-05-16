@@ -84,20 +84,18 @@
 {/if}
 <div class="flex min-h-screen flex-col items-center p-4">
 	<div class="flex w-full max-w-2xl flex-col gap-4 lg:grid lg:max-w-7xl lg:grid-cols-[1fr_3fr_1fr]">
-		<div class="col-span-3">
+		<div class="lg:col-span-3">
 			<Banner />
 		</div>
-		<aside>
-			<div class="flex w-full flex-col gap-4">
-				{#await data.status}
-					<StatusWidget state="loading" />
-				{:then status}
-					<StatusWidget state="success" {status} />
-				{:catch error}
-					<StatusWidget state="error" errorMessage={error.message} />
-				{/await}
-				<Chatbox />
-			</div>
+		<aside class="flex w-full flex-col gap-4">
+			{#await data.status}
+				<StatusWidget state="loading" />
+			{:then status}
+				<StatusWidget state="success" {status} />
+			{:catch error}
+				<StatusWidget state="error" errorMessage={error.message} />
+			{/await}
+			<Chatbox />
 		</aside>
 		<main class="flex flex-col gap-4">
 			<Navbar {links} />
@@ -117,11 +115,9 @@
 				{/key}
 			</div>
 		</main>
-		<aside>
-			<div class="flex w-full flex-col gap-4">
-				<DateAndTime />
-				<Socials />
-			</div>
+		<aside class="flex w-full flex-col gap-4">
+			<DateAndTime />
+			<Socials />
 		</aside>
 	</div>
 </div>

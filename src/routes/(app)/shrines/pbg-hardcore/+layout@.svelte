@@ -63,12 +63,25 @@
 		<Header headerStyle="shrine" />
 	</div>
 	<div class="flex min-h-screen flex-col items-center p-4">
-		<div class="grid max-w-2xl grid-cols-[1fr] gap-4">
-			<a href={resolve('/shrines/pbg-hardcore')} data-sveltekit-noscroll>
-				<img src={pbgHardcoreLogo} alt="Logo for PeanutButterGamer's Hardcore series" />
+		<div
+			class="flex w-full max-w-2xl flex-col gap-4 lg:grid lg:max-w-7xl lg:grid-cols-[1fr_3fr_1fr]"
+		>
+			<a
+				href={resolve('/shrines/pbg-hardcore')}
+				data-sveltekit-noscroll
+				class="flex justify-center lg:col-span-3"
+			>
+				<img
+					src={pbgHardcoreLogo}
+					alt="Logo for PeanutButterGamer's Hardcore series"
+					class="w-fit"
+				/>
 			</a>
-			<Navbar {links} />
-			<main class="flex flex-col">
+			<aside class="flex w-full flex-col gap-4">
+				<section>sigam</section>
+			</aside>
+			<main class="flex flex-col gap-4">
+				<Navbar {links} />
 				<div class="grid">
 					{#key page.url.pathname}
 						<div
@@ -81,6 +94,9 @@
 					{/key}
 				</div>
 			</main>
+			<aside class="flex w-full flex-col gap-4">
+				<section>sigma</section>
+			</aside>
 		</div>
 	</div>
 	<Footer />
