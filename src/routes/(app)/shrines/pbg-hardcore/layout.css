@@ -10,29 +10,6 @@
 @theme {
 	--font-sans: 'Inter Variable', sans-serif;
 	--font-mono: 'JetBrains Mono Variable', monospace;
-
-	--animate-spring: spring 0.3s;
-	--animate-blink: blink 1s steps(1) infinite;
-
-	@keyframes spring {
-		0% {
-			transform: scale(0.9);
-		}
-
-		50% {
-			transform: scale(1.05);
-		}
-
-		100% {
-			transform: scale(1);
-		}
-	}
-
-	@keyframes blink {
-		50% {
-			opacity: 0;
-		}
-	}
 }
 
 body {
@@ -63,9 +40,9 @@ section hr {
 	@apply not-last:my-4;
 }
 
-section a,
-footer a {
-	@apply text-ctp-green-400 hover:underline;
+.pbg-hardcore section a,
+.pbg-hardcore footer a {
+	@apply text-ctp-yellow hover:underline;
 }
 
 .tippy-box[data-theme~='ctp-green'] {

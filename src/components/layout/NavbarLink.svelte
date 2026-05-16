@@ -18,6 +18,10 @@
 		@apply pointer-events-none border-b border-ctp-green-400 text-ctp-green-400;
 	}
 
+	:global(.pbg-hardcore) a.active {
+		@apply pointer-events-none border-b border-ctp-yellow text-ctp-yellow;
+	}
+
 	a:not(.active) {
 		@apply hover:border-b hover:border-ctp-text;
 	}

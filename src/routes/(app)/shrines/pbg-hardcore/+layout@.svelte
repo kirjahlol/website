@@ -52,34 +52,36 @@
 	let { children }: LayoutProps = $props();
 </script>
 
-{#if !isMounted}
-	<div
-		out:fade={{ duration: 300 }}
-		class="fixed inset-0 z-50 flex items-center justify-center bg-ctp-base"
-	></div>
-{/if}
-<div class="p-4">
-	<Header headerStyle="shrine" />
-</div>
-<div class="flex min-h-screen flex-col items-center p-4">
-	<div class="grid max-w-2xl grid-cols-[1fr] gap-4">
-		<a href={resolve('/shrines/pbg-hardcore')} data-sveltekit-noscroll>
-			<img src={pbgHardcoreLogo} alt="Logo for PeanutButterGamer's Hardcore series" />
-		</a>
-		<Navbar {links} />
-		<main class="flex flex-col">
-			<div class="grid">
-				{#key page.url.pathname}
-					<div
-						in:fly={{ duration: 200, delay: 100, y: 20 }}
-						out:fly={{ duration: 100, y: 10 }}
-						class="col-start-1 row-start-1 flex w-full flex-col gap-4"
-					>
-						{@render children()}
-					</div>
-				{/key}
-			</div>
-		</main>
+<div class="pbg-hardcore">
+	{#if !isMounted}
+		<div
+			out:fade={{ duration: 300 }}
+			class="fixed inset-0 z-50 flex items-center justify-center bg-ctp-base"
+		></div>
+	{/if}
+	<div class="p-4">
+		<Header headerStyle="shrine" />
 	</div>
+	<div class="flex min-h-screen flex-col items-center p-4">
+		<div class="grid max-w-2xl grid-cols-[1fr] gap-4">
+			<a href={resolve('/shrines/pbg-hardcore')} data-sveltekit-noscroll>
+				<img src={pbgHardcoreLogo} alt="Logo for PeanutButterGamer's Hardcore series" />
+			</a>
+			<Navbar {links} />
+			<main class="flex flex-col">
+				<div class="grid">
+					{#key page.url.pathname}
+						<div
+							in:fly={{ duration: 200, delay: 100, y: 20 }}
+							out:fly={{ duration: 100, y: 10 }}
+							class="col-start-1 row-start-1 flex w-full flex-col gap-4"
+						>
+							{@render children()}
+						</div>
+					{/key}
+				</div>
+			</main>
+		</div>
+	</div>
+	<Footer />
 </div>
-<Footer />
