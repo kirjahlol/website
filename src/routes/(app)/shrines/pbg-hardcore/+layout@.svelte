@@ -3,9 +3,11 @@
 	import { resolve } from '$app/paths';
 	import { page } from '$app/state';
 	import pbgHardcoreLogo from '$assets/shrines/pbg-hardcore-logo.webp';
+	import minecraftAppIcon from '$assets/shrines/pbg-hardcore/minecraft-app-icon.webp';
 	import Footer from '$components/layout/Footer.svelte';
 	import Header from '$components/layout/Header.svelte';
 	import Navbar, { type Link } from '$components/layout/Navbar.svelte';
+	import FavoriteHardcoreGame from '$components/shrines/pbg-hardcore/FavoriteHardcoreGame.svelte';
 	import Quote from '$components/shrines/pbg-hardcore/Quote.svelte';
 	import type { LayoutProps } from './$types';
 	import './layout.css';
@@ -105,7 +107,11 @@
 				</div>
 			</main>
 			<aside class="flex w-full flex-col gap-4">
-				<section>sigma</section>
+				<FavoriteHardcoreGame
+					name="Minecraft"
+					imageSource={minecraftAppIcon}
+					imageAlt="Minecraft app icon"
+				/>
 			</aside>
 		</div>
 	</div>
