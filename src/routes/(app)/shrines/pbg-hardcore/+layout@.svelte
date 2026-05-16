@@ -103,6 +103,7 @@
 				<img
 					src={pbgHardcoreLogo}
 					alt="Logo for PeanutButterGamer's Hardcore series"
+					fetchpriority="high"
 					class="w-fit"
 				/>
 			</a>
