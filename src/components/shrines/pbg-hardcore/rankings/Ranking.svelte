@@ -39,7 +39,7 @@
 
 <div class="flex flex-col rounded-md border border-ctp-surface0 bg-ctp-crust p-4">
 	<h3 class="mb-2">#{rankingInformation.rankingNumber}</h3>
-	<h1 class="text-lg">
+	<h1 class="mb-2 text-lg">
 		{rankingInformation.hardcoreName}
 		<span class="text-ctp-subtext1">({rankingInformation.yearOfRelease})</span>
 	</h1>
