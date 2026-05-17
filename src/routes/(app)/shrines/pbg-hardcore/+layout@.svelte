@@ -81,13 +81,16 @@
 	let { children }: LayoutProps = $props();
 </script>
 
-<div class="pbg-hardcore">
+<div class="pbg-hardcore relative">
 	{#if !isMounted}
 		<div
 			out:fade={{ duration: 300 }}
 			class="fixed inset-0 z-50 flex items-center justify-center bg-ctp-base"
 		></div>
 	{/if}
+	<div
+		class="absolute -z-50 min-h-full w-full bg-[url(/assets/shrines/pbg-hardcore/brick-pattern.png)] bg-repeat opacity-5"
+	></div>
 	<div class="w-fit p-4">
 		<Header headerStyle="shrine" />
 	</div>
