@@ -1,5 +1,13 @@
-- [ ] Create about page
-- [ ] Create Scolipede easter egg
-- [ ] Fix pronouns not loading on mobile
-- [ ] Make it so that data is loaded through `+page.ts` instead of individual components
+## General
+
 - [ ] Switch from Tippy.js to Floating UI
+- [ ] Make it so that no links open in new tabs
+- [ ] `ctp-green-400` -> `ctp-green`
+
+## Shrines
+
+### PBG Hardcore
+
+- [ ] Use custom colors for styling
+- [ ] Add cool brick pattern to background
+- [ ] Touch up writing
