@@ -8,6 +8,6 @@
 	<h3>
 		Favorite Hardcore <a href="https://hardcore.wiki/wiki/List_of_Game_Modifications">Twist</a>
 	</h3>
-	<h1 class="mb-0! text-lg">{name} (<i>{game}</i>)</h1>
+	<h1 class="mb-0! text-lg">{name} <span class="text-ctp-subtext1">(<i>{game}</i>)</span></h1>
 	<Explanation />
 </section>
