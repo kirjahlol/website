@@ -1,1 +1,1 @@
-8 buffoons take on the dangerous world of _Terraria_'s _Calamity Mod_, with the goal of defeating the Leviathan and Anahita. Who will survive? Who will die? Who will leave half-way through to go watch _Attack on Titan_?
+The _NCICORE_ folks are back at it for another _Terraria_ adventure. This time, they're braving the dangers of the _Calamity Mod_ and looking to take down the Leviathan and Anahita. Who will survive? Who will die? Who will leave half-way through to go watch _Attack on Titan_?

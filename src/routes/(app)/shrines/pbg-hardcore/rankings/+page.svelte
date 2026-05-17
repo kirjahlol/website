@@ -14,7 +14,7 @@
 	import NCICORETerrariaCalamitySynopsis from '$components/shrines/pbg-hardcore/rankings/ncicore-terraria-calamity-synopsis.md';
 	import TeamScallopFoulPlayRebirthSynopsis from '$components/shrines/pbg-hardcore/rankings/team-scallop-foul-play-rebirth-synopsis.md';
 
-	const rankings: RankingInformation[] = [
+	const top5Hardcores: RankingInformation[] = [
 		{
 			rankingNumber: 1,
 			hardcoreName: 'Minecraft #5',
@@ -66,20 +66,20 @@
 			rankingNumber: 2,
 			hardcoreName: 'Astraphobia',
 			yearOfRelease: 2023,
-			seriesName: 'Astra & Kekspert Mode*',
+			seriesName: '<i>Astra<i/> & <i>Kekspert Mode</i>*',
 			thumbnail: astraphobiaThumbnail,
 			game: '<i>Minecraft</i> (modded)',
 			goals: [
 				{
 					id: 1,
-					description: 'Defeat the Wither (Astra)'
+					description: 'Defeat the Wither (<i>Astra</i>)'
 				},
 				{
 					id: 2,
-					description: 'Defeat the Netherite Monstrosity (Kekspert Mode)'
+					description: 'Defeat the Netherite Monstrosity (<i>Kekspert Mode</i>)'
 				}
 			],
-			numberOfEpisodes: '16 (including the 2 episodes of Kekspert Mode)',
+			numberOfEpisodes: '16 (including the 2 episodes of <i>Kekspert Mode</i>)',
 			editors: [
 				{
 					id: 1,
@@ -92,13 +92,13 @@
 					id: 1,
 					href: 'https://twitter.com/mikeyswag13',
 					name: 'mikeyswag13',
-					contribution: 'Astra'
+					contribution: '<i>Astra</i>'
 				},
 				{
 					id: 2,
 					href: 'https://www.youtube.com/@toerin',
 					name: 'Torin',
-					contribution: 'Kekspert Mode'
+					contribution: '<i>Kekspert Mode</i>'
 				}
 			],
 			playlistLink: 'https://www.youtube.com/playlist?list=PLpo6UFvrZHBzOiye4z5c-p_QmCg0efMuh',
@@ -108,7 +108,7 @@
 			rankingNumber: 3,
 			hardcoreName: 'Foul Play Rebirth',
 			yearOfRelease: 2026,
-			seriesName: 'Team Scallop',
+			seriesName: '<i>Team Scallop</i>',
 			thumbnail: teamScallopFoulPlayRebirthThumbnail,
 			game: '<i>Minecraft</i>',
 			goals: [
@@ -121,12 +121,12 @@
 					description: 'Defeat the Ender Dragon'
 				}
 			],
-			numberOfEpisodes: '10 (including the Foul Play Remastered fakeout episode)',
+			numberOfEpisodes: '10 (including the <i>Foul Play Remastered</i> fakeout episode)',
 			editors: [
 				{
 					id: 1,
 					href: 'https://www.youtube.com/@cuubsters',
-					name: 'Cuubster (Autumn)'
+					name: 'Cuubster/Autumn'
 				},
 				{
 					id: 2,
@@ -154,7 +154,7 @@
 			rankingNumber: 4,
 			hardcoreName: 'Terraria Calamity',
 			yearOfRelease: 2024,
-			seriesName: 'NCICORE',
+			seriesName: '<i>NCICORE</i>',
 			thumbnail: ncicoreTerrariaCalamityThumbnail,
 			game: '<i>Terraria</i> (<i>Calamity Mod)</i>',
 			goals: [
@@ -196,7 +196,7 @@
 			rankingNumber: 5,
 			hardcoreName: 'Detonation 2',
 			yearOfRelease: 2022,
-			seriesName: 'Bonus HC',
+			seriesName: '<i>Bonus HC</i>',
 			thumbnail: bonusHcDetonation2Thumbnail,
 			game: '<i>Minecraft</i> (modded)',
 			goals: [
@@ -229,9 +229,9 @@
 <section>
 	<About />
 	<hr />
-	<h3>Rankings</h3>
+	<h3>Top 5 Hardcores</h3>
 	<div class="flex flex-col gap-4">
-		{#each rankings as rankingInformation (rankingInformation.rankingNumber)}
+		{#each top5Hardcores as rankingInformation (rankingInformation.rankingNumber)}
 			<Ranking {rankingInformation} />
 		{/each}
 	</div>

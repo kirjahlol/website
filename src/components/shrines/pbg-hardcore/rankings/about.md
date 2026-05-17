@@ -1,3 +1,3 @@
 ### About
 
-Here, you can find the rankings of my favorite Hardcore series. Check them out, and remember, this is just _my_ opinion!
+Here, you can find out where I rank my favorite Hardcore series. You should _really_ check them out out if you have the time!
