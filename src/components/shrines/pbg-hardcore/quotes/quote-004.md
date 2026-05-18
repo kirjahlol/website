@@ -1,0 +1,1 @@
+"This is like _Minecraft_ expert mode." -- [Simoz](https://hardcore.wiki/wiki/Simoz) ([_Minecraft #2_](https://www.youtube.com/playlist?list=PLfR0hlQ0jOLiFQqIbMZQngX1Ljp7gk7z1) of [Simoz's Hardcore series](https://hardcore.wiki/wiki/Simoz%27s_Hardcore_Series))

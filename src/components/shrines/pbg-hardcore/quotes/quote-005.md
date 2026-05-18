@@ -1,0 +1,1 @@
+"He got slain by the X!" -- [Cri](https://hardcore.wiki/wiki/Cri) ([_Minecraft #2_](https://www.youtube.com/playlist?list=PLfR0hlQ0jOLiFQqIbMZQngX1Ljp7gk7z1) of [Simoz's Hardcore series](https://hardcore.wiki/wiki/Simoz%27s_Hardcore_Series))
