@@ -2,7 +2,7 @@
 
 - [ ] Switch from Tippy.js to Floating UI
 - [ ] Make it so that no links open in new tabs
-- [ ] `ctp-green-400` -> `ctp-green`
+- [ ] `ctp-green` -> `ctp-green`
 
 ## Shrines
 

@@ -70,15 +70,15 @@ section hr {
 
 section a,
 footer a {
-	@apply text-ctp-green-400 hover:underline;
+	@apply text-ctp-green hover:underline;
 }
 
 .tippy-box[data-theme~='ctp-green'] {
-	@apply rounded-lg bg-ctp-base text-ctp-green-400;
+	@apply rounded-lg bg-ctp-base text-ctp-green;
 }
 
 .tippy-box[data-theme~='ctp-green'] .tippy-content {
-	@apply rounded-[inherit] border border-ctp-green-400 bg-ctp-green-400/25;
+	@apply rounded-[inherit] border border-ctp-green bg-ctp-green/25;
 }
 
 .tippy-box[data-theme~='ctp-green'] > .tippy-arrow::before {
@@ -86,17 +86,17 @@ footer a {
 }
 
 .tippy-box[data-theme~='ctp-green'][data-placement^='top'] > .tippy-arrow::before {
-	@apply border-t-ctp-green-400;
+	@apply border-t-ctp-green;
 }
 
 .tippy-box[data-theme~='ctp-green'][data-placement^='bottom'] > .tippy-arrow::before {
-	@apply border-b-ctp-green-400;
+	@apply border-b-ctp-green;
 }
 
 .tippy-box[data-theme~='ctp-green'][data-placement^='left'] > .tippy-arrow::before {
-	@apply border-l-ctp-green-400;
+	@apply border-l-ctp-green;
 }
 
 .tippy-box[data-theme~='ctp-green'][data-placement^='right'] > .tippy-arrow::before {
-	@apply border-r-ctp-green-400;
+	@apply border-r-ctp-green;
 }

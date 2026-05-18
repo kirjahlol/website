@@ -17,7 +17,7 @@
 				<span class="text-sm text-ctp-subtext0">(Loading...)</span>
 			</div>
 			<code class="self-stretch bg-ctp-base! p-4!"
-				><span class="text-ctp-green-400">> <span class="font-semibold">echo</span></span>
+				><span class="text-ctp-green">> <span class="font-semibold">echo</span></span>
 				<span class="text-ctp-yellow-400">"Loading..."</span><span
 					class="animate-blink text-ctp-rosewater-400">_</span
 				></code
@@ -28,7 +28,7 @@
 				<span class="text-sm text-ctp-subtext0">({status.timeAgo})</span>
 			</div>
 			<code class="self-stretch bg-ctp-base! p-4!"
-				><span class="text-ctp-green-400">> <span class="font-semibold">echo</span></span>
+				><span class="text-ctp-green">> <span class="font-semibold">echo</span></span>
 				<!-- eslint-disable-next-line svelte/no-at-html-tags -->
 				<span class="text-ctp-yellow-400">"{@html status.content}"</span><span
 					class="animate-blink text-ctp-rosewater-400">_</span

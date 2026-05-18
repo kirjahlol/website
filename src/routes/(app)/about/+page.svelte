@@ -129,7 +129,7 @@
 		<div>
 			<h3>Bio</h3>
 			<p>
-				Hi! My name is <span class="font-semibold text-ctp-green-400">kirjah</span>. I'm a
+				Hi! My name is <span class="font-semibold text-ctp-green">kirjah</span>. I'm a
 				self-taught programmer.
 			</p>
 			<p>

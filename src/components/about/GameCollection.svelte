@@ -32,7 +32,7 @@
 							src="https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/{appId}/library_600x900.jpg"
 							alt={name}
 							loading="lazy"
-							class="h-full rounded-sm border-2 border-ctp-green-400 transition-[scale] duration-150 hover:scale-105"
+							class="h-full rounded-sm border-2 border-ctp-green transition-[scale] duration-150 hover:scale-105"
 						/>
 					</a>
 				{:else}
@@ -66,7 +66,7 @@
 							src={imageSource}
 							alt={name}
 							loading="lazy"
-							class="h-full rounded-md border-2 border-ctp-green-400 transition-[scale] duration-150 hover:scale-105"
+							class="h-full rounded-md border-2 border-ctp-green transition-[scale] duration-150 hover:scale-105"
 						/>
 					</a>
 				{:else}
@@ -86,6 +86,6 @@
 		>
 	</div>
 	<div class="flex items-center justify-center gap-2">
-		<span class="size-4 rounded-sm border-2 border-ctp-green-400"></span> Favorite
+		<span class="size-4 rounded-sm border-2 border-ctp-green"></span> Favorite
 	</div>
 </div>

@@ -15,7 +15,7 @@
 	@reference '$routes/(app)/layout.css';
 
 	a.active {
-		@apply pointer-events-none border-b border-ctp-green-400 text-ctp-green-400;
+		@apply pointer-events-none border-b border-ctp-green text-ctp-green;
 	}
 
 	:global(.pbg-hardcore) a.active {

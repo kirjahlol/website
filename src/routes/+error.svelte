@@ -35,7 +35,7 @@
 	{/if}
 	<a
 		href={resolve('/')}
-		class="flex items-center gap-2 rounded-lg bg-ctp-green-400 p-2 text-ctp-base"
+		class="flex items-center gap-2 rounded-lg bg-ctp-green p-2 text-ctp-base"
 		><Icon icon="tabler:arrow-left" class="size-6" /> Back to home</a
 	>
 </div>
