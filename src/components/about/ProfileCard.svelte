@@ -24,7 +24,7 @@
 			</h2>
 		</div>
 		<div class="flex flex-col items-center justify-center gap-2">
-			<img src="/mii.png" alt="My Mii" class="bg-ctp-green/50" />
+			<img src="/assets/mii.png" alt="My Mii" class="bg-ctp-green/50" />
 			<p class="italic">kirjah</p>
 		</div>
 		<ol class="list-none font-mono uppercase">
