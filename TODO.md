@@ -2,3 +2,9 @@
 
 - [ ] Switch from Tippy.js to Floating UI
 - [ ] Use Markdown for certain portions of site
+
+## Shrines
+
+### PBG Hardcore
+
+- [ ] Add section for favorite Hardcore portrait styles
