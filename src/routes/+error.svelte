@@ -33,9 +33,7 @@
 		<h1 class="font-mono text-5xl font-semibold">{page.status}</h1>
 		<p class="mb-2 text-lg">{page.error?.message}</p>
 	{/if}
-	<a
-		href={resolve('/')}
-		class="flex items-center gap-2 rounded-lg bg-ctp-green p-2 text-ctp-base"
+	<a href={resolve('/')} class="flex items-center gap-2 rounded-lg bg-ctp-green p-2 text-ctp-base"
 		><Icon icon="tabler:arrow-left" class="size-6" /> Back to home</a
 	>
 </div>

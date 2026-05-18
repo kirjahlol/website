@@ -23,11 +23,7 @@
 		<div class="flex flex-wrap justify-center gap-2">
 			{#each steamGames as { id, isFavorite, appId, name } (id)}
 				{#if isFavorite}
-					<a
-						href="https://store.steampowered.com/app/{appId}"
-						target="_blank"
-						class="aspect-600/900 max-h-48"
-					>
+					<a href="https://store.steampowered.com/app/{appId}" class="aspect-600/900 max-h-48">
 						<img
 							src="https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/{appId}/library_600x900.jpg"
 							alt={name}
@@ -36,11 +32,7 @@
 						/>
 					</a>
 				{:else}
-					<a
-						href="https://store.steampowered.com/app/{appId}"
-						target="_blank"
-						class="aspect-600/900 max-h-48"
-					>
+					<a href="https://store.steampowered.com/app/{appId}" class="aspect-600/900 max-h-48">
 						<img
 							src="https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/{appId}/library_600x900.jpg"
 							alt={name}
@@ -52,7 +44,7 @@
 			{/each}
 		</div>
 		<span class="text-xs text-ctp-subtext0"
-			>Powered by <a href="https://steamdb.info/" target="_blank">SteamDB</a></span
+			>Powered by <a href="https://steamdb.info/">SteamDB</a></span
 		>
 	</div>
 	<hr />
@@ -61,7 +53,7 @@
 		<div class="flex flex-wrap justify-center gap-2">
 			{#each otherGames as { id, isFavorite, href, imageSource, name } (id)}
 				{#if isFavorite}
-					<a {href} rel="external" target="_blank" class="aspect-600/900 max-h-48">
+					<a {href} rel="external" class="aspect-600/900 max-h-48">
 						<img
 							src={imageSource}
 							alt={name}
@@ -70,7 +62,7 @@
 						/>
 					</a>
 				{:else}
-					<a {href} rel="external" target="_blank" class="aspect-600/900 max-h-48">
+					<a {href} rel="external" class="aspect-600/900 max-h-48">
 						<img
 							src={imageSource}
 							alt={name}
@@ -82,7 +74,7 @@
 			{/each}
 		</div>
 		<span class="mb-2 text-xs text-ctp-subtext0"
-			>Powered by <a href="https://www.steamgriddb.com/" target="_blank">SteamGridDB</a></span
+			>Powered by <a href="https://www.steamgriddb.com/">SteamGridDB</a></span
 		>
 	</div>
 	<div class="flex items-center justify-center gap-2">

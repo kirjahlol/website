@@ -45,7 +45,7 @@
 		{/if}
 	</div>
 	<div class="flex justify-between text-xs text-ctp-subtext0">
-		<span>Powered by <a href="https://status.cafe/" target="_blank">Status Cafe</a></span>
-		<a href="https://status.cafe/users/kirjahri" target="_blank">Past statuses</a>
+		<span>Powered by <a href="https://status.cafe/">Status Cafe</a></span>
+		<a href="https://status.cafe/users/kirjahri">Past statuses</a>
 	</div>
 </section>

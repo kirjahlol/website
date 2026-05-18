@@ -61,7 +61,7 @@
 <div class="flex flex-wrap justify-center gap-2">
 	{#each buttons as { id, href, src, alt } (id)}
 		{#if href}
-			<a {href} rel="external" target="_blank">
+			<a {href} rel="external">
 				<img
 					{src}
 					{alt}

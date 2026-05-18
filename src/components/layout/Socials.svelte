@@ -68,7 +68,6 @@
 			<a
 				{href}
 				rel="external"
-				target="_blank"
 				class="rounded-md border border-ctp-surface0 bg-ctp-surface0/50 p-2 text-ctp-text! transition-[scale] duration-150 hover:scale-110"
 				{@attach tooltip(name, 'bottom')}
 			>

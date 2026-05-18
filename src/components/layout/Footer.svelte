@@ -43,7 +43,7 @@
 				{#each items as { id, href, content } (id)}
 					{#if href}
 						<!-- eslint-disable-next-line svelte/no-at-html-tags -->
-						<a {href} rel="external" target="_blank">{@html content}</a>
+						<a {href} rel="external">{@html content}</a>
 					{:else}
 						<!-- eslint-disable-next-line svelte/no-at-html-tags -->
 						{@html content}

@@ -12,7 +12,7 @@
 			class="size-6 text-ctp-text! transition-[scale] duration-150 hover:scale-120"
 		/>
 	</a>
-	<a href="https://ctp-webr.ing/" target="_blank" {@attach tooltip('Catppuccin Webring', 'bottom')}>
+	<a href="https://ctp-webr.ing/" {@attach tooltip('Catppuccin Webring', 'bottom')}>
 		<img
 			src={catppuccinLogo}
 			alt="Catppuccin logo"
