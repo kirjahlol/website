@@ -176,7 +176,7 @@
 			yearOfRelease: 2024,
 			seriesName: '<i>NCICORE</i>',
 			thumbnail: ncicoreTerrariaCalamityThumbnail,
-			game: '<i>Terraria</i> (<i>Calamity Mod)</i>',
+			game: '<i>Terraria</i> (<i>Calamity Mod</i>)',
 			goals: [
 				{
 					id: 1,
