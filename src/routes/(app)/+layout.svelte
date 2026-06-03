@@ -54,23 +54,23 @@
 		{
 			id: 1,
 			href: '/',
-			name: 'Home'
+			name: 'Home',
 		},
 		{
 			id: 2,
 			href: '/about',
-			name: 'About'
+			name: 'About',
 		},
 		{
 			id: 3,
 			href: '/shrines',
-			name: 'Shrines'
+			name: 'Shrines',
 		},
 		{
 			id: 4,
 			href: '/contact',
-			name: 'Contact'
-		}
+			name: 'Contact',
+		},
 	];
 
 	let { children, data }: LayoutProps = $props();

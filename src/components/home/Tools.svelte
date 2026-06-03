@@ -21,24 +21,24 @@
 				{
 					id: 1,
 					icon: 'devicon-plain:archlinux',
-					name: 'Arch Linux'
+					name: 'Arch Linux',
 				},
 				{
 					id: 2,
 					icon: 'simple-icons:wezterm',
-					name: 'Wezterm'
+					name: 'Wezterm',
 				},
 				{
 					id: 3,
 					icon: 'devicon-plain:neovim',
-					name: 'Neovim'
+					name: 'Neovim',
 				},
 				{
 					id: 4,
 					icon: 'devicon-plain:vscode',
-					name: 'VSCode'
-				}
-			]
+					name: 'VSCode',
+				},
+			],
 		},
 		{
 			id: 2,
@@ -47,19 +47,19 @@
 				{
 					id: 1,
 					icon: 'devicon-plain:typescript',
-					name: 'TypeScript'
+					name: 'TypeScript',
 				},
 				{
 					id: 2,
 					icon: 'devicon-plain:godot',
-					name: 'GDScript'
+					name: 'GDScript',
 				},
 				{
 					id: 3,
 					icon: 'devicon-plain:luau',
-					name: 'Luau'
-				}
-			]
+					name: 'Luau',
+				},
+			],
 		},
 		{
 			id: 3,
@@ -68,14 +68,14 @@
 				{
 					id: 1,
 					icon: 'devicon-plain:svelte',
-					name: 'Svelte/SvelteKit'
+					name: 'Svelte/SvelteKit',
 				},
 				{
 					id: 2,
 					icon: 'file-icons:tailwind',
-					name: 'Tailwind CSS'
-				}
-			]
+					name: 'Tailwind CSS',
+				},
+			],
 		},
 		{
 			id: 4,
@@ -84,15 +84,15 @@
 				{
 					id: 1,
 					icon: 'devicon-plain:godot',
-					name: 'Godot'
+					name: 'Godot',
 				},
 				{
 					id: 2,
 					icon: 'simple-icons:robloxstudio',
-					name: 'Roblox Studio'
-				}
-			]
-		}
+					name: 'Roblox Studio',
+				},
+			],
+		},
 	];
 </script>
 

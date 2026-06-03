@@ -13,23 +13,23 @@
 	const items: Item[] = [
 		{
 			id: 1,
-			content: `&copy; ${new Date().getFullYear()} kirjah`
+			content: `&copy; ${new Date().getFullYear()} kirjah`,
 		},
 		{
 			id: 2,
 			href: 'https://neocities.org/site/kirjah',
-			content: 'Neocities profile'
+			content: 'Neocities profile',
 		},
 		{
 			id: 3,
 			href: 'https://github.com/kirjahlol/website',
-			content: 'Source code'
+			content: 'Source code',
 		},
 		{
 			id: 4,
 			href: `https://github.com/kirjahlol/website/commit/${version}`,
-			content: version
-		}
+			content: version,
+		},
 	];
 </script>
 

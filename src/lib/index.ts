@@ -23,7 +23,7 @@ export function tooltip(content: string, placement: Placement): Attachment {
 			placement,
 			allowHTML: true,
 			animation: 'shift-away-subtle',
-			theme: 'ctp-green'
+			theme: 'ctp-green',
 		});
 		return tooltip.destroy;
 	};
@@ -32,6 +32,6 @@ export function tooltip(content: string, placement: Placement): Attachment {
 export const dateOfBirth = '2010-03-29T00:00:00.000Z';
 export const age = getAge(new Date(dateOfBirth));
 
-export const pronouns = 'he/she/it';
+export const pronouns = 'he/they/it';
 
 export const location = 'United States';

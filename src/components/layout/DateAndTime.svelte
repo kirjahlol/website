@@ -8,15 +8,15 @@
 			timeZone: myTimeZone,
 			hour: 'numeric',
 			minute: '2-digit',
-			second: '2-digit'
-		})
+			second: '2-digit',
+		}),
 	);
 	let date = $state(
 		new Date().toLocaleDateString('en-US', {
 			timeZone: myTimeZone,
 			month: 'numeric',
-			day: 'numeric'
-		})
+			day: 'numeric',
+		}),
 	);
 
 	$effect(() => {
@@ -26,12 +26,12 @@
 				timeZone: myTimeZone,
 				hour: 'numeric',
 				minute: '2-digit',
-				second: '2-digit'
+				second: '2-digit',
 			});
 			date = now.toLocaleDateString('en-US', {
 				timeZone: myTimeZone,
 				month: 'numeric',
-				day: 'numeric'
+				day: 'numeric',
 			});
 		}, 1000);
 

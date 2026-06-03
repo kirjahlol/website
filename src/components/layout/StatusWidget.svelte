@@ -4,7 +4,7 @@
 	let {
 		state,
 		status,
-		errorMessage
+		errorMessage,
 	}: { state: 'loading' | 'success' | 'error'; status?: Status; errorMessage?: string } = $props();
 </script>
 

@@ -37,14 +37,14 @@
 			id: 1,
 			name: 'Pronouns',
 			icon: 'tabler:tags',
-			content: pronouns
+			content: pronouns,
 		},
 		{
 			id: 2,
 			name: 'Location',
 			icon: 'tabler:map-pin',
-			content: location
-		}
+			content: location,
+		},
 	];
 </script>
 

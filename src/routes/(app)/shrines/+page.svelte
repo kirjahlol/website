@@ -7,9 +7,9 @@
 		{
 			id: 1,
 			pathname: '/shrines/pbg-hardcore',
-			name: "PeanutButterGamer's Hardcore series",
-			imageSource: pbgHardcoreLogo
-		}
+			name: "PeanutButterGamer's <i>Hardcore</i> series",
+			imageSource: pbgHardcoreLogo,
+		},
 	];
 </script>
 

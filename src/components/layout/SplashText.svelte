@@ -9,9 +9,8 @@
 		'wow coming up with these is harder than i thought',
 		'Mobile friendly!',
 		'Bugs are so cool...',
-		'Start digging in your butt, twin!',
 		'gorp',
-		':3'
+		':3',
 	];
 
 	let splashText = $state(splashTexts[0]);

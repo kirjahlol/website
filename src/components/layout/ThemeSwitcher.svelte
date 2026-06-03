@@ -13,18 +13,18 @@
 		{
 			id: 1,
 			name: 'system',
-			icon: 'tabler:device-desktop'
+			icon: 'tabler:device-desktop',
 		},
 		{
 			id: 2,
 			name: 'light',
-			icon: 'tabler:sun'
+			icon: 'tabler:sun',
 		},
 		{
 			id: 3,
 			name: 'dark',
-			icon: 'tabler:moon'
-		}
+			icon: 'tabler:moon',
+		},
 	];
 
 	function handleThemeChange() {

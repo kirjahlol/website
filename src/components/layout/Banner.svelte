@@ -16,13 +16,13 @@
 		{
 			imageSource: banner1,
 			creditUrl: 'https://twitter.com/yuuji7604',
-			credit: '@yuuji7604 on Twitter'
+			credit: '@yuuji7604 on Twitter',
 		},
 		{
 			imageSource: banner2,
 			creditUrl: 'https://twitter.com/ThatOneHaxorus',
-			credit: '@ThatOneHaxorus on Twitter'
-		}
+			credit: '@ThatOneHaxorus on Twitter',
+		},
 	];
 
 	let banner = $state(banners[0]);

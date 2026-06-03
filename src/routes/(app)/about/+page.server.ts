@@ -26,7 +26,7 @@ export const load: PageServerLoad = async () => {
 		'Super Mario Maker 2': 5249544,
 		'Pokémon Shield': 5261356,
 		'Splatoon 3': 5277939,
-		'Tomodachi Life: Living the Dream': 5483703
+		'Tomodachi Life: Living the Dream': 5483703,
 	};
 	const gameIds = Object.values(gameIdsDictionary);
 
@@ -37,6 +37,6 @@ export const load: PageServerLoad = async () => {
 	});
 
 	return {
-		gameCovers
+		gameCovers,
 	};
 };

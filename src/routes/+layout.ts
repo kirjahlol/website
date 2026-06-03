@@ -15,7 +15,7 @@ async function getStatus(): Promise<Status> {
 
 export const load: LayoutLoad = () => {
 	return {
-		status: getStatus()
+		status: getStatus(),
 	};
 };
 

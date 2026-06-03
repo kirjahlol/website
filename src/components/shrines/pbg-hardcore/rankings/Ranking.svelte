@@ -7,13 +7,7 @@
 		description: string;
 	}
 
-	interface Editor {
-		id: number;
-		href?: string;
-		name: string;
-	}
-
-	interface Artist {
+	interface Contributor {
 		id: number;
 		href?: string;
 		name: string;
@@ -29,10 +23,10 @@
 		game: string;
 		goals: Goal[];
 		numberOfEpisodes: string;
-		editors: Editor[];
-		artists: Artist[];
+		editors: Contributor[];
+		artists: Contributor[];
 		playlistLink: string;
-		Synopsis: Snippet;
+		synopsis: Snippet;
 	}
 
 	let { rankingInformation }: { rankingInformation: RankingInformation } = $props();
@@ -68,10 +62,17 @@
 					<h3>Goal</h3>
 				{/if}
 				<span>
-					{#each rankingInformation.goals as { id, description } (id)}
+					{#if rankingInformation.goals.length > 1}
+						<ol class="list-inside list-decimal">
+							{#each rankingInformation.goals as { id, description } (id)}
+								<!-- eslint-disable-next-line svelte/no-at-html-tags -->
+								<li>{@html description}</li>
+							{/each}
+						</ol>
+					{:else}
 						<!-- eslint-disable-next-line svelte/no-at-html-tags -->
-						<span class="not-last:after:content-[',_']">{@html description}</span>
-					{/each}
+						<span>{@html rankingInformation.goals[0].description}</span>
+					{/if}
 				</span>
 			</div>
 			<div>
@@ -86,12 +87,16 @@
 					<h3>Editor</h3>
 				{/if}
 				<span class="flex flex-wrap gap-x-1">
-					{#each rankingInformation.editors as { id, href, name } (id)}
+					{#each rankingInformation.editors as { id, href, name, contribution } (id)}
 						<span class="not-last:after:content-[',']">
 							{#if href}
-								<a {href} rel="external">{name}</a>
+								<a {href} rel="external">{name}</a>{#if contribution}<span>
+										<!-- eslint-disable-next-line svelte/no-at-html-tags -->
+										&nbsp;({@html contribution})</span
+									>{/if}
 							{:else}
-								{name}
+								<!-- eslint-disable-next-line svelte/no-at-html-tags -->
+								{name}{#if contribution}<span>&nbsp;({@html contribution})</span>{/if}
 							{/if}
 						</span>
 					{/each}
@@ -126,6 +131,6 @@
 		</div>
 		<hr />
 		<h3 class="mb-2">Synopsis</h3>
-		<rankingInformation.Synopsis />
+		<rankingInformation.synopsis />
 	</div>
 {/if}

@@ -1,7 +1,7 @@
 <script lang="ts">
 	import GameCollection, {
 		type OtherGames,
-		type SteamGames
+		type SteamGames,
 	} from '$components/about/GameCollection.svelte';
 	import ProfileCard, { type ProfileCardItem } from '$components/about/ProfileCard.svelte';
 	import { age, pronouns, tooltip } from '$lib';
@@ -11,19 +11,19 @@
 		{
 			id: 1,
 			name: 'Age',
-			content: `${age}`
+			content: `${age}`,
 		},
 		{
 			id: 2,
 			name: 'Pronouns',
-			content: `${pronouns}`
+			content: `${pronouns}`,
 		},
 		{
 			id: 3,
 			name: 'Address',
 			styles: 'blur-sm',
-			content: '123 Fake St.'
-		}
+			content: '123 Fake St.',
+		},
 	];
 
 	let steamGames: SteamGames[] = [
@@ -31,53 +31,53 @@
 			id: 1,
 			isFavorite: true,
 			appId: 105600,
-			name: 'Terraria'
+			name: 'Terraria',
 		},
 		{
 			id: 2,
 			appId: 413150,
-			name: 'Stardew Valley'
+			name: 'Stardew Valley',
 		},
 		{
 			id: 3,
 			appId: 504230,
-			name: 'Celeste'
+			name: 'Celeste',
 		},
 		{
 			id: 4,
 			appId: 391540,
-			name: 'UNDERTALE'
+			name: 'UNDERTALE',
 		},
 		{
 			id: 5,
 			appId: 1671210,
-			name: 'DELTARUNE'
+			name: 'DELTARUNE',
 		},
 		{
 			id: 6,
 			appId: 367520,
-			name: 'Hollow Knight'
+			name: 'Hollow Knight',
 		},
 		{
 			id: 7,
 			appId: 322170,
-			name: 'Geometry Dash'
+			name: 'Geometry Dash',
 		},
 		{
 			id: 8,
 			appId: 960090,
-			name: 'Bloons TD 6'
+			name: 'Bloons TD 6',
 		},
 		{
 			id: 9,
 			appId: 2379780,
-			name: 'Balatro'
+			name: 'Balatro',
 		},
 		{
 			id: 10,
 			appId: 567640,
-			name: 'Danganronpa V3: Killing Harmony'
-		}
+			name: 'Danganronpa V3: Killing Harmony',
+		},
 	];
 
 	let { data }: PageProps = $props();
@@ -88,38 +88,38 @@
 			isFavorite: true,
 			href: 'https://www.nintendo.com/us/store/products/mario-kart-world-switch-2/',
 			imageSource: data.gameCovers['Mario Kart World'],
-			name: 'Mario Kart World'
+			name: 'Mario Kart World',
 		},
 		{
 			id: 2,
 			href: 'https://www.mariowiki.com/Mario_Kart_Wii',
 			imageSource: data.gameCovers['Mario Kart Wii'],
-			name: 'Mario Kart Wii'
+			name: 'Mario Kart Wii',
 		},
 		{
 			id: 3,
 			href: 'https://www.nintendo.com/us/store/products/super-mario-maker-2-switch/',
 			imageSource: data.gameCovers['Super Mario Maker 2'],
-			name: 'Super Mario Maker 2'
+			name: 'Super Mario Maker 2',
 		},
 		{
 			id: 4,
 			href: 'https://www.nintendo.com/us/store/products/pokemon-shield-switch/',
 			imageSource: data.gameCovers['Pokémon Shield'],
-			name: 'Pokémon Shield'
+			name: 'Pokémon Shield',
 		},
 		{
 			id: 5,
 			href: 'https://www.nintendo.com/us/store/products/splatoon-3-switch/',
 			imageSource: data.gameCovers['Splatoon 3'],
-			name: 'Splatoon 3'
+			name: 'Splatoon 3',
 		},
 		{
 			id: 6,
 			href: 'https://www.nintendo.com/us/store/products/tomodachi-life-living-the-dream-switch/',
 			imageSource: data.gameCovers['Tomodachi Life: Living the Dream'],
-			name: 'Tomodachi Life: Living the Dream'
-		}
+			name: 'Tomodachi Life: Living the Dream',
+		},
 	]);
 </script>
 

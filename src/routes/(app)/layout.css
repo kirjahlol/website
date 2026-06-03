@@ -36,7 +36,7 @@
 }
 
 body {
-	@apply bg-ctp-base text-ctp-text;
+	@apply overscroll-none bg-ctp-base text-ctp-text;
 }
 
 strong,
@@ -57,7 +57,7 @@ section > * {
 }
 
 section h3 {
-	@apply font-mono text-sm font-medium text-ctp-subtext0 uppercase;
+	@apply mb-2 font-mono text-sm font-medium text-ctp-subtext0 uppercase;
 }
 
 section code {

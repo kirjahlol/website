@@ -8,7 +8,7 @@
 	import Header from '$components/layout/Header.svelte';
 	import Navbar, { type Link } from '$components/layout/Navbar.svelte';
 	import ExternalLinks, {
-		type ExternalLink
+		type ExternalLink,
 	} from '$components/shrines/pbg-hardcore/ExternalLinks.svelte';
 	import FavoriteHardcoreGame from '$components/shrines/pbg-hardcore/FavoriteHardcoreGame.svelte';
 	import FavoriteHardcoreTwist from '$components/shrines/pbg-hardcore/FavoriteHardcoreTwist.svelte';
@@ -43,25 +43,25 @@
 		{
 			id: 1,
 			href: '/shrines/pbg-hardcore',
-			name: 'About'
+			name: 'About',
 		},
 		{
 			id: 2,
 			href: '/shrines/pbg-hardcore/community',
-			name: 'Community'
+			name: 'Community',
 		},
 		{
 			id: 3,
 			href: '/shrines/pbg-hardcore/rankings',
-			name: 'Rankings'
-		}
+			name: 'Rankings',
+		},
 	];
 
 	const modules = import.meta.glob<{ default: Snippet }>(
 		'$components/shrines/pbg-hardcore/quotes/*.md',
 		{
-			eager: true
-		}
+			eager: true,
+		},
 	);
 	const quotes = Object.values(modules).map((module) => module.default);
 
@@ -69,13 +69,13 @@
 		{
 			id: 1,
 			href: 'https://discord.gg/trug74ffUx',
-			content: '"Hardcore Community!" Discord server'
+			content: '"Hardcore Community!" Discord server',
 		},
 		{
 			id: 2,
 			href: 'https://hardcore.wiki/wiki/Hardcore_Wiki',
-			content: 'Hardcore Wiki main page'
-		}
+			content: 'Hardcore Wiki main page',
+		},
 	];
 
 	let { children }: LayoutProps = $props();

@@ -6,21 +6,21 @@ import { mdsvex } from 'mdsvex';
 const config = {
 	compilerOptions: {
 		// Force runes mode for the project, except for libraries. Can be removed in svelte 6.
-		runes: ({ filename }) => (filename.split(/[/\\]/).includes('node_modules') ? undefined : true)
+		runes: ({ filename }) => (filename.split(/[/\\]/).includes('node_modules') ? undefined : true),
 	},
 	extensions: ['.svelte', '.svx', '.md'],
 	kit: {
 		adapter: adapter({
-			fallback: '404.html'
+			fallback: '404.html',
 		}),
 		alias: {
 			$assets: 'src/assets',
 			$components: 'src/components',
-			$routes: 'src/routes'
+			$routes: 'src/routes',
 		},
-		version: { name: execSync('git rev-parse --short HEAD').toString().trim() }
+		version: { name: execSync('git rev-parse --short HEAD').toString().trim() },
 	},
-	preprocess: [mdsvex({ extensions: ['.svx', '.md'] })]
+	preprocess: [mdsvex({ extensions: ['.svx', '.md'] })],
 };
 
 export default config;
