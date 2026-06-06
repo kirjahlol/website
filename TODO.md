@@ -9,3 +9,4 @@
 ### PBG Hardcore
 
 - [ ] Add section for favorite Hardcore portrait styles
+- [ ] Make it so that clicking on the image for a Hardcore on the Rankings page takes the user to the playlist for that Hardcore
